@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Setting up Python on Windows - Python Crash Course, 2nd Edition</title>
+  <link rel="stylesheet" href="http://localhost:4001/assets/css/just-the-docs.css">
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-29433314-13', 'http://localhost:4001');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4001/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4001/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4001" class="site-title fs-6 lh-tight">Python Crash Course, 2nd Edition</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4001/" class="navigation-list-link">Home</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4001/setup_instructions/setup_instructions/" class="navigation-list-link">Setup Instructions</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4001/setup_instructions/windows/" class="navigation-list-link active">Setting up Python on Windows</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4001/setup_instructions/macos/" class="navigation-list-link">Setting up Python on macOS</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4001/setup_instructions/linux/" class="navigation-list-link">Setting up Python on Linux</a>
+                      
+                    </li>
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Python Crash Course, 2nd Edition" aria-label="Search Python Crash Course, 2nd Edition" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="//github.com/ehmatthes/pcc_2e">Python Crash Course on GitHub</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4001/setup_instructions/setup_instructions/">Setup Instructions</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Setting up Python on Windows</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="setting-up-python-on-windows">Setting up Python on Windows</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#checking-your-current-version-of-python" id="markdown-toc-checking-your-current-version-of-python">Checking your current version of Python</a></li>
+  <li><a href="#installing-python-37" id="markdown-toc-installing-python-37">Installing Python 3.7</a></li>
+  <li><a href="#installing-sublime-text" id="markdown-toc-installing-sublime-text">Installing Sublime Text</a></li>
+</ul>
+
+<hr />
+<h2 id="checking-your-current-version-of-python">Checking your current version of Python</h2>
+
+<p>Python may already installed on your system. Open a command window by right-clicking on the Desktop while holding the Shift key, and then select “Open Command Window Here”. You can also search for “command” in the task bar. Find out which version is your default by issuing the command <code class="highlighter-rouge">python --version</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> python <span class="nt">--version</span>
+Python 3.7.2
+</code></pre></div></div>
+
+<p>If you see something like this, you already have Python installed. You’ll need Python 3.6 or higher to follow along with the book. If you see a version earlier than Python 3.6, or if you see an error message, it’s fairly straightforward to install a newer version of Python.</p>
+
+<h2 id="installing-python-37">Installing Python 3.7</h2>
+
+<p>Go to <a href="https://python.org/">https://python.org/</a> and hover over the <strong>Downloads</strong> link. You should see a link for your operating system; click the link and download the appropriate installer for your system.</p>
+
+<p>Run the installer, making sure to check the <em>Add Python to PATH</em> checkbox.</p>
+
+<p><img src="/images/crash_course01-1.png" alt="" /></p>
+
+<p>To confirm that the installation was successful, open a terminal and start a Python session:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> python
+Python 3.7.2 <span class="o">(</span>v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28<span class="o">)</span> <span class="o">[</span>MSC v.1916 64 bit <span class="o">(</span>AMD64<span class="o">)]</span> on win32
+Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for </span>more information.
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></div>
+
+<p>To exit the Python session, press <strong>Ctrl-Z</strong> or enter the command <strong>exit()</strong>.</p>
+
+<h2 id="installing-sublime-text">Installing Sublime Text</h2>
+
+<p>You can download an installer for Sublime Text from <a href="https://sublimetext.com">https://sublimetext.com</a>. Click the link and look for a Windows installer. Download the installer and run it.</p>
+
+<p>Assuming you use the command <strong>python</strong> to start a Python terminal session, Sublime Text should not require any configuration to run Python programs on your system.</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
