@@ -7,3 +7,5 @@ notes/
 *_env*/
 
 *.DS_Store
+
+_site/
