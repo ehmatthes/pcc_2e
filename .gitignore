@@ -9,3 +9,5 @@ notes/
 *.DS_Store
 
 _site/
+
+.sass-cache/
