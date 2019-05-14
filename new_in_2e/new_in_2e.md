@@ -38,7 +38,7 @@ Here is a summary of the changes that have been made to the book overall:
   - **Chapter 15**
     - The installation instructions for Matplotlib are simpler for all operating systems.
     - The visualizations featuring Matplotlib use the `subplots()` function, which will be easier to build upon as you learn to create more complex visualizations.
-    - The Rolling Dice project in Chapter 15 now uses Plotly, a well-maintained visualization library that features a clean syntax and fully customizable output. The first edition used Pygal.
+    - The Rolling Dice project in Chapter 15 now uses [Plotly](https://plot.ly/python/), a well-maintained visualization library that features a clean syntax and fully customizable output. The first edition used Pygal.
   - **Chapter 16**
     - The weather project is based on data from NOAA, which should be more stable over the next few years than the site used in the first edition.
     - The mapping project focuses on global earthquake activity. You'll end up with a visualization showing Earth's tectonic plate boundaries through a focus on the locations of all earthquakes over a given time period. This project will help you learn to plot any location-based data set, rather than just country-specific data.
