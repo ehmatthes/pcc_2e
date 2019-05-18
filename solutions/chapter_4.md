@@ -33,7 +33,7 @@ print("\n")
 
 # Print a sentence about each pizza.
 for pizza in favorite_pizzas:
-    print("I really love " + pizza + " pizza!")
+    print(f"I really love {pizza} pizza!")
 
 print("\nI really love pizza!")
 ```
@@ -98,7 +98,7 @@ Output:
 Make a list of the numbers from one to one million, and then use `min()` and `max()` to make sure your list actually starts at one and ends at one million. Also, use the `sum()` function to see how quickly Python can add a million numbers.
 
 ```python
-numbers = list(range(1, 1000001))
+numbers = list(range(1, 1_000_001))
 
 print(min(numbers))
 print(max(numbers))
@@ -219,11 +219,11 @@ friend_pizzas.append('pesto')
 
 print("My favorite pizzas are:")
 for pizza in favorite_pizzas:
-    print("- " + pizza)
+    print(f"- {pizza}")
 
 print("\nMy friend's favorite pizzas are:")
 for pizza in friend_pizzas:
-    print("- " + pizza)
+    print(f"- {pizza}")
 ```
 
 Output:
@@ -260,7 +260,7 @@ menu_items = (
 
 print("You can choose from the following menu items:")
 for item in menu_items:
-    print("- " + item)
+    print(f"- {item}")
 
 menu_items = (
     'rockfish sandwich', 'halibut nuggets', 'smoked salmon chowder',
@@ -270,7 +270,7 @@ menu_items = (
 print("\nOur menu has been updated.")
 print("You can now choose from the following items:")
 for item in menu_items:
-    print("- " + item)
+    print(f"- {item}")
 ```
 
 Output:

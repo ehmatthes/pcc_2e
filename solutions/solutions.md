@@ -21,7 +21,7 @@ The rest of the solutions will be posted shortly. If you need to see a solution 
 <a name="questions"></a>Questions and Feedback
 ---
 
-If you're stuck on something and what you see here isn't helping, please feel free to get in touch. Also, if you think you've found a mistake in the book, I'd love to know about it!
+If you're stuck on something and what you see here isn't helping, please feel free to get in touch. Also, if you think you've found a mistake in the book or in the online resources, I'd love to know about it!
 
 Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
 
