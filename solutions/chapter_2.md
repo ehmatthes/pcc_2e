@@ -104,7 +104,7 @@ Store your favorite number in a variable. Then, using that variable, create a me
 
 ```python
 fav_num = 42
-msg = "My favorite number is " + str(fav_num) + "."
+msg = f"My favorite number is {fav_num}."
 
 print(msg)
 ```

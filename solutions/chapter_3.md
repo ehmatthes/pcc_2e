@@ -44,13 +44,13 @@ Start with the list you used in Exercise 3-1, but instead of just printing each 
 ```python
 names = ['ron', 'tyler', 'dani']
 
-msg = "Hello, " + names[0].title() + "!"
+msg = f"Hello, {names[0].title()}!"
 print(msg)
 
-msg = "Hello, " + names[1].title() + "!"
+msg = f"Hello, {names[1].title()}!"
 print(msg)
 
-msg = "Hello, " + names[2].title() + "!"
+msg = f"Hello, {names[2].title()}!"
 print(msg)
 ```
 
@@ -72,13 +72,13 @@ If you could invite anyone, living or deceased, to dinner, who would you invite?
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 ```
 
 Output:
@@ -104,16 +104,16 @@ You just heard that one of your guests can't make the dinner, so you need to sen
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print("\nSorry, " + name + " can't make it to dinner.")
+print(f"\nSorry, {name} can't make it to dinner.")
 
 # Jack can't make it! Let's invite Gary instead.
 del(guests[1])
@@ -121,13 +121,13 @@ guests.insert(1, 'gary snyder')
 
 # Print the invitations again.
 name = guests[0].title()
-print("\n" + name + ", please come to dinner.")
+print(f"\n{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 ```
 
 Output:
@@ -161,16 +161,16 @@ Print a new set of invitation messages, one for each person in your list.
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print("\nSorry, " + name + " can't make it to dinner.")
+print(f"\nSorry, {name} can't make it to dinner.")
 
 # Jack can't make it! Let's invite Gary instead.
 del(guests[1])
@@ -178,13 +178,13 @@ guests.insert(1, 'gary snyder')
 
 # Print the invitations again.
 name = guests[0].title()
-print("\n" + name + ", please come to dinner.")
+print(f"\n{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 # We got a bigger table, so let's add some more people to the list.
 print("\nWe got a bigger table!")
@@ -193,22 +193,22 @@ guests.insert(2, 'reinhold messner')
 guests.append('elizabeth peratrovich')
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[3].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[4].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[5].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 ```
 
 Output:
@@ -249,16 +249,16 @@ You just found out that your new dinner table won't arrive in time for the dinne
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print("\nSorry, " + name + " can't make it to dinner.")
+print(f"\nSorry, {name} can't make it to dinner.")
 
 # Jack can't make it! Let's invite Gary instead.
 del(guests[1])
@@ -266,13 +266,13 @@ guests.insert(1, 'gary snyder')
 
 # Print the invitations again.
 name = guests[0].title()
-print("\n" + name + ", please come to dinner.")
+print(f"\n{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 # We got a bigger table, so let's add some more people to the list.
 print("\nWe got a bigger table!")
@@ -281,44 +281,44 @@ guests.insert(2, 'reinhold messner')
 guests.append('elizabeth peratrovich')
 
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[2].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[3].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[4].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[5].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 # Oh no, the table won't arrive on time!
 print("\nSorry, we can only invite two people to dinner.")
 
 name = guests.pop()
-print("Sorry, " + name.title() + " there's no room at the table.")
+print(f"Sorry, {name.title()} there's no room at the table.")
 
 name = guests.pop()
-print("Sorry, " + name.title() + " there's no room at the table.")
+print(f"Sorry, {name.title()} there's no room at the table.")
 
 name = guests.pop()
-print("Sorry, " + name.title() + " there's no room at the table.")
+print(f"Sorry, {name.title()} there's no room at the table.")
 
 name = guests.pop()
-print("Sorry, " + name.title() + " there's no room at the table.")
+print(f"Sorry, {name.title()} there's no room at the table.")
 
 # There should be two people left. Let's invite them.
 name = guests[0].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 name = guests[1].title()
-print(name + ", please come to dinner.")
+print(f"{name}, please come to dinner.")
 
 # Empty out the list.
 del(guests[0])
