@@ -201,11 +201,11 @@ print(album)
 
 Output:
 
-
+```
 {'title': 'Ride The Lightning', 'artist': 'Metallica'}
 {'title': 'Ninth Symphony', 'artist': 'Beethoven'}
 {'title': 'Red-Headed Stranger', 'artist': 'Willie Nelson'}
-
+```
 
 With tracks:
 
@@ -235,12 +235,12 @@ print(album)
 
 Output:
 
-
+```
 {'artist': 'Metallica', 'title': 'Ride The Lightning'}
 {'artist': 'Beethoven', 'title': 'Ninth Symphony'}
 {'artist': 'Willie Nelson', 'title': 'Red-Headed Stranger'}
 {'tracks': 8, 'artist': 'Iron Maiden', 'title': 'Piece Of Mind'}
-
+```
 
 [top](#top)
 
@@ -283,7 +283,7 @@ print("\nThanks for responding!")
 
 Output:
 
-
+```
 Enter 'quit' at any time to stop.
 
 What album are you thinking of? number of the beast
@@ -301,6 +301,6 @@ Who's the artist? megadeth
 What album are you thinking of? quit
 
 Thanks for responding!
-
+```
 
 [top](#top)
