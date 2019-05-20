@@ -15,6 +15,10 @@ I haven't included solutions for Chapters 12-14 and 18-20, because the exercises
 
 - [Chapter 2](../chapter_2/)
 - [Chapter 3](../chapter_3/)
+- [Chapter 4](../chapter_4/)
+- [Chapter 5](../chapter_5/)
+- [Chapter 6](../chapter_6/)
+- [Chapter 7](../chapter_7/)
 
 The rest of the solutions will be posted shortly. If you need to see a solution now and it's not listed here, you can check the [solutions for the first edition](https://ehmatthes.github.io/pcc/solutions/README.html). Many of the solutions have not changed, so you might find these helpful.
 
