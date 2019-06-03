@@ -30,4 +30,7 @@ The full set of resources will be posted as soon as the book is available.
 
 ---
 
-<a href="https://nostarch.com/pythoncrashcourse2e"><img src="images/cover.png" /></a>Available from <a href="https://nostarch.com/pythoncrashcourse2e">No Starch Press</a> and <a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280">Amazon</a>.
+<a href="https://nostarch.com/pythoncrashcourse2e"><img src="images/cover.png" /></a>
+
+
+Available from <a href="https://nostarch.com/pythoncrashcourse2e">No Starch Press</a>, <a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280">Amazon</a>, and [Barnes & Noble](https://www.barnesandnoble.com/w/python-crash-course-2nd-edition-eric-matthes/1129705311/). You can also find *Python Crash Course* in person at Barnes & Noble bookstores, and other fine booksellers worldwide.
