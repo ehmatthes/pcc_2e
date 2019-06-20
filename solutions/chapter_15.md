@@ -119,7 +119,7 @@ Output:
 
 ## 15-3: Molecular Motion
 
-Modify *rw_visual.py* by replacing `plt.scatter()` with `plt.plot()`. to simulate the path of a pollen grain on the surface of a drop of water, pass in the `rw.x_values` and `rw.y_values`, and include a `linewidth` argument. Use 5000 instead of 50,000 points.
+Modify *rw_visual.py* by replacing `ax.scatter()` with `ax.plot()`. to simulate the path of a pollen grain on the surface of a drop of water, pass in the `rw.x_values` and `rw.y_values`, and include a `linewidth` argument. Use 5000 instead of 50,000 points.
 
 ```python
 import matplotlib.pyplot as plt
@@ -128,27 +128,27 @@ from random_walk import RandomWalk
 
 # Keep making new walks, as long as the program is active.
 while True:
-    # Make a random walk, and plot the points.
-    rw = RandomWalk(5000)
+    # Make a random walk.
+    rw = RandomWalk(5_000)
     rw.fill_walk()
-    
-    # Set the size of the plotting window.
-    plt.figure(dpi=128, figsize=(10, 6))
-    
-    point_numbers = list(range(rw.num_points))
-    plt.plot(rw.x_values, rw.y_values, linewidth=1)
-        
+
+    # Plot the points in the walk.
+    plt.style.use('classic')
+    fig, ax = plt.subplots(figsize=(15, 9))
+    point_numbers = range(rw.num_points)
+    ax.plot(rw.x_values, rw.y_values, linewidth=1)
+
     # Emphasize the first and last points.
-    plt.scatter(0, 0, c='green', edgecolors='none', s=75)
-    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
-        s=75)
-        
+    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
+        s=100)
+
     # Remove the axes.
-    plt.axes().get_xaxis().set_visible(False)
-    plt.axes().get_yaxis().set_visible(False)
-        
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
     plt.show()
-    
+
     keep_running = input("Make another walk? (y/n): ")
     if keep_running == 'n':
         break
@@ -167,27 +167,27 @@ from random_walk import RandomWalk
 
 # Keep making new walks, as long as the program is active.
 while True:
-    # Make a random walk, and plot the points.
-    rw = RandomWalk(5000)
+    # Make a random walk.
+    rw = RandomWalk(5_000)
     rw.fill_walk()
-    
-    # Set the size of the plotting window.
-    plt.figure(dpi=128, figsize=(10, 6))
-    
-    point_numbers = list(range(rw.num_points))
-    plt.plot(rw.x_values, rw.y_values, linewidth=1, zorder=1)
-        
+
+    # Plot the points in the walk.
+    plt.style.use('classic')
+    fig, ax = plt.subplots(figsize=(15, 9))
+    point_numbers = range(rw.num_points)
+    ax.plot(rw.x_values, rw.y_values, linewidth=1, zorder=1)
+
     # Emphasize the first and last points.
-    plt.scatter(0, 0, c='green', edgecolors='none', s=75, zorder=2)
-    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
-        s=75, zorder=2)
-        
+    ax.scatter(0, 0, c='green', edgecolors='none', s=100, zorder=2)
+    ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
+        s=100, zorder=2)
+
     # Remove the axes.
-    plt.axes().get_xaxis().set_visible(False)
-    plt.axes().get_yaxis().set_visible(False)
-        
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
     plt.show()
-    
+
     keep_running = input("Make another walk? (y/n): ")
     if keep_running == 'n':
         break
@@ -204,8 +204,8 @@ Output:
 The method `fill_walk()` is lengthy. Create a new method called `get_step()` to determine the direction and distance for each step, and then calculate the step. You should end up with two calls to `get_step()` in `fill_walk()`:
 
 ```python
-x_step = get_step()
-y_step = get_step()
+x_step = self.get_step()
+y_step = self.get_step()
 ```
 
 This refactoring should reduce the size of `fill_walk()` and make the method easier to read and understand.
@@ -215,7 +215,7 @@ This refactoring should reduce the size of `fill_walk()` and make the method eas
 ```python
 from random import choice
 
-class RandomWalk():
+class RandomWalk:
     """A class to generate random walks."""
     
     def __init__(self, num_points=5000):
@@ -235,24 +235,24 @@ class RandomWalk():
 
     def fill_walk(self):
         """Calculate all the points in the walk."""
-        
+    
         # Keep taking steps until the walk reaches the desired length.
         while len(self.x_values) < self.num_points:
-            
-            # Decide which direction to go, and how far to go in that direction.
+        
+            # Decide which direction to go and how far to go in that direction.
             x_step = self.get_step()
             y_step = self.get_step()
-            
+        
             # Reject moves that go nowhere.
             if x_step == 0 and y_step == 0:
                 continue
-            
-            # Calculate the next x and y values.
-            next_x = self.x_values[-1] + x_step
-            next_y = self.y_values[-1] + y_step
-            
-            self.x_values.append(next_x)
-            self.y_values.append(next_y)
+        
+            # Calculate the new position.
+            x = self.x_values[-1] + x_step
+            y = self.y_values[-1] + y_step
+        
+            self.x_values.append(x)
+            self.y_values.append(y)
 ```
 
 Output:
@@ -261,88 +261,23 @@ Output:
 
 [top](#top)
 
-## 15-6: Automatic Labels
+## 15-6: Two D8s
 
-Modify *die.py* and *dice_visual.py* by replacing the list we used to set the value of `hist.x_labels` with a loop to generate this list automatically. If you're comfortable with list comprehensions, try replacing the other `for` loops in *die_visual.py* and *dice_visual.py* with comprehensions as well.
-
-***Note:** This should say to modify die_visual.py, not die.py. This will be corrected in future printings.*
-
-*die_visual.py:*
+Create a simulation showing what happens when you roll two eight-sided dice 1000 times. Try to picture what you think the visualization will look like before you run the simulation; then see if your intuition was correct. Gradually increase the number of rolls until you start to see the limits of your system's capabilities.
 
 ```python
-import pygal
-
-from die import Die
-
-# Create a D6.
-die = Die()
-
-# Make some rolls, and store results in a list.
-results = [die.roll() for roll_num in range(1000)]
-    
-# Analyze the results.
-frequencies = [results.count(value) for value in range(1, die.num_sides+1)]
-    
-# Visualize the results.
-hist = pygal.Bar()
-
-hist.title = "Results of rolling one D6 1000 times."
-hist.x_labels = [str(x) for x in range(1, die.num_sides+1)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6', frequencies)
-hist.render_to_file('die_visual.svg')
-```
-
-*dice_visual.py:*
-
-```python
-import pygal
-
-from die import Die
-
-# Create two D6 dice.
-die_1 = Die()
-die_2 = Die()
-
-# Make some rolls, and store results in a list.
-results = [die_1.roll() + die_2.roll() for roll_num in range(1000)]
-    
-# Analyze the results.
-max_result = die_1.num_sides + die_2.num_sides
-frequencies = [results.count(value) for value in range(2, max_result+1)]
-    
-# Visualize the results.
-hist = pygal.Bar()
-
-hist.title = "Results of rolling two D6 dice 1000 times."
-hist.x_labels = [str(x) for x in range(2, max_result+1)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6 + D6', frequencies)
-hist.render_to_file('dice_visual.svg')
-```
-
-[top](#top)
-
-## 15-7: Two D8s
-
-Create a simulation showing what happens if you roll two eight-sided dice 1000 times. Increase the number of rolls gradually until you start to see the limits of your system's capabilities.
-
-```python
-import pygal
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
 
 from die import Die
 
 # Create two D8 dice.
-die_1 = Die(8)
-die_2 = Die(8)
+die_1 = Die(num_sides=8)
+die_2 = Die(num_sides=8)
 
 # Make some rolls, and store results in a list.
 results = []
-for roll_num in range(1000000):
+for roll_num in range(1_000_000):
     result = die_1.roll() + die_2.roll()
     results.append(result)
     
@@ -354,18 +289,15 @@ for value in range(2, max_result+1):
     frequencies.append(frequency)
     
 # Visualize the results.
-hist = pygal.Bar()
+x_values = list(range(2, max_result+1))
+data = [Bar(x=x_values, y=frequencies)]
 
-hist.title = "Results of rolling two D8 dice 1,000,000 times."
-hist.x_labels = [str(x) for x in range(2, max_result+1)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D8 + D8', frequencies)
-hist.render_to_file('dice_visual.svg')
+x_axis_config = {'title': 'Result', 'dtick': 1}
+y_axis_config = {'title': 'Frequency of Result'}
+my_layout = Layout(title='Results of rolling two D8 dice 1,000,000 times',
+        xaxis=x_axis_config, yaxis=y_axis_config)
+offline.plot({'data': data, 'layout': my_layout}, filename='d8_d8.html')
 ```
-
-Note: This solution only uses a list comprehension for the `hist.x_labels` parameter. You might want to try replacing the other loops with comprehensions as well.
 
 Output:
 
@@ -373,12 +305,13 @@ Output:
 
 [top](#top)
 
-## 15-8: Three Dice
+## 15-7: Three Dice
 
 If you roll three D6 dice, the smallest number you can roll is 3 and the largest number is 18. Create a visualization that shows what happens when you roll three D6 dice.
 
 ```python
-import pygal
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
 
 from die import Die
 
@@ -389,7 +322,7 @@ die_3 = Die()
 
 # Make some rolls, and store results in a list.
 results = []
-for roll_num in range(1000000):
+for roll_num in range(1_000_000):
     result = die_1.roll() + die_2.roll() + die_3.roll()
     results.append(result)
     
@@ -401,18 +334,15 @@ for value in range(3, max_result+1):
     frequencies.append(frequency)
     
 # Visualize the results.
-hist = pygal.Bar()
+x_values = list(range(3, max_result+1))
+data = [Bar(x=x_values, y=frequencies)]
 
-hist.title = "Results of rolling three D6 dice 1,000,000 times."
-hist.x_labels = [str(x) for x in range(3, max_result+1)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6 + D6 + D6', frequencies)
-hist.render_to_file('dice_visual.svg')
+x_axis_config = {'title': 'Result', 'dtick': 1}
+y_axis_config = {'title': 'Frequency of Result'}
+my_layout = Layout(title='Results of rolling three D6 dice 1,000,000 times',
+        xaxis=x_axis_config, yaxis=y_axis_config)
+offline.plot({'data': data, 'layout': my_layout}, filename='3d6.html')
 ```
-
-Note: This solution only uses a list comprehension for the `hist.x_labels` parameter. You might want to try replacing the other loops with comprehensions as well.
 
 Output:
 
@@ -420,12 +350,13 @@ Output:
 
 [top](#top)
 
-## 15-9: Multiplication
+## 15-8: Multiplication
 
 When you roll two dice, you usually add the two numbers together to get the result. Create a visualization that shows what happens if you multiply these numbers instead.
 
 ```python
-import pygal
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
 
 from die import Die
 
@@ -435,33 +366,68 @@ die_2 = Die()
 
 # Make some rolls, and store results in a list.
 results = []
-for roll_num in range(1000000):
+for roll_num in range(1_000_000):
     result = die_1.roll() * die_2.roll()
     results.append(result)
     
 # Analyze the results.
 frequencies = []
 max_result = die_1.num_sides * die_2.num_sides
-for value in range(1, max_result+1):
+for value in range(2, max_result+1):
     frequency = results.count(value)
     frequencies.append(frequency)
     
 # Visualize the results.
-hist = pygal.Bar()
+x_values = list(range(2, max_result+1))
+data = [Bar(x=x_values, y=frequencies)]
 
-hist.title = "Results of multiplying two D6 dice. (1,000,000 rolls)"
-hist.x_labels = [str(x) for x in range(1, max_result+1)]
-hist.x_title = "Result"
-hist.y_title = "Frequency of Result"
-
-hist.add('D6 * D6', frequencies)
-hist.render_to_file('dice_visual.svg')
+x_axis_config = {'title': 'Result', 'dtick': 1}
+y_axis_config = {'title': 'Frequency of Result'}
+my_layout = Layout(
+        title='Results of multiplying two D6 dice. (1,000,000 rolls)',
+        xaxis=x_axis_config, yaxis=y_axis_config)
+offline.plot({'data': data, 'layout': my_layout}, filename='d6*d6.html')
 ```
-
-Note: This solution only uses a list comprehension for the `hist.x_labels` parameter. You might want to try replacing the other loops with comprehensions as well.
 
 Output:
 
 ![Graph of results of multiplying two D6 dice, one million times](../../images/solution_images/dice_visual_2d6_multiplication.png)
+
+[top](#top)
+
+## 15-9: Die Comprehension
+
+For clarity, the listings in this section use the long form of `for` loops. If you're comfortable using list comprehensions, try writing a comprehension for one or both of the loops in each of these programs.
+
+```python
+from plotly.graph_objs import Bar, Layout
+from plotly import offline
+
+from die import Die
+
+# Create two D6 dice.
+die_1, die_2 = Die(), Die()
+
+# Make some rolls, and store results in a list.
+results = [die_1.roll() + die_2.roll() for roll_num in range(1000)]
+    
+# Analyze the results.
+max_result = die_1.num_sides + die_2.num_sides
+frequencies = [results.count(value) for value in range(2, max_result+1)]
+    
+# Visualize the results.
+x_values = list(range(2, max_result+1))
+data = [Bar(x=x_values, y=frequencies)]
+
+x_axis_config = {'title': 'Result', 'dtick': 1}
+y_axis_config = {'title': 'Frequency of Result'}
+my_layout = Layout(title='Results of rolling two D6 dice 1000 times',
+        xaxis=x_axis_config, yaxis=y_axis_config)
+offline.plot({'data': data, 'layout': my_layout}, filename='d6_d6.html')
+```
+
+Output:
+
+![Graph of results of adding two D6 dice, one thousand times](../../images/solution_images/dice_visual_2d6_comprehension.png)
 
 [top](#top)
