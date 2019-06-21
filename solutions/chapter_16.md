@@ -185,7 +185,254 @@ Output:
 
 ## 16-4: Automatic Indexes
 
-In this section, we hardcoded the indexes corresponding to the TMIN and TMAX columns. Use the header row to determine the indexes for these values, so your program can work for Sitka or Death Valley. Use the station name to automatically generate an appropriate title for your graph as well.
+In this section, we hardcoded the indexes corresponding to the `TMIN` and `TMAX` columns. Use the header row to determine the indexes for these values, so your program can work for Sitka or Death Valley. Use the station name to automatically generate an appropriate title for your graph as well.
+
+The `index()` method returns the index of an item in a list. For example:
+
+```
+>>> animals = ['cat', 'dog', 'mouse', 'elephant']
+>>> animals.index('dog')
+1
+```
+
+This can help us pull the indexes of the headers we want from the header row:
+
+```python
+import csv
+from datetime import datetime
+
+from matplotlib import pyplot as plt
+
+filename = 'data/death_valley_2018_simple.csv'
+filename = 'data/sitka_weather_2018_simple.csv'
+place_name = ''
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
+
+    print(header_row)
+    date_index = header_row.index('DATE')
+    high_index = header_row.index('TMAX')
+    low_index = header_row.index('TMIN')
+    name_index = header_row.index('NAME')
+
+    # Get dates, and high and low temperatures from this file.
+    dates, highs, lows = [], [], []
+    for row in reader:
+        # Grab the station name, if it's not already set.
+        if not place_name:
+            place_name = row[name_index]
+            print(place_name)
+            
+        current_date = datetime.strptime(row[date_index], '%Y-%m-%d')
+        try:
+            high = int(row[high_index])
+            low = int(row[low_index])
+        except ValueError:
+            print(f"Missing data for {current_date}")
+        else:
+            dates.append(current_date)
+            highs.append(high)
+            lows.append(low)
+
+# Plot the high and low temperatures.
+plt.style.use('seaborn')
+fig, ax = plt.subplots()
+ax.plot(dates, highs, c='red', alpha=0.5)
+ax.plot(dates, lows, c='blue', alpha=0.5)
+plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
+
+# Format plot.
+title = f"Daily high and low temperatures - 2018\n{place_name}"
+plt.title(title, fontsize=20)
+plt.xlabel('', fontsize=16)
+fig.autofmt_xdate()
+plt.ylabel("Temperature (F)", fontsize=16)
+plt.tick_params(axis='both', which='major', labelsize=16)
+
+plt.show()
+```
+
+Output:
+
+![Daily high and low temperatures for Death Valley, CA for 2018](../../images/solution_images/death_valley_auto_index.png)
+
+[top](#top)
+
+## 16-6: Refactoring
+
+The loop that pulls data from `all_eq_dicts` uses variables for the magnitude, longitude, latitude, and title of each earthquake before appending these values to their appropriate lists. This approach was chosen for clarity in how to pull data from a JSON file, but it’s not necessary in your code. Instead of using these temporary variables, pull each value from `eq_dict` and append it to the appropriate list in one line. Doing so should shorten the body of this loop to just four lines.
+
+```python
+import json
+
+from plotly.graph_objs import Scattergeo, Layout
+from plotly import offline
+
+# Explore the structure of the data.
+filename = 'data/eq_data_30_day_m1.json'
+with open(filename) as f:
+    all_eq_data = json.load(f)
+
+all_eq_dicts = all_eq_data['features']
+
+mags, lons, lats, hover_texts = [], [], [], []
+for eq_dict in all_eq_dicts:
+    mags.append(eq_dict['properties']['mag'])
+    lons.append(eq_dict['geometry']['coordinates'][0])
+    lats.append(eq_dict['geometry']['coordinates'][1])
+    hover_texts.append(eq_dict['properties']['title'])
+
+# Map the earthquakes.
+data = [{
+    'type': 'scattergeo',
+    'lon': lons,
+    'lat': lats,
+    'text': hover_texts,
+    'marker': {
+        'size': [5*mag for mag in mags],
+        'color': mags,
+        'colorscale': 'Viridis',
+        'reversescale': True,
+        'colorbar': {'title': 'Magnitude'},
+    },
+}]
+
+my_layout = Layout(title='Global Earthquakes')
+
+fig = {'data': data, 'layout': my_layout}
+offline.plot(fig, filename='global_earthquakes.html')
+```
+
+Output:
+
+![Map of global earthquake activity over 30-day period](../../images/solution_images/global_earthquakes_m1_30_day.png)
+
+[top](#top)
+
+## 16-7: Automated Title
+
+In this section, we specified the title manually when defining `my_layout`, which means we have to remember to update the title every time the source file changes. Instead, you can use the title for the data set in the metadata part of the JSON file. Pull this value, assign it to a variable, and use this for the title of the map when you’re defining `my_layout`.
+
+```python
+import json
+
+from plotly.graph_objs import Scattergeo, Layout
+from plotly import offline
+
+# Explore the structure of the data.
+filename = 'data/eq_data_30_day_m1.json'
+with open(filename) as f:
+    all_eq_data = json.load(f)
+
+title = all_eq_data['metadata']['title']
+all_eq_dicts = all_eq_data['features']
+
+mags, lons, lats, hover_texts = [], [], [], []
+for eq_dict in all_eq_dicts:
+    mags.append(eq_dict['properties']['mag'])
+    lons.append(eq_dict['geometry']['coordinates'][0])
+    lats.append(eq_dict['geometry']['coordinates'][1])
+    hover_texts.append(eq_dict['properties']['title'])
+
+# Map the earthquakes.
+data = [{
+    'type': 'scattergeo',
+    'lon': lons,
+    'lat': lats,
+    'text': hover_texts,
+    'marker': {
+        'size': [5*mag for mag in mags],
+        'color': mags,
+        'colorscale': 'Viridis',
+        'reversescale': True,
+        'colorbar': {'title': 'Magnitude'},
+    },
+}]
+
+my_layout = Layout(title=title)
+
+fig = {'data': data, 'layout': my_layout}
+offline.plot(fig, filename='global_earthquakes.html')
+```
+
+Output:
+
+![Map of global earthquake activity over 30-day period](../../images/solution_images/global_earthquakes_m1_30_day_auto_title.png)
+
+[top](#top)
+
+## 16-9: World Fires
+
+In the resources for this chapter, you’ll find a file called *world_fires_1_day.csv*. This file contains information about fires burning in different locations around the globe, including the latitude and longitude, and the brightness of each fire. Using the data processing work from the first part of this chapter and the mapping work from this section, make a map that shows which parts of the world are affected by fires.
+
+You can download more recent versions of this data at [https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data/](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data/). You can find links to the data in CSV format in the TXT section.
+
+*Note: There are over 27,000 rows listed in the file world_fires_1_day.csv. Using all of these rows was stressing my system, so I added a block to stop processing the data after 10,000 rows. You may want to change this number, or leave this limit out if your system can handle the entire data set smoothly.*
+
+```python
+import csv
+from datetime import datetime
+
+from plotly.graph_objs import Scattergeo, Layout
+from plotly import offline
+
+num_rows = 10_000
+
+filename = 'data/world_fires_1_day.csv'
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
+
+    # Get brightnesses, lats and lons, and dates.
+    dates, brightnesses = [], []
+    lats, lons = [], []
+    hover_texts = []
+    row_num = 0
+    for row in reader:
+        date = datetime.strptime(row[5], '%Y-%m-%d')
+        brightness = float(row[2])
+        label = f"{date.strftime('%m/%d/%y')} - {brightness}"
+
+        dates.append(date)
+        brightnesses.append(brightness)
+        lats.append(row[0])
+        lons.append(row[1])
+        hover_texts.append(label)
+        
+        row_num += 1
+        if row_num == num_rows:
+            break
+
+# Map the fires.
+data = [{
+    'type': 'scattergeo',
+    'lon': lons,
+    'lat': lats,
+    'text': hover_texts,
+    'marker': {
+        'size': [brightness/20 for brightness in brightnesses],
+        'color': brightnesses,
+        'colorscale': 'YlOrRd',
+        'reversescale': True,
+        'colorbar': {'title': 'Brightness'},
+    },
+}]
+
+my_layout = Layout(title='Global Fire Activity')
+
+fig = {'data': data, 'layout': my_layout}
+offline.plot(fig, filename='global_fires.html')
+```
+
+Output:
+
+![Map of global fire activity over 1-day period](../../images/solution_images/global_fire_activity.png)
+
+[top](#top)
+
+
+
 
 
 
