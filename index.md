@@ -26,7 +26,7 @@ Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
 
 Twitter: [@ehmatthes](https://twitter.com/ehmatthes)
 
-The full set of resources will be posted as soon as the book is available.
+I'd love to know what you think of *Python Crash Course*. Please consider taking a [brief survey](https://docs.google.com/forms/d/e/1FAIpQLSez7B3mKB9hmOKoiE7LS5ZmpaWME_KNOiLsznH4zb0UtSoxsA/viewform?usp=sf_link).
 
 ---
 
