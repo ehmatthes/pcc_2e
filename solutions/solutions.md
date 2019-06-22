@@ -27,8 +27,6 @@ I haven't included solutions for Chapters 12-14 and 18-20, because the exercises
 - [Chapter 16](../chapter_16/)
 - [Chapter 17](../chapter_17/)
 
-The rest of the solutions will be posted shortly. If you need to see a solution now and it's not listed here, you can check the [solutions for the first edition](https://ehmatthes.github.io/pcc/solutions/README.html). Many of the solutions have not changed, so you might find these helpful.
-
 <a name="questions"></a>Questions and Feedback
 ---
 
