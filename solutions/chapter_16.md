@@ -368,7 +368,7 @@ In the resources for this chapter, you’ll find a file called *world_fires_1_da
 
 You can download more recent versions of this data at [https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data/](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/active-fire-data/). You can find links to the data in CSV format in the TXT section.
 
-*Note: There are over 27,000 rows listed in the file world_fires_1_day.csv. Using all of these rows was stressing my system, so I added a block to stop processing the data after 10,000 rows. You may want to change this number, or leave this limit out if your system can handle the entire data set smoothly.*
+***Note:** There are over 27,000 rows listed in the file world_fires_1_day.csv. Using all of these rows was stressing my system, so I added a block to stop processing the data after 10,000 rows. You may want to change this number, or leave this limit out if your system can handle the entire data set smoothly.*
 
 ```python
 import csv
