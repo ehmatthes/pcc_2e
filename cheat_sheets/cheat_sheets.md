@@ -9,7 +9,7 @@ has_children: false
 
 Cheat sheets can be really helpful when you’re trying a set of exercises related to a specific topic, or working on a project. Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
 
-The first three updated cheat sheets are available now:
+All of the cheat sheets for the first half of the book are available now, as well as the Pygame cheat sheet:
 
 - [Beginner's Python Cheat Sheet](https://github.com/ehmatthes/pcc_2e/releases/download/v0.4/beginners_python_cheat_sheet_pcc.pdf)
     - Provides an overview of the basics of Python including variables, lists, dictionaries, functions, classes, and more.
@@ -34,4 +34,4 @@ You can also [download a zip file](https://github.com/ehmatthes/pcc_2e/releases/
 
 ---
 
-More updated sheets will be posted shortly. You may still find the [cheat sheets for the first edition](https://ehmatthes.github.io/pcc/cheatsheets/README.html) useful.
+The rest of the project-focused cheat sheets (Matplotlib, Plotly, and Django) will be posted shortly. You may still find the [cheat sheets for the first edition](https://ehmatthes.github.io/pcc/cheatsheets/README.html) useful.
