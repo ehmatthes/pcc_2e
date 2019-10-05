@@ -28,3 +28,11 @@ The correct code should be:
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()
 ```
+## Chapter 13
+
+In the section *Aliens!*, we determined the number of rows that fit on the screen dividing its height by the integer of the alien's height twice:
+
+```python
+    number_rows = available_height_y // (2 * alien_height)
+```
+The variable `available_height` should  be `available_space_y`. This was incorrect just in the new code at the bottom of page 262
