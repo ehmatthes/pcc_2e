@@ -11,6 +11,8 @@ Cheat sheets can be really helpful when you’re trying a set of exercises relat
 
 All of these cheat sheets have been updated to match what's in the second edition of Python Crash Course. You can download sheets individually, or [download a zip file](https://github.com/ehmatthes/pcc_2e/releases/download/v1.0/beginners_python_cheat_sheet_all.zip) that includes all of these sheets in one directory. You can also download all of the cheat sheets in a [single pdf file](https://github.com/ehmatthes/pcc_2e/releases/download/v1.0/beginners_python_cheat_sheet_pcc_all.pdf) if you like.
 
+If you'd like to know when more resources become available, you can sign up for [email notifications here](https://emailoctopus.com/lists/95c27296-f1d4-11e9-be00-06b4694bee2a/forms/subscribe).
+
 ## Overview Sheet
 
 - [Beginner's Python Cheat Sheet](https://github.com/ehmatthes/pcc_2e/releases/download/v1.0/beginners_python_cheat_sheet_pcc.pdf)
