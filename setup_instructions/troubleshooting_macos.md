@@ -62,7 +62,7 @@ If your *Python3.sublime-build* file looks correct, try running *hello_world.py*
 
 If you don't see any results, or if you see an error, you can try running your program in a terminal.
 
-# Running *hello_world.py* from a terminal
+## Running *hello_world.py* from a terminal
 
 Running *hello_world.py* from a terminal will tell you whether you're using the correct command to configure Sublime Text.
 
@@ -97,7 +97,7 @@ hello_world.py
 Hello Python world!
 ```
 
-# If you're still stuck...
+## If you're still stuck...
 
 If you're still stuck, first of all I'm sorry you're having difficulty. Sometimes getting your system set up properly is harder than learning to write code. There are lots of things that can go wrong, and they can be quite difficult to diagnose if you haven't explored the internal workings of a computer before.
 
