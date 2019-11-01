@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Chapter 8
+title: Chapter 9
 parent: Challenges
-nav_order: 50
+nav_order: 60
 ---
 
-# Challenges - Chapter 8
+# Challenges - Chapter 9
 {: .no_toc }
 
 * 
@@ -13,4 +13,4 @@ nav_order: 50
 
 ---
 
-## Challenge 8-1: 
+## Challenge 9-1: 
