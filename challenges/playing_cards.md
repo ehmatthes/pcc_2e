@@ -19,7 +19,7 @@ You do not have to do every challenge in the set. If a challenge depends on comp
 
 ## Chapter 3
 
-### Challenge 3-1: Hearts
+### Playing Cards 3-1: Hearts
 
 Make a list of all the cards in a deck of cards that have hearts on them. Your list would have items like '2 of Hearts', '3 of Hearts', '4 of Hearts', etc. Print 3 of your cards.
 
@@ -27,7 +27,7 @@ Make a list of all the cards in a deck of cards that have hearts on them. Your l
 
 ## Chapter 4
 
-### Challenge 4-2: Heart Loops
+### Playing Cards 4-2: Heart Loops
 
 Make a list of all the cards in a deck of cards that have hearts on them. Your list would have items like '2 of Hearts', '3 of Hearts', '4 of Hearts'. Do this efficiently by using a loop to generate as many cards as you can.
 
@@ -35,7 +35,7 @@ Make a list of all the cards in a deck of cards that have hearts on them. Your l
 - Loop through a slice of your list and print out just the cards with numbers on them.
 - Loop through a slice of your list and print out just the face cards.
 
-### Challenge 4-3: Full Deck
+### Playing Cards 4-3: Full Deck
 
 Expand on *Hearts* to generate a list containing every card in a standard deck of cards. Using loops to generate some of the cards, how efficiently can you do this?
 
@@ -43,7 +43,7 @@ Expand on *Hearts* to generate a list containing every card in a standard deck o
 
 ## Chapter 8
 
-### Challenge 8-1: Basic Card Functions
+### Playing Cards 8-1: Basic Card Functions
 
 To do this challenge, you first need to do Challenge 4-3, *Full Deck*. Write a series of functions that help you work with cards from your deck:
 
@@ -54,7 +54,7 @@ To do this challenge, you first need to do Challenge 4-3, *Full Deck*. Write a s
 - Write a function called `same_suit()`. This function takes two cards, and returns `True` if the cards have the same suit, and `False` if they do not.
   - Extension: Write this function so that it works for two or more cards.
 
-### Challenge 8-2: Basic Deck Functions
+### Playing Cards 8-2: Basic Deck Functions
 
 You should do challenge 8-1, *Basic Card Functions* before trying this challenge. Write a series of functions that work with a whole deck:
 
@@ -65,11 +65,11 @@ You should do challenge 8-1, *Basic Card Functions* before trying this challenge
 - Write a function called `deal_hand()`. This function accepts a deck as an argument, and the size of the hand. The function returns a list containing the cards in the hand. The function also removes these cards from the deck.
     - Extra challenge: This function should more properly be called `deal_hands()`. It should accept three arguments - the deck, the number of hands to deal, and the size of the hand. It should return a list of hands. This is more complicated, so consider taking the simplified route of just writing `deal_hand()`, and call it sequentially when you need to generate a number of hands.
 
-### Challenge 8-3: Go Fish
+### Playing Cards 8-3: Go Fish
 
 You should do challenges 8-1 and 8-2, *Basic Card Functions* and *Basic Deck Functions*, before trying this challenge. After completing these two challenges you have everything you need to code a game of Go Fish that you can play against the computer!
 
-### Challenge 8-4: AI Go Fish
+### Playing Cards 8-4: AI Go Fish
 
 You need to do Challenge 8-3, *Go Fish*, before trying this challenge. If the computer player in your Go Fish game makes moves by randomly choosing a card in its hand to ask you about, you have a very weak Go Fish player. Consider a strategy for playing Go Fish well, and implement that strategy in code. For example, a good Go Fish player remembers when the other player has asked about a card. Your computer player should do this as well!
 
@@ -77,7 +77,7 @@ You need to do Challenge 8-3, *Go Fish*, before trying this challenge. If the co
 
 ## Chapter 9
 
-### Challenge 9-1: Deck of Cards
+### Playing Cards 9-1: Deck of Cards
 
 Write code to represent a deck of cards. Your code should contain all the functionality described in Challenges 8-1 and 8-2, *Basic Card Functions* and *Basic Deck Functions*. To recap, that includes the following functions or methods:
 
@@ -93,30 +93,85 @@ Write code to represent a deck of cards. Your code should contain all the functi
     - `shuffle_deck()`
     - `deal_hand()`
 
-### Challenge 9-2: Go Fish
+### Playing Cards 9-2: Go Fish
 
-Use your class-based deck of cards to implement a game of Go Fish that you can play against the computer.
+Use your class-based deck of cards to implement a game of Go Fish that you can play against the computer. A basic Go Fish game has the following rules:
 
-### Challenge 9-3: Scoring Go Fish
+- Each player is dealt a hand of 7 cards.
+- If either player has a pair, they pull the pair from their hands and place them on the table.
+- One player goes first. The player picks a card in their hand that they're trying to match, and they say, "Do you have a Jack?"
+  - If the other player has a Jack, the asking player gets that card and places both Jacks on the table. The asking player goes again.
+  - If the other player doesn't have a Jack, they say "Go Fish!" The asking player draws a card from the deck and puts it in their hand.
+    - If the drawn card is the card they asked for, they place the pair on the table and go again.
+    - If the drawn card matches any other card in their hand, they place the pair on the table but don't go again.
+- The game is over whenever one player runs out of cards.
+- The player with the most pairs at the end of the game wins, regardless of who ran out of cards first.
 
-Report the number of cards in the player's hand, and the computer's hand. Report the number of turns that have been played.
+*Note: There are a number of variations to Go Fish. Feel free to make any variations you need to the above rules to match your style of play.*
+
+### Playing Cards 9-3: Scoring Go Fish
+
+Report the number of cards in the player's hand, and the computer's hand. Report the number of turns that have been played. Keep track of the pairs that each player has won, and display the number of pairs won by each player.
+
+### Playing Cards 9-4: Other Card Games
+
+*Note: It may be tempting to start coding other games, but many card-based games are much easier to work on in a graphical environment. For example, it's much easier to examine a poker hand when you can see the colors of the cards in your hand.*
+
+*That said, it can be easier to work on some of the game logic outside the complexity of a graphical framework. So if you're really interested in modeling card games and you don't want to wait until after Chapter 14, go ahead and get started on the game you're interested in.*
 
 ---
 
 ## Chapter 10
 
-### Challenge 10-1: Statistics
+### Playing Cards 10-1: Statistics
 
-For your Go Fish game, create a file that tracks statistics for the game. Keep track of wins and losses, even when the game is not running.
+For your Go Fish game, create a file that tracks statistics for the game. Keep track of wins and losses, and update the statistics after each completed game. You may choose to keep track of just wins and losses, or more detailed information such as how many turns were played, how many pairs each player ended with, and how many cards the losing player was left holding.
 
 ---
 
 ## Chapter 11
 
-### Challenge 11-1: Testing Your Deck
+### Playing Cards 11-1: Testing Your Deck
+
+Write some tests for the deck functions or classes that you've written. You might start with any or all of the following tests:
+
+- Test that a newly-built deck has the correct number of cards in it.
+- Test that a newly-built deck has the correct number of 2s, 3s, 4s, etc.
+- Write a full deck to a file. Build a new deck, and test that your new deck matches the deck you've saved in a file.
+- Build a new deck, and deal some cards. Test that the cards that should have been dealt were actually dealt. Test that the remaining deck is the size it should be.
+
+### Playing Cards 11-2: Testing Go Fish
+
+Write some tests for your game. Consider any or all of the following:
+
+- Build non-random hands for each player. Test that a correct guess is processed correctly, and that an incorrect guess is processed correctly. Make sure you test the processing of the user's guesses, and the computer's guesses.
+- Build a hand for each player that has one or two pairs in it. Test that these pairs are pulled from the hands before the first turn happens.
+- Write a test ensuring that when either player draws a card that matches another card in their hand, that pair is pulled before the next turn.
+
+---
+
+## Chapter 14
+
+### Playing Cards 14-1: Go Fish Game
+
+PyGame is a great framework for building a graphical version of Go Fish. You can find a set of card images blah. 
+
+In your Go Fish game, the player should see all the cards in their hand once the game begins. They should be able to click on a button to ask for a certain card, and they should see...[computer's turn]. Start with a basic version of the game, and then implement a scoring system.
+
+---
+
+## Chapter 15
+
+### Playing Cards 15-1: Go Fish Statistics - Visualized
 
 Pass
 
-### Challenge 11-2: Testing Go Fish
+---
+
+## Chapter 20
+
+### Playing Cards 20-1: Go Fish Online
 
 Pass
+
+Note: probably worth finishing LL, then trying this.
