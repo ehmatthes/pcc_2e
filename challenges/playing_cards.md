@@ -105,7 +105,7 @@ Implement a game of Go Fish that you can play against the computer. A basic Go F
 - The game is over whenever one player runs out of cards.
 - The player with the most pairs at the end of the game wins, regardless of who ran out of cards first.
 
-*Note: There are a number of variations to Go Fish. Feel free to make any variations you need to the above rules to match your style of play.*
+*Note: There are a number of variations to Go Fish. Feel free to make any changes you need to the above rules to match your style of play.*
 
 *Prerequisite: [Playing Cards 8-2: Basic Deck Functions](#playing-cards-8-2-basic-deck-functions)*
 
@@ -137,7 +137,9 @@ Write a class, or set of classes, to represent a deck of cards. Your code should
     - `shuffle_deck()`
     - `deal_hand()`
 
-*Prerequisites: There are no prerequisites for this challenge. If you haven't done the previous card-related challenges, and you want to jump in here, go ahead. If the class-based version of this challenge is too difficult, consider trying some of the earlier challenges in this series.*    
+*Prerequisites: There are no prerequisites for this challenge. If you haven't done the previous card-related challenges, and you want to jump in here, go ahead. If the class-based version of this challenge is too difficult, consider trying some of the earlier challenges in this series.*
+
+*You might need to see the short [guide to working with the `random` module](../../beyond_pcc/random_functions/) when implementing some of these methods.*
 
 ### Playing Cards 9-2: Go Fish
 
@@ -210,13 +212,19 @@ Write some tests for the deck functions or classes that you've written. You migh
 
 ### Playing Cards 11-2: Testing Go Fish
 
-Write some tests for your game. Consider any or all of the following:
+Write some tests for your Go Fish game. Consider any or all of the following:
 
 - Build non-random hands for each player. Test that a correct guess is processed correctly, and that an incorrect guess is processed correctly. Make sure you test the processing of the user's guesses, and the computer's guesses.
 - Build a hand for each player that has one or two pairs in it. Test that these pairs are pulled from the hands before the first turn happens.
 - Write a test ensuring that when either player draws a card that matches another card in their hand, that pair is pulled before the next turn.
 
 *Prerequisites: A Go Fish game, such as [Playing Cards 8-3: Go Fish](#playing-cards-8-3-go-fish) or [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
+
+### Playing Cards 11-3: Testing Other Games
+
+Write some tests for a different card game that you've made.
+
+*Prerequisite: [Playing Cards 9-5: Other Card Games](#playing-cards-9-5-other-card-games).*
 
 [top](#top)
 
@@ -233,6 +241,12 @@ In your Go Fish game, the player should see all the cards in their hand once the
 Start with a basic version of the game, and then implement a scoring system.
 
 *Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
+
+### Playing Cards 14-2: Other Card Games
+
+Make a graphical version of a different card game that you've made.
+
+*Prerequisite: [Playing Cards 9-5: Other Card Games](#playing-cards-9-5-other-card-games).*
 
 [top](#top)
 
@@ -254,6 +268,14 @@ Make a guess about what you think the answers to these questions might be. Then 
 
 *Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
 
+### Playing Cards 15-2: Other Card Games - Visualized
+
+Develop a version of your other card game where the computer can play itself. Write a loop of some sort that makes the computer play itself 100 times or more.
+
+Develop several questions about what might happen over the course of a large number of these games. Make a guess about what you think the answers to these questions might be. Then make a visualization, or series of visualizations, that answer these questions based on your simulated game play.
+
+*Prerequisite: [Playing Cards 9-5: Other Card Games](#playing-cards-9-5-other-card-games).*
+
 [top](#top)
 
 ---
@@ -265,3 +287,11 @@ Make a guess about what you think the answers to these questions might be. Then 
 Develop an online version of Go Fish. This could be text-based, or it could be image based.
 
 *Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
+
+### Playing Cards 20-2: Online Card Games
+
+Develop an online version of your other card game. This could be text-based, or it could be image based.
+
+*Prerequisite: [Playing Cards 9-5: Other Card Games](#playing-cards-9-5-other-card-games).*
+
+[top](#top)
