@@ -51,6 +51,18 @@ Print the entire deck. Then choose a suit, and print just the cards in that suit
 
 ---
 
+## Chapter 6
+
+### Playing Cards 6-1: Full Deck
+
+Now that you've learned about nested loops, can you write a nested loop that creates an entire deck of cards?
+
+Print the entire deck. Then choose a suit, and print just the cards in that suit.
+
+*Prerequisite: [Playing Cards 4-2: Heart Loops](#playing-cards-4-2-heart-loops)*
+
+---
+
 ## Chapter 8
 
 ### Playing Cards 8-1: Basic Card Functions
@@ -65,11 +77,11 @@ Write a series of functions that help you work with cards from your deck:
 - Write a function called `same_suit()`. This function takes two cards, and returns `True` if the cards have the same suit, and `False` if they do not.
   - Extension: Write this function so that it works for two or more cards.
 
-*Prerequisite: [Playing Cards 4-3: Full Deck](#playing-cards-4-3-full-deck)*
+*Prerequisite: [Playing Cards 6-1: Full Deck](#playing-cards-6-1-full-deck)*
 
 ### Playing Cards 8-2: Basic Deck Functions
 
-Write a series of functions that work with a whole deck:
+Write a series of functions that work with a whole deck. You might need to see the short [guide to working with the `random` module](../../beyond_pcc/random_functions/) when implementing some of these functions.
 
 - Write a function called `deal_top_card()`. This function accepts a deck as an argument, and returns the first card in the deck. It also removes that card from the deck.
 - Write a function called `get_random_card()`. This function accepts a deck as an argument, and returns a random card from the deck. It also removes that card from the deck.
@@ -155,9 +167,11 @@ Report the number of cards in the player's hand, and the computer's hand. Report
 
 If the computer player in your Go Fish game makes moves by randomly choosing a card in its hand to ask you about, you have a very weak Go Fish player. Consider a strategy for playing Go Fish well, and implement that strategy in code. For example, a good Go Fish player remembers when the other player has asked about a card. Your computer player should do this as well!
 
+Extension: Write a version of this game where the computer plays itself.
+
 *Prerequisite: [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish) It will probably also be helpful to complete [Playing Cards 9-3: Scoring Go Fish](#playing-cards-9-3-scoring-go-fish) as well.*
 
-### Playing Cards 9-4: Other Card Games
+### Playing Cards 9-5: Other Card Games
 
 Consider other card-based games you know such as Poker, Solitaire, War, Rummy, Crazy Eights, and others. Implement one of these games so that you can play it against the computer.
 
@@ -212,9 +226,13 @@ Write some tests for your game. Consider any or all of the following:
 
 ### Playing Cards 14-1: Go Fish Game
 
-PyGame is a great framework for building a graphical version of Go Fish. You can find a set of card images blah. 
+PyGame is a great framework for building a graphical version of Go Fish. You can find a set of card images [here](https://pixabay.com/vectors/card-deck-deck-cards-playing-cards-161536/). You can also find this file as *playing_cards.bmp* in the *beyond_pcc* folder in the zip file of online resources for the book.  
 
-In your Go Fish game, the player should see all the cards in their hand once the game begins. They should be able to click on a button to ask for a certain card, and they should see...[computer's turn]. Start with a basic version of the game, and then implement a scoring system.
+In your Go Fish game, the player should see all the cards in their hand once the game begins. They should see a card back for each card in the computer's hand, and a set of cards representing the draw pile. They should be able to click on a button to ask for a certain card. If they are incorrect, they should have to click on the draw pile to draw their card. They should see their card, and if they got what they asked for they should get to go again. When their turn is completely over, they should click a button to let the computer take its turn.
+
+Start with a basic version of the game, and then implement a scoring system.
+
+*Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
 
 [top](#top)
 
@@ -224,7 +242,17 @@ In your Go Fish game, the player should see all the cards in their hand once the
 
 ### Playing Cards 15-1: Go Fish Statistics - Visualized
 
-Pass
+Create a Go Fish game, in which the computer follows a specific strategy. Make a version of the game where the computer plays itself. Write a loop of some sort that makes the computer play itself 100 times or more.
+
+Develop several questions about what might happen over the course of a large number of Go Fish games, such as:
+
+- At the end of each game, how many cards was each player holding?
+- How many games does each player win?
+- How often does one player end up with all the cards?
+
+Make a guess about what you think the answers to these questions might be. Then make a visualization, or series of visualizations, that answer these questions based on your simulated game play.
+
+*Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*
 
 [top](#top)
 
@@ -234,6 +262,6 @@ Pass
 
 ### Playing Cards 20-1: Go Fish Online
 
-Pass
+Develop an online version of Go Fish. This could be text-based, or it could be image based.
 
-Note: probably worth finishing LL, then trying this.
+*Prerequisites: A Go Fish game, such as [Playing Cards 9-2: Go Fish](#playing-cards-9-2-go-fish).*

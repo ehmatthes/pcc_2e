@@ -20,9 +20,16 @@ Enjoy!
 
 ---
 
+## Random Functions
+
+- [Random Functions](../random_functions/)
+
+    Randomness is discussed when it's needed in the book, but it can be helpful to have a number of these functions described in one place. There are also a couple functions mentioned here that are not covered in the book, which can be useful in some of the challenges.
+
+
 ## Pygame
 
 - [Using Sprite Sheets](../pygame_sprite_sheets/)
 
-    This first extension will allow you to build games that involve lots of images. For example, a deck of cards has 52 different cards in it. If you tried to load 52 separate images, the performance of your game would suffer. Sprite Sheets allow you to load one image, and then create game elements from all of the images contained within that one larger image.
+    This guide will help you build games that involve lots of images. For example, a deck of cards has 52 different cards in it. If you tried to load 52 separate images, the performance of your game would suffer. Sprite sheets allow you to load one image, and then create game elements from all of the images contained within that single larger image.
 
