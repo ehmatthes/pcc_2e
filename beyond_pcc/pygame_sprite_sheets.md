@@ -23,7 +23,7 @@ For this example we'll look at how you can load a full set of chess pieces from 
 
 Here's the sprite sheet we'll work with:
 
-![](/images/chess_pieces.bmp)
+![](/images/challenge_images/chess_pieces.bmp)
 
 I downloaded this image from [Public Domain Clip Art](https://www.pdclipart.org/displayimage.php?album=search&cat=0&pos=39), and converted it to a .bmp file. You can right click and save the image file from this page, or you can find it in the *beyond_pcc* folder when you [download the resources for the book](https://github.com/ehmatthes/pcc_2e/zipball/master/).
 
@@ -88,6 +88,8 @@ class Settings:
 ```
 
 This gives us an empty game window, and we can press 'q' to quit the game at any time. I like to have this option because sometimes I run games in fullscreen mode, and you can't click the close button in fullscreen mode.
+
+You'll also need to create an *images* folder, and save the sprite sheet as *chess_pieces.bmp* in this folder.
 
 ## Modeling a Chess Piece
 
@@ -326,7 +328,7 @@ We first import `ChessSet`. Then in `__init__()` we make an attribute called `ch
 
 The output shows the black king in the upper left corner of the game window:
 
-![](/images/chess_game_king.png)
+![](/images/challenge_images/chess_game_king.png)
 
 We've pretty much got the image we want. We might want to go back and refine the rectangle we used for pulling this image, to even out the amount of background on each of the margins.
 
@@ -338,7 +340,7 @@ As mentioned earlier, it's possible to load all of the images we need from the s
 
 Consider the original sprite sheet again, this time with a couple aspects of the sheet highlighted:
 
-![](/images/chess_pieces_annotated.bmp)
+![](/images/challenge_images/chess_pieces_annotated.bmp)
 
 The dark blue rectangle shows the space to the left of the first column, which we can call a *margin*. The light blue region shows the horizontal space between columns, which we can call *padding*. The dark green bar shows the margin above the first row, and the light green bar shows the vertical padding between each row.
 
@@ -506,7 +508,7 @@ We loop through the first 6 pieces. For each piece, we set the x value 100 highe
 
 Here we can see that all of the pieces were grabbed appropriately:
 
-![](/images/chess_game_all_pieces.png)
+![](/images/challenge_images/chess_game_all_pieces.png)
 
 ### Making mistakes
 
