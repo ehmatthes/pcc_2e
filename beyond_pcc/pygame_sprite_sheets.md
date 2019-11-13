@@ -25,7 +25,7 @@ Here's the sprite sheet we'll work with:
 
 ![](/images/challenge_images/chess_pieces.bmp)
 
-I downloaded this image from [Public Domain Clip Art](https://www.pdclipart.org/displayimage.php?album=search&cat=0&pos=39), and converted it to a .bmp file. You can right click and save the image file from this page, or you can find it in the *beyond_pcc* folder when you [download the resources for the book](https://github.com/ehmatthes/pcc_2e/zipball/master/).
+I downloaded this image from [Public Domain Clip Art](https://www.pdclipart.org/displayimage.php?album=search&cat=0&pos=39), and converted it to a .bmp file. You can right click and save the image file from this page, or you can find it in the [*beyond_pcc*](https://github.com/ehmatthes/pcc_2e/tree/master/beyond_pcc) folder when you [download the resources for the book](https://github.com/ehmatthes/pcc_2e/zipball/master/).
 
 ## Starting a Chess Game
 
@@ -520,7 +520,7 @@ If you run into mistakes in the game you're working on, or any project you find 
 
 ## Loading Your Own Images
 
-You are free to copy *spritesheet.py* into your own game project. Some people like to place this kind of file in a directory called *utils* inside their main project folder, and then their import statement looks like this:
+Some people like to place files like *spritesheet.py* in a directory called *utils* inside their main project folder, and then their import statement looks like this:
 
 ```python
 from utils.spritesheet import SpriteSheet
@@ -528,7 +528,7 @@ from utils.spritesheet import SpriteSheet
 
 This makes it clear what code is specific to your game, and what code is a utility module that could be used for any game. If you're making a lot of games, you can place the utils directory in a location that's accessible to all your games, so you don't have a bunch of copies of the same utility module all over your system.
 
-You can find the full *spritesheet.py* module here. It's also in the *beyond_pcc* folder in the zip file of online resources for the book. If you don't see that folder, you might need to download a newer copy of the online resources, as I've just recently added this section.
+You can find the full *spritesheet.py* module [here](https://github.com/ehmatthes/pcc_2e/blob/master/beyond_pcc/chess_game/utils/spritesheet.py). It's also in the [*beyond_pcc*](https://github.com/ehmatthes/pcc_2e/tree/master/beyond_pcc) folder in the [zip file](https://github.com/ehmatthes/pcc_2e/zipball/master/) of online resources for the book. If you don't see that folder, you might need to download a newer copy of the online resources, as I've just recently added this section.
 
 ## Final Words
 
