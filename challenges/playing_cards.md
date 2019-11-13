@@ -234,7 +234,7 @@ Write some tests for a different card game that you've made.
 
 ### Playing Cards 14-1: Go Fish Game
 
-PyGame is a great framework for building a graphical version of Go Fish. You can find a set of card images [here](https://pixabay.com/vectors/card-deck-deck-cards-playing-cards-161536/). You can also find this file as *playing_cards.bmp* in the [*beyond_pcc*](https://github.com/ehmatthes/pcc_2e/tree/master/beyond_pcc) folder in the [zip file](https://github.com/ehmatthes/pcc_2e/zipball/master/) of online resources for the book.  
+PyGame is a great framework for building a graphical version of Go Fish. You can find a set of card images [here](https://pixabay.com/vectors/card-deck-deck-cards-playing-cards-161536/). You can also find this file as *playing_cards.bmp* in the [*beyond_pcc*](https://github.com/ehmatthes/pcc_2e/tree/master/beyond_pcc) folder in the [zip file](https://github.com/ehmatthes/pcc_2e/zipball/master/) of online resources for the book. To load the card images, you'll need to see the guide [*Pygame - Using Sprite Sheets*](../../beyond_pcc/pygame_sprite_sheets/).
 
 In your Go Fish game, the player should see all the cards in their hand once the game begins. They should see a card back for each card in the computer's hand, and a set of cards representing the draw pile. They should be able to click on a button to ask for a certain card. If they are incorrect, they should have to click on the draw pile to draw their card. They should see their card, and if they got what they asked for they should get to go again. When their turn is completely over, they should click a button to let the computer take its turn.
 
