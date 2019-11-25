@@ -30,7 +30,9 @@ Each of these sets is made up of a series of smaller challenges. You don't have 
 
     *You can start on this challenge as early as Chapter 3.*
 
-- Photo Filters (*Coming soon!)*
+- [Photo Filters](../photo_filters/)
 
     Learn about image manipulation, and build your own set of photo filters. If you like data analysis, you can make visualizations of the pixel data in an image. If you're interested in web apps, make your photo filters available online.
+
+    *You can start on this challenge as early as Chapter 3.*
 

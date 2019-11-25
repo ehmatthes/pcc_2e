@@ -26,6 +26,8 @@ Enjoy!
 
     Randomness is discussed when it's needed in the book, but it can be helpful to have a number of these functions described in one place. There are also a couple functions mentioned here that are not covered in the book, which can be useful in some of the challenges.
 
+    *This section will make sense after you've worked through Chapter 4.*
+
 
 ## Pygame
 
@@ -33,3 +35,12 @@ Enjoy!
 
     This guide will help you build games that involve lots of images. For example, a deck of cards has 52 different cards in it. If you tried to load 52 separate images, the performance of your game would suffer. Sprite sheets allow you to load one image, and then create game elements from all of the images contained within that single larger image.
 
+    *This section will make sense after you've worked through Chapters 12-14.*
+
+## Pillow: Working with Images
+
+- [Pillow](../pillow/)
+
+    Pillow is an imaging library that lets you load and work with existing images, and also lets you create images from a blank canvas. This guide is used for the set of challenges about [making your own photo filters](../../challenges/photo_filters/).
+
+    *This section will make sense after you've worked through Chapter 10.*
