@@ -1,5 +1,5 @@
 dj-database-url==0.5.0
-Django==2.2
+Django==2.2.8
 django-bootstrap4==0.0.8
 django-heroku==0.3.1
 gunicorn==19.9.0
