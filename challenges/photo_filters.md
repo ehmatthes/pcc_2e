@@ -302,6 +302,20 @@ Create a new, blank image that's 4096 x 4096 pixels. Make each pixel a different
 
 *Don't spend much time trying to ensure smooth transitions through all the colors. Coming up with smooth transitions through an entire colorspace is a really hard problem. Once you come up with a first solution to this challenge, you'll appreciate the work people have done to create effective colormaps.*
 
+*Prerequisite: [Photo Filter 10-4: All Red and Green Colors](#photo-filter-10-4-all-red-and-green-colors)*
+
+### Photo Filter 10-6: Sharpening Images
+
+Many image manipulation programs have tools for sharpening images. This can be done by looking for adjacent pixels that have significanly different component values, and increasing the difference between those values.
+
+For example if you look at the total brightness of two adjacent pixels, and those two totals are different by a certain amount, you would want to increase the component values of the brighter pixel, and decrease the component values of the darker pixel. This increases the contrast between these two pixels, which makes a sharper edge in that region of the image. If the difference between the two pixels' brightness totals is not different by your threshold amount, you leave the pixels as they are.
+
+Choose a threshold for sharpening pixels. Write a program that compares each pixel to its neighboring pixels, and modifies pixels where the total brightness of adjacent pixels is above your threshold.
+
+*This is a fairly advanced challenge. Don't be discouraged if it takes many attempts to get a working solution. This is also a challenge that can run really slowly, depending on how large your image is and how many pixel-comparisons you are making. There are mathematical and programmatic ways to make this program more efficient; if you like this challenge, it is well worth revisiting your solution periodically as you learn more about programming.*
+
+*Prerequisite: [Photo Filter 10-1: Grayscale Filter](#photo-filter-10-1-grayscale-filter) or [Photo Filter 10-3: Any Function](#photo-filter-10-3-any-function).*
+
 [top](#top)
 
 ## Chapter 11
