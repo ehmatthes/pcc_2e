@@ -73,7 +73,7 @@ The last line uses your system's image viewer to display the image. You can see 
 
 So far, we haven't done anything to modify the image:
 
-![](../images/challenge_images/starr_bears.jpg)
+![](../../images/challenge_images/starr_bears.jpg)
 
 ## Exploring Pixel Data
 
