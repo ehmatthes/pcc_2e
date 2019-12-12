@@ -29,7 +29,7 @@ Go to [https://python.org/](https://python.org/) and hover over the **Downloads*
 
 Run the installer, making sure to check the *Add Python to PATH* checkbox.
 
-![](/images/crash_course01-1.png)
+![](../../images/crash_course01-1.png)
 
 To confirm that the installation was successful, open a terminal and start a Python session:
 
