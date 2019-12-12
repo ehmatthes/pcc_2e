@@ -13,7 +13,7 @@ Back to [Updates](../updates/)
 
 ---
 
-Python 3.8 was released on October 14, 2019. Everything in the book should still work as it's written, except you might need to [install a specific version of Pygame](). Still, there's a bit more you might want to know about new Python releases. Here's a brief summary, including some links to official Python documentation. If you plan to continue using Python, it's a good idea to know what to look for in new releases.
+Python 3.8 was released on October 14, 2019. Everything in the book should still work as it's written, except you might need to [install a specific version of Pygame](#pygame-on-python-38). Still, there's a bit more you might want to know about new Python releases. Here's a brief summary, including some links to official Python documentation. If you plan to continue using Python, it's a good idea to know what to look for in new releases.
 
 ## Overview
 
@@ -133,5 +133,17 @@ $ python3.8 -m pip install --user requests
 ```
 
 This will install the version of Requests that's compatible with Python 3.8.
+
+[top](#top)
+
+## Pygame on Python 3.8
+
+The stable version of Pygame has not been updated to work with Python 3.8 yet. However, there is a recent development version that works with Python 3.8. To install it, run the following command:
+
+    $ python -m pip install pygame==2.0.0.dev6
+
+You should use the same command you use to run a Python terminal session on your system, which might be `python`, `python3`, `py`, `python3.8`, or something else.
+
+If you've had any issues running Pygame on macOS, this version of Pygame should address those issues as well.
 
 [top](#top)

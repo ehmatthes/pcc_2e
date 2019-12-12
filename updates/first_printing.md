@@ -6,8 +6,14 @@ nav_order: 10
 ---
 
 # Updates and Errata - First printing
+{: .no_toc }
 
 This page is broken into two parts, Updates and Errata. *Updates* address issues that affect whether your code will run or not. *Errata* refer to minor issues such as typos, and errors in grayed-out code that probably won't affect the code you're entering.
+
+* 
+{:toc}
+
+---
 
 ## Updates
 
@@ -32,6 +38,36 @@ The correct code should be:
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()
 ```
+
+[top](#top)
+
+### Chapter 12
+
+*This only applies if you're using Python 3.8.*
+
+The stable version of Pygame has not been updated to work with Python 3.8 yet. However, there is a recent development version that works with Python 3.8. To install it, run the following command:
+
+    $ python -m pip install pygame==2.0.0.dev6
+
+You should use the same command you use to run a Python terminal session on your system, which might be `python`, `python3`, `py`, `python3.8`, or something else.
+
+If you've had any issues running Pygame on macOS, this version of Pygame should address those issues as well.
+
+[top](#top)
+
+### Chapter 20
+
+##### The `psycopg2` package (page 448)
+
+There's only one minor change you'll need to make in order to deploy your Learning Log project to Heroku. On page 448 in the section *Installing Required Packages*, it says to install the package `psycopg2==2.7.*`. This should be changed to `psycopg2-binary`.
+
+##### The Python Runtime (page 449)
+
+The latest Python runtimes available on Heroku are listed [here](https://devcenter.heroku.com/articles/python-support#specifying-a-python-version). The ones you're probably interested in are `python-3.8.0` and `python-3.7.5`. You can use either of these in the *runtime.txt* file described on page 449.
+
+This is not a critical update; if you specify a runtime that's slightly out of date, Heroku will use the closest match it finds in its available runtimes.
+
+[top](#top)
 
 ---
 
@@ -98,3 +134,6 @@ The code works fine as it's written, but the new entry page will differ slightly
 ### Index
 
 On page 497, the entry for *Discord* should point to page 484, not page 48.
+
+[top](#top)
+
