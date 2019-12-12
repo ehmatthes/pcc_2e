@@ -117,7 +117,7 @@ First pixel: (31, 52, 21)
 
 Each pixel is represented as a tuple with three elements, corresponding to the RGB components of thepixel's color. We can see that this pixel has a red component of 31, a green component of 52, and a blue component of 21. You can plug these values into an [online color tool](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) and see what color this pixel is if you're curious:
 
-![](/images/challenge_images/color_31_52_21.png)
+![](../../images/challenge_images/color_31_52_21.png)
 
 ### Examining Multiple Pixels
 
@@ -223,7 +223,7 @@ new_image.show()
 
 The `Image.new()` function creates a new image. It requires a [color mode](), which we set to match the original image's mode. It also requires a size, specified as a tuple with a width and height. We pass in the dimensions of our original image. If you don't specify a base color, the new image starts out with all black pixels:
 
-![](/images/challenge_images/starr_bears_black.png)
+![](../../images/challenge_images/starr_bears_black.png)
 
 ### Copying all Pixels to the New Image
 
@@ -264,7 +264,7 @@ new_image.show()
 
 When I run this code, an image with the filename *tmpdmq72fv3.PNG* pops up, but it looks exactly like the original image:
 
-![](/images/challenge_images/modified_starr_bears.jpg)
+![](../../images/challenge_images/modified_starr_bears.jpg)
 
 ### Saving the New Image
 
@@ -351,8 +351,8 @@ We set a brightness factor, which we'll multiply every RGB component value by. I
 
 Component values in this color model need to be integers, so we wrap the `int()` function around the multiplication operation for each pixel. The result is a brighter image, which you can see by looking at the original next to the brightened image:
 
-![](/images/challenge_images/starr_bears.jpg)
-![](/images/challenge_images/brightened_starr_bears.jpg)
+![](../../images/challenge_images/starr_bears.jpg)
+![](../../images/challenge_images/brightened_starr_bears.jpg)
 
 If you want to have a little fun with this, try swapping the red and green values, or switching all three values. You should still see the bears, but they should look quite different!
 
@@ -377,7 +377,7 @@ We set a size for our new image, and set the mode to `'RGB'`. Then we call `Imag
 
 We get an image that's all black, with the dimensions we specified:
 
-![](/images/challenge_images/blank_black.png)
+![](../../images/challenge_images/blank_black.png)
 
 To demonstrate a simple way to work with a blank canvas, we'll set every pixel's component value randomly:
 
@@ -410,7 +410,7 @@ We import the [`randint()` function](/beyond_pcc/random_functions/#generating-a-
 
 The result is an image where every color is completely random:
 
-![](/images/challenge_images/random_colors.png)
+![](../../images/challenge_images/random_colors.png)
 
 If you look at this image in a file browser, you'll notice that it takes up much more memory than other images of comparable dimensions. For example the blank black image takes about 19 KB of memory, while the random color image takes up almost 3 MB of memory. That's because a truly random image cannot be compressed at all. There are no similar regions to compress, so the details of every single pixel must be stored individually.
 
