@@ -437,6 +437,54 @@ summit
 
 [top](#top)
 
+## 10-10: Common Words
+
+Visit Project Gutenberg (https://gutenberg.org/) and find a few texts you'd like to analyze. Download the text files for these works, or copy the raw text from your browser into a text file on your computer.
+
+You can use the `count()` method to find out how many times a word or phrase appears in a string. For example, the following code counts the number of times `'row'` appers in a string:
+
+```
+>>> line = "Row, row, row your boat"
+>>> line.count('row')
+2
+>>> line.lower().count('row')
+3 
+```
+
+Notice that converting the string to lowercase using `lower()` catches all appearances of the word you're looking for, regardless of how it's formatted.
+
+Write a program that reads the files you found at Project Gutenberg and determines how many times the word 'the' appears in each text. This will be an approximation because it will also count words such as 'then' and 'tehre'. Try counting 'the ', with a space in the string, and see how much lower your count is.
+
+*common_words.py*
+
+```python
+def count_common_words(filename, word):
+    """Count how many times word appears in the text."""
+    # Note: This is a really simple approximation, and the number returned
+    #   will be higher than the actual count.
+    try:
+        with open(filename, encoding='utf-8') as f:
+            contents = f.read()
+    except FileNotFoundError:
+        pass
+    else:
+        word_count = contents.lower().count(word)
+
+        msg = f"'{word}' appears in {filename} about {word_count} times."
+        print(msg)
+
+filename = 'alice.txt'
+count_common_words(filename, 'the')
+```
+
+Output:
+
+```
+'the' appears in alice.txt about 2505 times.
+```
+
+This solution only examines one text, but the function can be applied to any number of texts.
+
 ## 10-11: Favorite Number
 
 Write a program that prompts for the user's favorite number. Use `json.dump()` to store this number in a file. Write a separate program that reads in this value and prints the message, "I know your favorite number! It's _____."
