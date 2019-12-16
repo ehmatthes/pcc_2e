@@ -1,5 +1,5 @@
 responses = {}
-    _poll.py
+
 # Set a flag to indicate that polling is active.
 polling_active = True
 
