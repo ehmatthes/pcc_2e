@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Pygame - Using Sprite Sheets
+title: Using Sprite Sheets in Pygame
 parent: Beyond PCC
 nav_order: 20
 ---
 
-# Pygame: Using Sprite Sheets
+# Using Sprite Sheets in Pygame
 {: .no_toc }
 
 When we built Alien Invasion, we only needed two images: one for the ship, and one for the alien. In some games, however, you'll need lots of different images.
