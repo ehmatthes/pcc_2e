@@ -513,7 +513,7 @@ for city, city_info in cities.items():
 
     print(f"\n{city.title()} is in {country}.")
     print(f"  It has a population of about {population}.")
-    print(f"  The {mountains} mounats are nearby.")
+    print(f"  The {mountains} mounts are nearby.")
 ```
 
 Output:
@@ -521,15 +521,15 @@ Output:
 ```
 Santiago is in Chile.
   It has a population of about 6310000.
-  The Andes mounats are nearby.
+  The Andes mounts are nearby.
 
 Talkeetna is in United States.
   It has a population of about 876.
-  The Alaska Range mounats are nearby.
+  The Alaska Range mounts are nearby.
 
 Kathmandu is in Nepal.
   It has a population of about 975453.
-  The Himilaya mounats are nearby.
+  The Himilaya mounts are nearby.
 ```
 
 [top](#top)
