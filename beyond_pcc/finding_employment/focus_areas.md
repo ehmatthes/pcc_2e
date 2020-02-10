@@ -11,6 +11,8 @@ One of the reasons it's hard to give a quick answer to the question, "What shoul
 * 
 {:toc}
 
+---
+
 [Previous: Finding Employment as a (New) Programmer](../../finding_employment/)
 
 [Next: How long will it take?](../../finding_employment/how_long/)
@@ -103,5 +105,60 @@ If you are interested in freelance work, you might look at joining a freelancing
 
 [top](#top)
 
-## blah
+## System Administration
 
+System Administration has often been seen as separate from programming. But there is so much automation involved in sysadmin work, that many system administrators end up learning to program at some point. If you're just starting out in the technical world, you might find that you really like sysadmin work. You'd be responsible for building and maintaining technical infrastructure. For exmaple, you might work on a SaaS project, and you'd be responsible for the deployment infrastructure. Or you'd work at a large company, and you'd be responsbile for maintaining the organization's network, and much of the hardware on the network.
+
+[top](#top)
+
+## Embedded Software
+
+Almost every electronic device available has some software on it. If a device runs software but has no way to attach a keyboard and monitor, we often call that embedded software, or firmware. A good example is the software that's embedded in a printer.
+
+Embedded software is a really interesting field to work in. It's more important in this area than many others that your code is correct when it's released, because many users rarely, if ever, update the firmware on their devices. If you make a mistake as a web developer, you can fix that bug and push that fix to all users as soon as you update the site's servers. If you work in embedded software, your end users won't see the fix unti they choose to update their firmware. Some people like the challenge of writing software that functions on its own like this - it can be really satisfying to think of thousands or millions of copies of your code running untouched and unmodified for years on end.
+
+Embedded software is everywhere - on printers, ovens, microwaves, radios, amplifiers, cars, medical devices, satellites - the list is literally endless because new devices are being invented every day.
+
+[top](#top)
+
+## Domain-specific Software
+
+Domain-specific software refers to software that's written to solve a problem in a specific domain, or field of work. Some examples include scientific software, medical software, and real estate software. Many people who make a mid-career transition into software development do this kind of work, because they already have the domain expertise.
+
+What's the difference between domain-specific software and software that's written by a general programming agency? Domain-specific software tends to require expertise and experience working in the domain. For example, consider the software used to run the Large Hadron Collider; you probably need a deep understanding of particle physics to write software tha can run a particle accelerator safely and effectively. The team writing this software would have some people who are stronger in physics and some who are stronger in software development, but everyone on the team probably needs some expertise in both areas.
+
+If you already have expertise in a non-software field, you should seriously consider this type of work. There are often opportunities for you to start solving problems in your domain at your current organization, if you are already employed. Just be careful, as it's easy to automate something and end up with some unintended consequences that you might be responsible for.
+
+[top](#top)
+
+## Robotics
+
+People have been writing software for robotic applications for a long time, and this work is only getting more interesting. If you're interested in working with robotics, you can focus on low-level code that makes efficient use of physical devices, or you can work on higher-level code that aims to solve real-world challenges.
+
+As an example of lower-level code, you mgiht want to work on stabilization software for drones. What's the highest wind a drone can remain stationary in, given a certain set of physical constraints? How quickly can the drone handle changes in the wind's direction? How well can the drone handle the momentary loss of a gps signal in windy conditions? These are all low-level problems that apply to most drones being built today. An example of higher-level code would be developing software that allows a drone, or a fleet of drones, to build a high-resolution map of a city.
+
+Robotics includes many things that don't traditionall "look" like robots: drones, autonomous vehicles, personal assistants, toys, submersible rovers, extraterrestrial rovers, and much more.
+
+[top](#top)
+
+## Financial Trading
+
+If you have really strong math skils and love money, you may want to get into financial trading software, also known as algorithmic trading. This kind of work tends to be high-stress, but if you do it well it can pay really well.
+
+There are no shortcuts in this field; if you think you've thought of a way to game the system through code, what you're thinking of is probably illegal, or will probably lose all of your money faster than you can imagine.
+
+[top](#top)
+
+## Machine Learning
+
+Machine Learning is an advanced case of applied statistics and data analysis. ML refers to the process of identifying rules and parameters about a certain problem, that allow a computer to get better at addressing that problem over time. There is nothing magical about this work, other than being impressed at how many calculations can be done in a short amount of time, and how much work people have done in this area over time.
+
+If you want to work on ML algorithms, you will need a really strong background in math. If you want to apply ML techniques to specific problem areas, you will need enough of a math background to have a high-level understanding of how ML works, but most of your work will involve adapting existing ML libraries to specific problem areas.
+
+[top](#top)
+
+## Artificial Intelligence
+
+Much of what is sold as artificial intelligence is really just applied statistics, or Machine Learning. True AI, or general AI, is still a far-off goal. Nevertheless, people are working on this problem area. If you are interested in working on true AI, you probably want to look for a research-focused organization.
+
+[top](#top)
