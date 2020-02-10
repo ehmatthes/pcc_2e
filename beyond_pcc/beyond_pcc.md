@@ -44,5 +44,5 @@ Enjoy!
 
 - ## [Finding Employment as a (New) Programmer](../finding_employment/)
 
-    People often ask me what it takes to get a job as a programmer. That's a big question, and this section is a more complete response to these kinds of questions.
+    People often ask what it takes to get a job as a programmer. That's a big question, and this section gives you some perspective on what it might take to find work as a programmer. [old version](../finding_employment_old/)
 
