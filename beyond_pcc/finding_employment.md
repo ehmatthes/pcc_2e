@@ -12,27 +12,16 @@ People have a wide variety of reasons for learning to write code, and finding wo
 
 This section looks at the kinds of work you can find as a programmer, and shares some specific steps you can take to find your first job.
 
-* 
-{:toc}
-
 ---
 
-[delete all this, and just make it a toc unordered list]
-
-- ## [What can you do as a professional programmer?](../finding_employment/focus_areas/)
-
-- ## How long will it take to find a job?
-
-- ## What do I need to learn?
-
-- ## What are employers looking for?
-
-- ## Building a portfolio
-
-- ## Applying for jobs
-
-- ## Am I too old to become a professional programmer?
+- [What can you do as a professional programmer?](../finding_employment/focus_areas/)
+- [How long will it take to find a job?](../finding_employment/how_long/)
+- What do I need to learn?
+- What are employers looking for?
+- Building a portfolio
+- Applying for jobs
+- Am I too old to become a professional programmer?
   - We hear this question from people in their early 20s!
+- Recommended steps
 
-- ## Recommended steps
-
+---
