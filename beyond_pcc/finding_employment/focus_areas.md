@@ -6,14 +6,14 @@ nav_exclude: true
 # What can you do as a professional programmer?
 {: .no_toc }
 
-One of the reasons it's hard to give a quick answer to the question, "What should I learn if I want to be a professional programmer?" is there are so many different things you can do as a programmer. If you want clear advice, you need to know the kinds of things you can do, and know what kinds of work you're most interested in.
+It's hard to give a quick answer to the question, "What should I learn if I want to be a professional programmer?" One of the reasons is there's such a wide variety of things you can do as a programmer. If you want clear advice, you need to know the kinds of things you can do, and what kinds of work you're most interested in.
 
 * 
 {:toc}
 
 ---
 
-[Previous: Finding Employment as a (New) Programmer](../../finding_employment/)
+[Back to Finding Employment as a (New) Programmer](../../finding_employment/)
 
 [Next: How long will it take?](../../finding_employment/how_long/)
 
