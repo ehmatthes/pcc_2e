@@ -35,11 +35,35 @@ You can find work building new sites, or maintaining any of the millions of exis
 
 [top](#top)
 
+## App Development
+
+App development is closely related to web development. Many app developers started out as web developers, and many web developers spend some of their time building apps. App development usually breaks down into iOS and Android development, although plenty of people still spend time building desktop applications.
+
+If you want to build iOS apps, you'll be using Swift and XCode. If you want to build Android apps, you'll be using Java or related lanagues like Kotlin. You're not wasting your time learning Python, though. For one thing, Python is a much friendlier first language than Swift. The fundamentals of programming you learn through Python will serve you well when you start digging into other languages like Swift or Java or Kotlin.
+
+Another major reason it's good to know Python as an app developer is that many apps talk to a server on the backend. You can store some data on the user's device, but often times there's data that needs to be stored externally. For example, any interactions between users need to be processed through an external server. Also, any off-device backups need to be saved to an external server. When you hear that an app's data is "backed up to the cloud", it really means that data is stored on an external server. To write your server code, you can build a Django project that handles all of the external server interactions. For example, the Learning Log project in Chapters 18-20 could serve as the backend for an iOS app and an Android app. You'd need to build an API for the project, and then the apps would each talk to the Learning Log API to read and write the user's data. When people want to access their learning logs, they could then choose to go to the web site, or use an iOS app, or use an Android app.
+
+[top](#top)
+
 ## Data Science
 
 Data science is a broad field. Data scientists collect, clean, analyze, and visualize data. They can work with small data sets that can be processed in RAM on a single laptop, or they can be enormous data sets that require careful planning to process efficiently. They can be largely static data sets, or they can be real-time feeds with large amounts of data coming in quickly, all the time.
 
 A good data scientist also helps make meaningful decisions based on the data that's been collected.
+
+[top](#top)
+
+## Machine Learning
+
+Machine Learning is an advanced case of applied statistics and data analysis. ML refers to the process of identifying rules and parameters about a certain problem, that allow a computer to get better at addressing that problem over time. There is nothing magical about this work, other than being impressed at how many calculations can be done in a short amount of time, and how much work people have done in this area over time.
+
+If you want to work on ML algorithms, you will need a really strong background in math. If you want to apply ML techniques to specific problem areas, you will need enough of a math background to have a high-level understanding of how ML works, but most of your work will involve adapting existing ML libraries to specific problem areas.
+
+[top](#top)
+
+## Artificial Intelligence
+
+Much of what is sold as artificial intelligence is really just applied statistics, or Machine Learning. True AI, or general AI, is still a far-off goal. Nevertheless, people are working on this problem area. If you are interested in working on true AI, you probably want to look for a research-focused organization.
 
 [top](#top)
 
@@ -50,16 +74,6 @@ Business software development covers a broad range of work. Almost every busines
 If you want to focus on business software development, you can work within a single company, focusing solely on that company's needs. Or, you can work in an agency that does contract work for other companies.
 
 This kind of work is a great way for people already working in a field to transition to software development. If you are already employed in a non-programming job, there's a fair chance you know some of that company's inefficiencies. You may be able to write code that addresses these inefficiencies; this is how many people start to write code that's used in a professional context. Be careful though, because software that's not fully thought out and tested can cause major disruptions to a compny if it does something wrong. And these issues can be hard to spot, because everybody assumes that since the process is automated, it's being done correctly. A small error can cause big, costly issues, and you don't want to be responsible for that as your first professional programming experience.
-
-[top](#top)
-
-## App Development
-
-App development is closely related to web development. Many app developers started out as web developers, and many web developers spend some of their time building apps. App development usually breaks down into iOS and Android development, although plenty of people still spend time building desktop applications.
-
-If you want to build iOS apps, you'll be using Swift and XCode. If you want to build Android apps, you'll be using Java or related lanagues like Kotlin. You're not wasting your time learning Python, though. For one thing, Python is a much friendlier first language than Swift. The fundamentals of programming you learn through Python will serve you well when you start digging into other languages like Swift or Java or Kotlin.
-
-Another major reason it's good to know Python as an app developer is that many apps talk to a server on the backend. You can store some data on the user's device, but often times there's data that needs to be stored externally. For example, any interactions between users need to be processed through an external server. Also, any off-device backups need to be saved to an external server. When you hear that an app's data is "backed up to the cloud", it really means that data is stored on an external server. To write your server code, you can build a Django project that handles all of the external server interactions. For example, the Learning Log project in Chapters 18-20 could serve as the backend for an iOS app and an Android app. You'd need to build an API for the project, and then the apps would each talk to the Learning Log API to read and write the user's data. When people want to access their learning logs, they could then choose to go to the web site, or use an iOS app, or use an Android app.
 
 [top](#top)
 
@@ -146,19 +160,5 @@ Robotics includes many things that don't traditionall "look" like robots: drones
 If you have really strong math skils and love money, you may want to get into financial trading software, also known as algorithmic trading. This kind of work tends to be high-stress, but if you do it well it can pay really well.
 
 There are no shortcuts in this field; if you think you've thought of a way to game the system through code, what you're thinking of is probably illegal, or will probably lose all of your money faster than you can imagine.
-
-[top](#top)
-
-## Machine Learning
-
-Machine Learning is an advanced case of applied statistics and data analysis. ML refers to the process of identifying rules and parameters about a certain problem, that allow a computer to get better at addressing that problem over time. There is nothing magical about this work, other than being impressed at how many calculations can be done in a short amount of time, and how much work people have done in this area over time.
-
-If you want to work on ML algorithms, you will need a really strong background in math. If you want to apply ML techniques to specific problem areas, you will need enough of a math background to have a high-level understanding of how ML works, but most of your work will involve adapting existing ML libraries to specific problem areas.
-
-[top](#top)
-
-## Artificial Intelligence
-
-Much of what is sold as artificial intelligence is really just applied statistics, or Machine Learning. True AI, or general AI, is still a far-off goal. Nevertheless, people are working on this problem area. If you are interested in working on true AI, you probably want to look for a research-focused organization.
 
 [top](#top)
