@@ -3,7 +3,7 @@ layout: default
 nav_exclude: true
 ---
 
-# What do you need to learn in order to find a job?
+# How much do you need to know in order to find a job?
 {: .no_toc }
 
 How much you need to learn to land your first programming job depends a lot on what you already know, and what kind of job you're hoping to find. Here's some perspective on how to think about this question for your own situation.

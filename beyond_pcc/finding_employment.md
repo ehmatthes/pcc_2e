@@ -16,9 +16,8 @@ This section looks at the kinds of work you can find as a programmer, and shares
 
 - [What can you do as a professional programmer?](../finding_employment/focus_areas/)
 - [How long will it take to find a job?](../finding_employment/how_long/)
-- [What do you need to learn in order to find a job?](../finding_employment/what_learn/)
-- What are employers looking for?
-- Building a portfolio
+- [How much do you need to know in order to find a job?](../finding_employment/what_learn/)
+- [Building a portfolio](../finding_employment/building_portfolio/)
 - Applying for jobs
 - Am I too old to become a professional programmer?
   - We hear this question from people in their early 20s!
