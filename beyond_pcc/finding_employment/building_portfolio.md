@@ -6,7 +6,7 @@ nav_exclude: true
 # Building a portfolio
 {: .no_toc }
 
-When you're applyihng for your first programming job, employers want to know that you can use code to solve real-world problems. Most won't be satisfied that you've simply learned the syntax of a language. One of the clearest ways to demonstrate that you've moved beyond learning syntax is to build a portfolio that shows your skills, knowledge, and experience. Even if an employer doesn't look at your portfolio, you will have benefited from the process of putting it together.
+When you're applying for your first programming job, employers want to know that you can use code to solve real-world problems. Most won't be satisfied that you've simply learned the syntax of a language. One of the clearest ways to demonstrate that you've moved beyond learning syntax is to build a portfolio that shows your skills, knowledge, and experience. Even if an employer doesn't look at your portfolio, you will have benefited from the process of putting it together.
 
 * 
 {:toc}
@@ -35,6 +35,7 @@ A portfolio demonstrates not just the ability to write code; it also demonstrate
 - You know how to manage a remote repository, not just a repository on your local system.
 - You know how issue trackers work, and you have a clear system for tracking issues over the course of a larger project.
 - You know how to submit, review, and accept pull requests.
+- You know how to manage a project environment, and make it easy for others to replicate.
 
 [top](#top)
 
@@ -68,9 +69,9 @@ Your portfolio project should demonstrate familiarity with as many aspects of a 
 
 ### Write an informative readme
 
-  Your readme file is an overview of your project. It should tell peoplpe what the project does, and how to run your project locally. Writing a good readme shows potential employers how well you can document your own development work, and how you might communicate with co-workers, customers, and the general public.
+  Your readme file is an overview of your project. It should tell people what the project does, and how to run your project locally. It should include a description of how to install the required libraries in an isolated environment on a developer's local sytem. If your project is deployed somewhere, make sure you provide a link to the deployed version of your projects.
 
-  If your project is deployed somewhere, make sure you provide a link to the deployed version of your projects.
+  Writing a good readme shows potential employers how well you can document your own development work, and how you might communicate with co-workers, customers, and the general public.
 
 ### Include meaningful tests
 
