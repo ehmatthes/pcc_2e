@@ -13,7 +13,7 @@ There's no magic trick that will get you a job quickly. Often times, it's a bunc
 
 ---
 
-| [<< Building a portfolio](../building_portfolio/) | [Finding Employment](../../finding_employment/) | [blah >>]() |
+| [<< Building a portfolio](../building_portfolio/) | [Finding Employment](../../finding_employment/) | [Am I too old to become a professional programmer? >>](../age_in_tech/) |
 
 ---
 
@@ -67,6 +67,14 @@ Depending on where you live, you don't have to wait for major conferences to hap
 
 [top](#top)
 
+## Making sense of listed job requirements
+
+There's a famous parody of tech job postings that says something along the lines of, "We're looking for a candidate with X years of experience in Y technology", where X is more years than that technology has existed. HR departments are famous for listing way more qualifications than any candidate can honestly claim.
+
+If you see a posting that you're interested in, feel free to submit an application package. If you're contacted for an interview, you can clarify in the interview process whether you're indeed a good fit for the position.
+
+[top](#top)
+
 ## Writing a resume
 
 There are many resume templates available online, and plenty of actual examples of people's resumes as well. If you're unsure about how to write a good resume, focus on keeping it simple, clear, and to the point.
@@ -97,10 +105,8 @@ Remember, interviewing is a mutual process. The interviewer team is trying to se
 
 [top](#top)
 
-## What if you don't meet all the listed requirements for a job you really want?
+## Being realistic about pay
 
-There's a famous parody of tech job postings that says something along the lines of, "We're looking for a candidate with X years of experience in Y technology", where X is more years than that technology has existed. HR departments are famous for listing way more qualifications than any candidate can honestly claim.
-
-If you see a posting that you're interested in, feel free to submit an application package. If you're contacted for an interview, you can clarify in the interview process whether you're indeed a good fit for the position.
+The tech world has a reputation for paying really well, and there are certainly many people in higher-paying programming-focused jobs. But there are also lots of people in low or moderately paying entry-level programming jobs. Be careful not to undervalue your skills, but also keep in mind you're quite likely not going to walk in the door as a new programmer and make $100k right away. Once you've held a programming-focused job for a while and show you can hold your own, you can go on another round of applying and interviewing, and make a stronger case for a higher compensation package. There is nothing wrong with shopping around and making sure you know your current value in the market. You have no obligation to stay long at the first company that hires you. Stay long enough to make meaningful contributions and complete some projects, but make sure to reevalute your value as an employee. People earn salary increases much more often by moving between companies than they do by getting raises from one company. Do all of this with tact and professionalism, and you will be more likely to find a series of jobs that are satisfying to you, and beneficial to your employers as well.
 
 [top](#top)
