@@ -81,7 +81,7 @@ There are many resume templates available online, and plenty of actual examples 
 
 Your resume should tell people who you are, what kind of work you're interested in, and what your relevant experience is. It should list your skills, and any formal educational levels you have achieved. You can list non-technical experiences, if you'd be comfortable discussing them in an interview. For example I've been an active member of a mountain rescue team for a number of years, and I include this on my resume because it demonstrates the ability to think and act calmly in stressful situations, and it's always something interesting to talk about.
 
-It's important to view your resume as a living document. You should have a base resume that's mainly for you to keep track of your relevant employment history and qualifications. When you're applying for a specific position, especially one that you really hope to get, you should customize your resume for that application. Tweak your objective and the order in which you list your qualifications, in a way that targets this particular job opportunity.
+It's important to view your resume as a living document. You should have a base resume that's mainly for you to keep track of your relevant employment history and qualifications. When you're applying for a specific position, especially one that you really hope to get, you should customize your resume for that application. Tweak your objective and the order in which you list your qualifications, in a way that targets this particular job opportunity. It's a really good idea to have a few peers read over your resume; if you can find people who already work in the field who are willing to look at your resume, they should be able to give you a really clear sense of whether your resume will look good to a hiring team at their company, or a company similar to theirs.
 
 Keep in mind there are two main ways your resume is likely to be used. The HR people will look at it to make sure you meet the minimum qualifications for the job, and the interviewers will (hopefully) skim it before starting the interview. Make sure your resume clearly shows the HR people your qualifications, and make sure to give the interviewers some interesting technical and non-technical things to ask you about.
 
@@ -97,16 +97,41 @@ The cover letter is a brief opportunity to speak openly and personally about why
 
 Interviews for tech jobs is a huge topic, and I'm not going to go into too much detail here. Some interviews are well run, by qualified people with a professional, respectful approach to the interviewing process. Some are conducted by overworked engineers who don't want to be doing it in the first place. It's good to recognize this, and understand that not all bad or awkward interviews are your fault - sometimes applicants are effectively set up to fail.
 
+### What can you expect in an interview?
+
 Reasonable interviewers will want to validate what they see on your resume. People lie and overrepresent themselves all the time on resumes, so they're trying to see that you are as qualified as you say you are. They shouldn't be looking for a "perfect" candidate, because perfect people don't exist. They should be looking for someone who will do this job well, and who will be good to work with profesionally. Be honest about your skills and experience, inlcuding what you don't know. You won't be expected to know everything; good interviewers want to see how you discuss topics at the edge of your experience and understanding.
 
 Your interview should have some kind of technical component. It may be a whiteboard session where you'll sketch out a solution to a problem that's presented; it may be a pair programming session with a current employee; or it may be a mini-project that you're asked to complete. You might be allowed to use external libraries, or they might ask you to just use what's in the standard library. Whatever you're asked to do, give it your best and be honest about your progress. If it's above your skill level, you may still be offered a job; people may appreciate how you approached the problem, and they may want to work with you and help you grow as a programmer. Maybe they won't hire you for that position, but they'll want you for another postion in the company they're aware of. If you aren't offered a position because of the technical part of the interview, the real-world interviewing experience will guide your subsequent learning tremendously. I once failed miserably in an interview for a statistics job that required way more expertise that I originally thought. I wanted to run out of the interview, but I finished the process and learned a great deal from it, even though I didn't come close to getting the job.
 
 Remember, interviewing is a mutual process. The interviewer team is trying to see if you're a good fit for the company and the position, and you're trying to see if this is a good fit for you. If you feel respected by the interviewers and the process makes you want to work at this company, then you've probably found a good fit. If it feels like a hostile process and you don't want to work at this company, then it's really good to know that up front and not end up in a possibly toxic workplace. They'll ask you a bunch of questions; make sure you ask any questions you need to help you decide whether this company and position really is a good fit for you as well.
 
+### Practicing for interviews
+
+If you know people who are already working in the field, they might be willing to do a mock interview with you. It can feel silly at first, but people who do this tend to become comfortable more quickly in actual interviews. Your mock interviewer doesn't need to be someone in the field. Being able to explain your technical skills to someone who isn't a developer is a valuable skill in itself, and is better than no practice at all. You can also find other people in your area who are doing a job search, and interview each other. There are also online communities where you can share your job search experience in general, and your interviewing experiences specifically.
+
+### Reflecting on your interview
+
+I highly recommend you write some notes after each interview, no matter how well or how poorly it went. Include some or all of the following:
+
+- What happened in the interview? (Describe the process, from beginning to end, even if it's just a bulleted list.)
+- What questions did they ask you?
+  - How did you respond to each question?
+  - Which questions were easiest?
+  - Which were most challenging?
+  - If you could do it over, would you change any of your answers?
+- What questions did you ask?
+  - If you have the chance, what questions will you ask next time you speak with someone from this company?
+  - What questions do you want to ask in your next interview with a different company?
+- What do you want to learn more about, to be better prepared for your next interview?
+
+An interview can be a tremendous learning experience, especially if you are new to the process. If your interview went well, you'll want to remember what made it go well next time. Even if you are offered a job and don't interview again for a couple years, you are almost certain to want to change jobs at some point. If your interview went poorly, you're probably going to need to interview again soon, and these notes can help you focus on your subsequent learning and interview preparation.
+
 [top](#top)
 
 ## Being realistic about pay
 
 The tech world has a reputation for paying really well, and there are certainly many people in higher-paying programming-focused jobs. But there are also lots of people in low or moderately paying entry-level programming jobs. Be careful not to undervalue your skills, but also keep in mind you're quite likely not going to walk in the door as a new programmer and make $100k right away. Once you've held a programming-focused job for a while and show you can hold your own, you can go on another round of applying and interviewing, and make a stronger case for a higher compensation package. There is nothing wrong with shopping around and making sure you know your current value in the market. You have no obligation to stay long at the first company that hires you. Stay long enough to make meaningful contributions and complete some projects, but make sure to reevalute your value as an employee. People earn salary increases much more often by moving between companies than they do by getting raises from one company. Do all of this with tact and professionalism, and you will be more likely to find a series of jobs that are satisfying to you, and beneficial to your employers as well.
+
+You should also be aware that many developers are underpaid. A great person to follow around this topic is Patrick McKenzie (@patio11). He is famous for telling developers running their own businesses to charge more, and for telling employees to know their market value and switch jobs often early in your career until you start to hit industry-wide pay ceilings. Both of these perspectives are good to keep in mind; don't expect sky-high salaries in your very first job as a developer, but also,remember that good developers are in high demand, and your pay should rise quickly as you gain experience in the field.
 
 [top](#top)

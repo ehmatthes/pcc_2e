@@ -14,6 +14,7 @@ This section looks at the kinds of work you can find as a programmer, and shares
 
 ---
 
+- [My background](../finding_employment/background/)
 - [What kinds of things can you do as a professional programmer?](../finding_employment/focus_areas/)
 - [How long will it take to find a job?](../finding_employment/how_long/)
 - [How much do you need to know in order to find a job?](../finding_employment/what_learn/)
