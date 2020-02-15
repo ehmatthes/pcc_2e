@@ -21,7 +21,7 @@ This section looks at the kinds of work you can find as a programmer, and shares
 - [Building a portfolio](../finding_employment/building_portfolio/)
 - [Applying for jobs](../finding_employment/applying_jobs/)
 - [Am I too old to become a professional programmer?](../finding_employment/age_in_tech)
-- Recommended steps
+- [Recommended steps](../finding_employment/recommended_steps/)
 
 ---
 

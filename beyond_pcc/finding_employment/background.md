@@ -33,7 +33,7 @@ My parents pushed my brother and I to explore work at a fairly young age. I had 
 
 ## Teaching
 
-I began teaching in the mid 1990s. I never thought I'd be a teacher, and I thought I had completely failed my first teaching interview. But apparently the interviewers liked how I thought about teaching and learning, and I was happily surprised to find I had a real teaching job. I taught for 4 years at one school in New York City, and then left to live on a bicycle for a year. Then I spent 3 more years teaching at a different school in NYC, before moving to Alaska in 2002, where I still live. I became a lead teacher at one point, and I've been on the interviewer side of the hiring table a number of times now.
+I began teaching in the mid 1990s. I never thought I'd be a teacher, and I thought I had completely failed my first teaching interview. But apparently the interviewers liked how I thought about teaching and learning, and I was happily surprised to find I had a real teaching job. I taught for 4 years at one school in New York City, and then left to [live on a bicycle for a year](https://www.amazon.com/Road-Alaska-Eric-Matthes/dp/1544175965). Then I spent 3 more years teaching at a different school in NYC, before moving to Alaska in 2002, where I still live. I became a lead teacher at one point, and I've been on the interviewer side of the hiring table a number of times now.
 
 [top](#top)
 
