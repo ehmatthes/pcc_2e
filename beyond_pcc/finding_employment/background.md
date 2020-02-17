@@ -11,9 +11,7 @@ If you're going to take advice about finding a job from someone, you should prob
 * 
 {:toc}
 
-
-
-| [<< Finding Employment](../../finding_employment/) | [What kinds of things can you do as a professional programmer? >>]() |
+| [<< Finding Employment](../../finding_employment/) | [What kinds of things can you do as a professional programmer? >>](../focus_areas/) |
 
 ---
 
