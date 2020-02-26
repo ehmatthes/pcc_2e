@@ -15,39 +15,58 @@ You can also [download this checklist as a pdf file]().
 * 
 {:toc}
 
----
-
-| [<< Am I too old to become a professional programmer?](../age_in_tech/) |
+| [<< Am I too old?](../age_in_tech/) |
 
 ---
 
-## Background work
+## Background knowledge and projects
+- [ ] Learn the fundamentals of programming: variables, lists, dictionaries, loops, conditional statements, functions, classes, working with files, and testing your code
+- [ ] Complete several larger-scale projects from a book or other learning resource
+- [ ] Build a meaningful project of your own, or add a significant set of features to a project you started in a tutorial
+- [ ] Learn about some intermediate concepts such as generators, async, recursion, regular expressions, algorithms, data structures, and more
+- [ ] Become familiar with the official Python documentation
+- [ ] Become familiar with the documentation of other libraries you use
+- [ ] Build a professional portfolio
+- [ ] Learn to use some of the advanced features of your editor or IDE
+- [ ] Use a version control system such as Git to manage your projects
 
-- Learn the fundamentals of programming, including the following: variables, lists, dictionaries, conditional statements, loops, functions, classes, working with files, handling errors, testing your code
-- Work through one larger project, following all steps until your version of the project runs
-- Decide what [kind of work](../../focus_areas/) you're most interested in doing as a programmer
-- Gain some familiarity with intermediate programming topics
-- Gain some familiarity with the most fundamental tools and work flows
-  - Know an editor or IDE well enough to write, navigate, and modify code efficiently
-  - Use a version control system such as Git to manage a project on your local system
-  - Use an online code repository such as GitHub to manage a project
-  - Use an issue tracker
-  - Submit, review, and merge pull requests
-  - Use feature branches in your development process
-  - Write meaningful tests of a core aspect of your project
-- Build a portfolio that you can discuss meaningfully in an interview
+[top](#top)
+
+## Searching for jobs
+- [ ] Decide what kinds of jobs you're most interested in
+- [ ] Research companies and organizations you might want to work for
+- [ ] Find a job board with relevant listings, and follow it for new opportunities
+- [ ] Attend a meetup or conference, or find an online programming-related community to join
+- [ ] Build your professional network
+
+[top](#top)
 
 ## Applying for jobs
+- [ ] Write a base resume that's mostly for you
+- [ ] Adapt your resume to at least one specific kind of job you're looking for
+- [ ] Write a cover letter for each job you're interested in applying to
+- [ ] Submit an application for at least one open position (It can be tempting to keep putting off this important step!)
+- [ ] Practice interviewing with a friend or colleague
+- [ ] Go through an interview, and make written notes about the process
+- [ ] Use your experiences so far to focus what you're currently learning, and what you're currently building
+- [ ] Continue to build your personal and professional networks
+- [ ] Continue reading and learning about the job-searching process
+- [ ] Be prepared to negotiate a market-rate salary that's fair to your level of experience and knowledge
 
-- Write a base resume
-- Identify a small list of companies and job openings you'd like to apply to (3-10, although starting with just one is fine)
-- Customize your resume for a specific application, or set of applications
-- Write a separate cover letter for each job you're applying to
-- Submit your application
-- Complete an interview
-- Reflect on the interview, including a brief set of written notes about each interview
+[top](#top)
 
-## Between interviews
+## After you land your first job
+- [ ] Ask the questions you need in order to perform well in your job
+- [ ] Stay long enough to complete meaningful projects and make specific contributions
+- [ ] Keep an eye out for the right time to change jobs, as you gain experience
+- [ ] Develop expertise in one area of programming, without letting yourself get stuck
+- [ ] Continue to learn on your own time, while maintaining a healthy work-life balance
+- [ ] Find ways to help those who are just starting out on their professional journey
 
-- Make a plan for focused learning based on your interviewing experiences
-- Set aside specific times each day for ongoing learning, practice, and projects
+[top](#top)
+
+---
+
+Download [this checklist as a pdf file]()
+
+---
