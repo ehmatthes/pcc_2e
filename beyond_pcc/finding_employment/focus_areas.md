@@ -17,17 +17,17 @@ It's hard to give a quick answer to the question, "What should I learn if I want
 
 ## General Programming
 
-While there are many who might consider themselves to be generalist programmers, there aren't many jobs for generalists. People get hired for more specific roles, such as web development or data science work. So by all means continue to improve your overall programming skills and knowledge, but consider a more specific area to focus on when looking for work.
+While there are many who might consider themselves to be generalist programmers, there aren't many jobs for generalists. People usually get hired for more specific roles, such as web development or data science work. So by all means continue to improve your overall programming skills and knowledge, but consider a more specific area to focus on when looking for work.
 
 [top](#top)
 
 ## Web Development
 
-Web developers focus on building and maintaining interactive web sites. Web sites have been interactive for a long time now, but they are constantly evolving. As a web developer you can work on simple sites that allow users to upload specific kinds of data, or you can work on projects that are basically full desktop applications delivered through a browser.
+Web developers focus on building and maintaining interactive web sites. Web sites have been interactive for a long time now, but the technology behind them is constantly evolving. As a web developer you can work on simple sites that allow users to upload specific kinds of data, or you can work on projects that are basically full desktop applications delivered through a browser.
 
 Web development is often broken into front end work and back end work. Front end developers focus on the interface that users see in the browser. They try to make sites look appealing on the full range of devices available today, and they try to make sites respond quickly and smoothly to user input. Back end developers focus on data management and server-side processing. This usualy involves a strong understanding of working with databases and APIs. Full-stack developers work on the front end and the back end, and can build full working prototypes of web sites independently.
 
-You can find work building new sites, or maintaining any of the millions of existing interactive sites. You can work on small development teams, or you can be part of a large corporation responsible for some of the largest and most popular sites on the internet.
+You can find work building new sites, or maintaining any of the millions of existing interactive sites. You can work on small development teams, or you can be part of a large corporation responsible for some of the largest and most popular sites on the internet. There's also a lot of web development work that's done entierly on internal networks, for apps that are used exclusively within an organization.
 
 [top](#top)
 
@@ -43,9 +43,9 @@ It's also beneficial to know Python as an app developer because many apps talk t
 
 ## Data Science
 
-Data science is a broad field. Data scientists collect, clean, analyze, and visualize data. They can work with small data sets that can be processed quickly in RAM on a single laptop, or they can be enormous data sets that require careful planning to process efficiently. They can be largely static data sets, or they can be real-time feeds with large amounts of data coming in quickly, 24 hours a day.
+Data science is a broad field. Data scientists collect, clean, analyze, and visualize data. They can work with small data sets that can be processed quickly in RAM on a single laptop, or enormous data sets that require careful planning to process efficiently. They can work with largely static data sets, or real-time feeds with large amounts of data coming in quickly, 24 hours a day.
 
-A good data scientist also helps make meaningful decisions based on the data that's been collected.
+A good data scientist also helps make meaningful decisions based on the data that's been collected and analyzed.
 
 [top](#top)
 
@@ -53,7 +53,7 @@ A good data scientist also helps make meaningful decisions based on the data tha
 
 [Machine Learning](https://www.technologyreview.com/s/612437/what-is-machine-learning-we-drew-you-another-flowchart/) is an advanced case of applied statistics and data analysis. ML refers to the process of identifying rules and parameters about a certain problem, that allow a computer to get better at addressing that problem over time. There's nothing magical about this work, other than being impressed at how many calculations can be done in a short amount of time, and how much work people have done in this area over time.
 
-If you want to work on ML algorithms, you will need a really strong background in math. If you want to apply ML techniques to specific problem areas, you'll need enough of a math background to have a high-level understanding of how ML works, but most of your work will involve adapting existing ML libraries to specific problem areas.
+If you want to work on ML algorithms, you'll need a really strong background in math. If you want to apply ML techniques to specific problem areas, you'll need enough of a math background to have a high-level understanding of how ML works, but most of your work will involve adapting existing ML libraries to specific problem areas.
 
 [top](#top)
 
@@ -69,7 +69,7 @@ Business software development covers a broad range of work. Almost every busines
 
 If you want to focus on business software development you can work within a single company, focusing solely on that company's needs. Or, you can work in an agency that does contract work for other companies.
 
-This kind of work is a great way for people already working in a field to transition to software development. If you are already employed in a non-programming job, there's a fair chance you know some of that company's inefficiencies. You may be able to write code that addresses these inefficiencies; this is how many people start to write code that's used in a professional context. Be careful though, because software that's not fully thought out and tested can cause major disruptions to a company if it does something wrong. And these issues can be hard to spot, because everybody assumes that since the process is automated, it's being done correctly. A small error can cause big, costly issues, and you don't want to be responsible for that as your first professional programming experience.
+This kind of work is a great way for people already working in a field to transition to software development. If you are already employed in a non-programming job, there's a fair chance you know some inefficiencies in your company's workflows. You may be able to write code that addresses these inefficiencies; this is how many people start to write code that's used in a professional context. Be careful though, because software that's not fully thought out and tested can cause major disruptions to a company if it does something wrong. And these issues can be hard to spot, because everybody assumes that since the process is automated, it's being done correctly. A small error can cause big, costly issues, and you don't want to be responsible for that as your first professional programming experience.
 
 [top](#top)
 
@@ -81,7 +81,7 @@ Many people think being a game tester means getting set up with your own high-en
 
 Many game development companies also have a reputation for pushing their developers really hard - demanding they work many more hours in a week than is healthy, for weeks and months at a time. And in the end, these developers usually don't get the financial reward that comes from building a massively popular game. Some game dev shops are even proud of how hard they drive their developers, and use that in their advertising.
 
-Another source of frustation in the game development world is that people go into the field thinking they're going to do creative work building fun, amazing games, only to find their day to day work comes down to trying to make users click on in-app purchases. Not many people go into game dev wanting to implement dark patters, but that's what a lot of people (unhappily) end up doing.
+Another source of frustation in the game development world is that people go into the field thinking they're going to do creative work building fun, amazing games, only to find their day to day work comes down to trying to make users click on in-app purchases. Not many people go into game development wanting to implement dark patterns, but that's what a lot of people (unhappily) end up doing.
 
 That said, if you are interested in game development, do some research. There are good games being produced, and if you can find a shop that treats you well, it can be really satisfying work.
 
@@ -91,7 +91,7 @@ Another area of game development that's really appealing is being an independent
 
 ## SaaS
 
-SaaS stands for *Software as a Service*. This is what often takes the place of desktop apps these days. Instead of building a piece of software that users install on their computers, you build the functionality on a server, and you provide a way for users to intereact with that software - either through a browser, or through an app. You run the software on a server, and you offer this as a service to end users.
+SaaS stands for *Software as a Service*. This is what often takes the place of desktop apps on current devices. Instead of building a piece of software that users install on their computers, you build the functionality on a server, and you provide a way for users to intereact with that software - either through a browser, or through an app. You run the *software* on a server, and you offer this as a *service* to end users.
 
 There are many advantages of this model over the older desktop application model. It means you don't need to deal with distribution; users might need to download an app once, but they don't need to download the full application. If you have a bug in your server software, and you fix it, you know that you've fixed that bug for all of your users.
 
@@ -109,9 +109,9 @@ A common way to come up with an idea for a SaaS project is to watch how people i
 
 Many people who are new to programming dream about working as a freelancer. It's an appealing vision - you get to be your own boss, set your own hours, choose the projects you want to work on, and get paid well. But the reality is often quite different, and isn't usually a realistic option for people looking for their first programming job.
 
-Freelancers do a lot more than write code. They have to find work, handle all communications related to a project, handle their own accounting or pay someone else to do it, pay self-employment taxes, and deal with difficult clients without the backing of a company that you work for. Plus, you have to be able to handle the entire life cycle of a project - finding clients, speccing the work, developing a meaningful contract, handling changes to what was originally asked of you, responding to critical feedback, and making a plan to maintain the project. This is something most people need a fair amount of experience with before they can do it on their own.
+Freelancers do a lot more than write code. They have to find work, handle all communications related to a project, handle their own accounting or pay someone else to do it, pay self-employment taxes, and deal with difficult clients without the backing of a company that you work for. Plus, you have to be able to handle the entire life cycle of a project - finding clients, defining a clear scope for each project, developing a meaningful contract, handling changes to what was originally asked of you, responding to critical feedback, and making a plan to maintain the project. This is something most people need a fair amount of experience with before they can do it on their own.
 
-If you're interested in freelance work, you might look at joining a freelancing agency. This is an umbrella company that finds clients, specs projects, and signs contracts, and then subcontracts with freelancers to implement these projects. The company handles a lot of the logistics involved in freelancing, and you get to focus on building out the project. These agencies often prefer people with some professional experience, but if you're interested in this kind of work it won't hurt to talk to some of them early on in your career.
+If you're interested in freelance work, you might look at joining a freelancing agency. This is an umbrella company that finds clients, scopes projects, and signs contracts, and then subcontracts with freelancers to implement these projects. The company handles a lot of the logistics involved in freelancing, and you get to focus on building out the project. These agencies often prefer people with some professional experience, but if you're interested in this kind of work it won't hurt to talk to some of them early on in your career.
 
 [top](#top)
 
@@ -125,7 +125,7 @@ System Administration has often been seen as separate from programming. But ther
 
 Almost every electronic device available has some software on it. If a device runs software but has no way to attach a keyboard and monitor, the software it's running is called *embedded software*, or *firmware*. A good example is the software that runs on a printer.
 
-Embedded software is a really interesting field to work in. It's more important in this area than many others that your code is correct when it's released, because many users rarely, if ever, update the firmware on their devices. If you make a mistake as a web developer, you can fix that bug and push that fix to all users as soon as you update the site's servers. If you work in embedded software, your end users won't see the fix until they choose to update their firmware. Some people like the challenge of writing software that functions on its own like this - it can be really satisfying to think of thousands or millions of copies of your code running untouched and unmodified, for years on end.
+Embedded software is a really interesting field to work in. It's more important in this area than many others that your code is correct when it's released, because many users rarely, if ever, update the firmware on their devices. If you make a mistake as a web developer, you can fix that bug and push the fix to all users as soon as you update the site's servers. If you work in embedded software, your end users won't see the fix until they choose to update their firmware. Some people like the challenge of writing software that functions on its own like this - it can be really satisfying to think of thousands or millions of copies of your code running untouched and unmodified, for years on end.
 
 Embedded software is everywhere - on printers, ovens, microwaves, clocks, amplifiers, cars, medical devices, satellites - the list is literally endless because new devices are being invented every day.
 

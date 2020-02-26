@@ -41,7 +41,7 @@ This includes everything in the first half of the book - variables, lists, dicti
     
     First of all, you should be able to describe the way you think about debugging. There are a number of techniques for debugging, but there's also a mindset that everyone needs to develop when debugging. What questions do you ask yourself when you start debugging? What do you do if your initial debugging efforts don't work?
     
-    Make sure you are starting to develop a specific approach to debugging. This can start out as print debugging, where you insert print statements in your code to check if your variables represent the values you think they do at certain points in your program's execution. As you work with more complex codebases, however, you'll want to learn about using Python's built-in debugging tools, and your editor or IDE's more advanced debugging features. Some frameworks also have their own debugging tools, such as the `django-debug-toolbar` [package](https://github.com/jazzband/django-debug-toolbar) for Django projects.
+    Make sure you're starting to develop a specific approach to debugging. This can start out as print debugging, where you insert print statements in your code to check if your variables represent the values you think they do at certain points in your program's execution. As you work with more complex codebases, however, you'll want to learn about using Python's built-in debugging tools, and your editor or IDE's more advanced debugging features. Some frameworks also have their own debugging tools, such as the `django-debug-toolbar` [package](https://github.com/jazzband/django-debug-toolbar) for Django projects.
 
 ### How to work well with others
 
@@ -55,7 +55,7 @@ You can go a long way with just the basics. But there are a number of intermedia
 
 - Generators
 
-  When you define a list, the computer grabs enough memory to store the entire list, and keeps using that memory as long as the program might need that data. This can be a problem with large collections of data. A *generator* represents a large sequence, but it takes up as little memory as possible. Instead of storing all the items in the sequence, it just contains rules for how to generate the values you'll need, when you need them.
+  When you define a list, the computer grabs enough memory to store the entire list, and keeps using that memory as long as the program might need that data. This can be a problem with large collections of data. A *generator* represents a large sequence, but it takes up as little memory as possible. Instead of storing all the items in the sequence, it just contains rules for how to generate or retrieve the values you'll need, when you need them.
 
 - Asynchronous Code, Multithreaded Code, and Parallel Processing
 
@@ -71,13 +71,17 @@ You can go a long way with just the basics. But there are a number of intermedia
 
 - Packaging and managing environments
 
-  As you transition into professional programming work, you'll find yourself working on more than one project at a time, or multiple versions of the same project. For example you'll need to fix bugs in the latest version of a project, but also in older but still maintained versions of a project. These projects can require different libraries, different versions of the same library, and different versions of Python itself. At some point you'll need to learn how to isolate projects on your system, so the libraries you install for one project won't affect the libraries you're using for another project.
+  As you transition into professional programming work, you'll find yourself working on more than one project at a time, or multiple versions of the same project. For example you'll need to fix bugs in the latest version of a project, but also in older but still maintained versions of a project. These projects can require different libraries, different versions of the same library, and different versions of Python itself. At some point you'll need to learn how to isolate projects on your system, so the libraries you install for one project won't affect the libraries you're using for another project. The Learning Log project uses the `venv` module to do this.
+
+- Type systems
+
+  Python is a dynamically-typed language, which means you don't have to declare what kind of information you're going to assign to a variable ahead of time. Python looks at the values you're using, and takes care of types automatically. However, you can choose to assign types to your variables if you want. This makes for more verbose code, but it also helps prevent certain kinds of errors.
 
 [top](#top)
 
 ## Requirements for specific jobs
 
-For some kinds of jobs, you can start to apply as soon as you have a solid grasp of basic programming skills and concepts. There are some fields, however, where you'll need more specific knowledge to get an entry-level job.
+For some kinds of jobs, you can start to apply as soon as you have a solid grasp of basic programming skills and concepts. There are some fields, however, where you'll probably need more specific knowledge to get an entry-level job.
 
 - Web Development
 

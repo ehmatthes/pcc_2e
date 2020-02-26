@@ -23,7 +23,7 @@ A portfolio is a body of work that demonstrates your skills and knowledge. A por
 
 ## Why is building a portfolio important?
 
-A portfolio demonstrates not just the ability to write code; it also demonstrates that you understand how code fits into a larger project. Many portfolios are stored on [GitHub](https://github.com), but you can use any online code repository such as [GitLab](https://about.gitlab.com) or [Bitbucket](https://bitbucket.org). If you have a well developed project on one of these sites, employers will see clear evidence of a number of important things:
+A portfolio demonstrates not just the ability to write code; it also demonstrates that you understand how code fits into a larger project. Many portfolios are stored on [GitHub](https://github.com), but you can use any online code repository such as [GitLab](https://about.gitlab.com) or [Bitbucket](https://bitbucket.org). If you have a well-developed project on one of these sites, employers will see clear evidence of a number of important things:
 
 - You know how to use a version control system, such as Git.
 - You know how to manage a remote repository, not just a repository on your local system.
