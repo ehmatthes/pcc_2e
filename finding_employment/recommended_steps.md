@@ -10,7 +10,7 @@ nav_order: 80
 
 If a job offer doesn't come to you quickly through the connections you've already made, there can be a lot to think about as you start your job search in earnest. Here's a checklist that might help you think more clearly about all of the individual steps you'll need to take, and the process as a whole.
 
-You can also [download this checklist as a pdf file]().
+You can also [download this checklist as a pdf file](https://github.com/ehmatthes/pcc_2e/raw/master/beyond_pcc/checklist_finding_employment_pcc.pdf).
 
 * 
 {:toc}
@@ -67,6 +67,6 @@ You can also [download this checklist as a pdf file]().
 
 ---
 
-Download [this checklist as a pdf file]()
+Download [this checklist as a pdf file](https://github.com/ehmatthes/pcc_2e/raw/master/beyond_pcc/checklist_finding_employment_pcc.pdf)
 
 ---
