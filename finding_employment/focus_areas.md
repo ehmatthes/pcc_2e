@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: What kinds of things can you do?
+parent: Finding Employment
+nav_order: 20
 ---
 
 # What kinds of things can you do as a professional programmer?

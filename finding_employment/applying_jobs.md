@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: Applying for jobs
+parent: Finding Employment
+nav_order: 60
 ---
 
 # Applying for jobs

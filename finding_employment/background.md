@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: My Background
+parent: Finding Employment
+nav_order: 10
 ---
 
 # My background

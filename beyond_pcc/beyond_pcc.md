@@ -42,7 +42,3 @@ Enjoy!
 
     *This section will make sense after you've worked through Chapter 10.*
 
-- ## [Finding Employment as a (New) Programmer](../finding_employment/)
-
-    People often ask what it takes to get a job as a programmer. That's a big question, and this section gives you some perspective on what it might take to find work as a programmer. [old version](../finding_employment_old/)
-

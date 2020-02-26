@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: Recommended steps
+parent: Finding Employment
+nav_order: 80
 ---
 
 # Recommended steps

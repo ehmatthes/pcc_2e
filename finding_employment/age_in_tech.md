@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: Am I too old?
+parent: Finding Employment
+nav_order: 70
 ---
 
 # Am I too old to become a professional programmer?

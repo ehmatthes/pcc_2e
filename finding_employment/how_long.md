@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: How long will it take?
+parent: Finding Employment
+nav_order: 30
 ---
 
 # How long will it take to find a job?

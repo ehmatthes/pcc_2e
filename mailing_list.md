@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mailing List
-nav_order: 100
+nav_order: 110
 has_children: true
 has_toc: false
 ---

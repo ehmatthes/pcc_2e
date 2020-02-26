@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Finding Employment
-parent: Beyond PCC
+has_children: true
 nav_order: 90
 ---
 

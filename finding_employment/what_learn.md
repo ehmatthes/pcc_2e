@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: How much do you need to know?
+parent: Finding Employment
+nav_order: 40
 ---
 
 # How much do you need to know in order to find a job?

@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: Building a portfolio
+parent: Finding Employment
+nav_order: 50
 ---
       
 # Building a portfolio
