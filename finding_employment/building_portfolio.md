@@ -13,7 +13,7 @@ When you're applying for your first programming job, employers want to know that
 * 
 {:toc}
 
-| [<< How much do you need to know?](../what_learn/) | [Finding Employment](../../finding_employment/) | [Applying for jobs >>](../../finding_employment/applying_jobs/) |
+| [<< How much do you need to know?](../what_learn/) | [Applying for jobs >>](../../finding_employment/applying_jobs/) |
 
 ---
 

@@ -13,7 +13,7 @@ There's no magic trick that will get you a job quickly. Often times, it's a bunc
 * 
 {:toc}
 
-| [<< Building a portfolio](../building_portfolio/) | [Finding Employment](../../finding_employment/) | [Am I too old? >>](../age_in_tech/) |
+| [<< Building a portfolio](../building_portfolio/) | [Am I too old? >>](../age_in_tech/) |
 
 ---
 

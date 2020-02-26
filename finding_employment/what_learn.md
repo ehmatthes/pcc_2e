@@ -13,7 +13,7 @@ How much you need to learn to land your first programming job depends on what yo
 * 
 {:toc}
 
-| [<< How long will it take?](../how_long/) | [Finding Employment](../../finding_employment/) | [Building a portfolio >>](../../finding_employment/building_portfolio/) |
+| [<< How long will it take?](../how_long/) | [Building a portfolio >>](../../finding_employment/building_portfolio/) |
 
 ---
 

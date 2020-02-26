@@ -17,7 +17,7 @@ You can also [download this checklist as a pdf file]().
 
 ---
 
-| [<< Am I too old to become a professional programmer?](../age_in_tech/) | [Finding Employment >>](../../finding_employment/) |
+| [<< Am I too old to become a professional programmer?](../age_in_tech/) |
 
 ---
 

@@ -13,7 +13,7 @@ It's impossible to answer this question without knowing a lot about an individua
 * 
 {:toc}
 
-| [<< What kinds of things can you do?](../focus_areas/) | [Finding Employment](../../finding_employment/) | [Next: How much do you need to know? >>](../../finding_employment/what_learn/) |
+| [<< What kinds of things can you do?](../focus_areas/) | [How much do you need to know? >>](../../finding_employment/what_learn/) |
 
 ---
 

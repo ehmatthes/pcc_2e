@@ -3,6 +3,7 @@ layout: default
 title: Finding Employment
 has_children: true
 nav_order: 90
+has_toc: false
 ---
 
 # Finding Employment as a (New) Programmer
