@@ -77,6 +77,22 @@ You can go a long way with just the basics. But there are a number of intermedia
 
   Python is a dynamically-typed language, which means you don't have to declare what kind of information you're going to assign to a variable ahead of time. Python looks at the values you're using, and takes care of types automatically. However, you can choose to assign types to your variables if you want. This makes for more verbose code, but it also helps prevent certain kinds of errors.
 
+- Reading documentation
+
+  It's really important to become familiar with the [official Python documentation](https://docs.python.org/3/), and the documentation of the libraries you use regularly. Familiarity with documentation will help you solve your own problems more efficiently, and keep you from leaning too heavily on others in your learning and in your work. You should absolutely ask questions of the people around you and in online communities, but you should also show that you've done your own research as you're asking others for help. You'll also have to write documentation for your own code, or your team's code at some point. Knowing how [good documentation is organized](https://www.divio.com/blog/documentation/) is really helpful.
+
+  Don't worry if it takes a while to make sense of the documentation for large projects such as the overall Python language, a visualization library such as [Matplotlib](https://matplotlib.org), or a web framework like [Django](https://docs.djangoproject.com/en/3.0/). These large projects aim for thorough coverage in their documentation, so the documentation itself gets large and can take a while to understand. Instead of trying to understand the documentation of the entire Python language, just spend some time on one element such as [dictionaries](https://docs.python.org/3/tutorial/datastructures.html?highlight=dictionary#dictionaries), and see [how much you can learn](https://docs.python.org/3/library/stdtypes.html#typesmapping) about that one element from studying the documentation. Also, it might be helpful to start by diving into the documentation for a smaller library that you use, such as [Requests](https://requests.readthedocs.io/en/master/). 
+
+- Algorithms and data structures
+
+  Algorithms and data structures are the bread and butter of a programmer's work. *Algorithms* are well-established approaches to common problems in programming, such as how to sort a collection of elements into a specific order. *Data structures* refer to the model you'll use to store data for a specific problem you're trying to solve.
+
+  Python takes care of a lot of the basic algorithms you'll need, such as sorting a list. If you need to sort a list, you should use the built-in sorting methods. They're well tested and optimized, and you're unlikely to write better sorting code than what a large team of language developers have come up with over a period of decades. But at some point you might want to learn about the internals of these methods, and you may be asked about them in interviews. Employers won't want you to write your own sorting code. However, if you know many of the common CS algorithms they can be more confident that you'll be able to write higher-quality code that's easier to optimize over time.
+
+  You're probably already using a number of data structures - lists, tuples, dictionaries, and classes. These can go a long way, but there are a number of others you should be aware of at some point. These include arrays, stacks, queues, linked lists, structs, graphs, trees, and a few others.
+
+  Some interviewers use algorithms and data structures as a gatekeeping tool. Everyone who goes through a formal CS education has to learn about algorithms and data structures, and these are seen as evidence of a thorough background in CS concepts. Go ahead and learn them, because the concepts you learn will help you write better code, and understand the code you're working with better. But don't let the gatekeeper folks get you down about being self-taught, if it's clear they're more interested in showing how much they know than finding out how much you know.
+
 [top](#top)
 
 ## Requirements for specific jobs
