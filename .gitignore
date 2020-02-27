@@ -11,3 +11,5 @@ notes/
 _site/
 
 .sass-cache/
+
+vendor/
