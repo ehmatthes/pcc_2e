@@ -48,3 +48,7 @@ Eric
 Can you convert this image of our local bears to black and white? Can you write a function that highlights the red in their fur?
 
 ![](../../images/challenge_images/starr_bears.jpg)
+
+---
+
+[top](#top)

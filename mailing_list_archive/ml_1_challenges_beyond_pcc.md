@@ -34,3 +34,7 @@ I'm working on a new set of challenges that focus on building your own photo fil
 If you have questions or comments about these new sections, feel free to reply to this email. Thanks!
 
 Eric
+
+---
+
+[top](#top)
