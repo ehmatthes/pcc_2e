@@ -36,3 +36,9 @@ Each of these sets is made up of a series of smaller challenges. You don't have 
 
     *You can start on this challenge as early as Chapter 3.*
 
+- [Automated Alien Invasion Player](../ai_player/)
+
+    Learn how to write a program that plays Alien Invasion automatically. It's really interesting to see how the class-based structure of the Alien Invasion project lends itself to automated gameplay. You'll start out implementing a simple, naive strategy that shoots at aliens rather blindly. Then you'll build a series of more interesting and effective strategies.
+
+    *You can start on this challenge after you have completed Chapter 14.*
+
