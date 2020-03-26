@@ -36,9 +36,14 @@ Enjoy!
 
     *This section will make sense after you've worked through Chapters 12-14.*
 
+- ## [Pygame: Adding Sound and Automating Game Play](../ai_player/)
+
+    Adding sound to your games makes them much more interesting, and it doesn't take much code. Also, the class-based structure of the Alien Invasion project makes it possible to automate the game play, which is a really interesting exercise.
+
+    *This section will make sense after you've worked through Chapter 14.*
+
 - ## [Pillow: Working with Images](../pillow/)
 
     Pillow is an imaging library that lets you load and work with existing images, and also lets you create images from a blank canvas. This guide is used for the set of challenges about [making your own photo filters](../../challenges/photo_filters/).
 
     *This section will make sense after you've worked through Chapter 10.*
-
