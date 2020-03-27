@@ -5,7 +5,7 @@ parent: Beyond PCC
 nav_order: 10
 ---
 
-# Random Funtions
+# Random Functions
 {: .no_toc }
 
 Randomness is a really important and useful topic in programming. It can be used to do simple things like choose which player goes first in a game, or draw a random card from a deck. It can also be used for critically important processes like allowing a user to reset a forgotten password.

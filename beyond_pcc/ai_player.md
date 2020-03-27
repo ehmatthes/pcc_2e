@@ -425,12 +425,40 @@ You should be aware that speeding up the game affects the high score that your s
 
 [top](#top)
 
+### Randomized firing
 
+One interesting idea is to give some slight randomness to the decision about whether to fire or not. Right now the ship is firing whenever it can. That means it immediately fires three bullets, and then fires every time a bullet hits an alien or disappears off the top of the screen. This means the bullets often end up in a tightly-packed group, especially when there's only one alien left and the ship is moving out of sync with the alien.
 
+We can use the [random()](../../random_functions/) function to determine when to fire. The `random()` function returns a decimal between 0 and 1. So if we only fire when we get a random number less than 0.5, we'll fire a bullet on half of the game cycles where we can fire.
 
-speed up for development work
+Here's what this looks like:
 
-randomized firing (accuracy statistics would be interesting to watch here)
+```python
+import pygame
+
+from random import random
+
+from alien_invasion import AlienInvasion
+
+class AIPlayer:
+    --snip--
+
+    def _implement_strategy(self):
+        """Implement an automated strategy for playing the game."""
+        self._control_ship()        
+
+        # Fire a bullet whenever possible.
+        firing_frequency = 0.5
+        if random() < firing_frequency:
+            self.ai_game._fire_bullet()
+```
+
+I'm not sure that this approach helps the current strategy, but I have found it a useful approach in some situations. If you want, you can put this in a new method called `_fire_bullet()`, and give it a parameter for the firing frequency. Then you could use different firing frequencies in specific situations, such as when there are only a certain number of aliens left on the screen.
+
+[top](#top])
 
 targeting a specific alien
+
+(accuracy statistics would be interesting to watch here)
+
 
