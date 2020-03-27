@@ -100,6 +100,8 @@ We play the alien sound whenever there's a `collisions` dictionary, indicating t
 
 Now your game should sound much more interesting! You should hear a steady stream of sounds as you fire bullets and destroy aliens. You might also want to add sounds for destroying all aliens in the fleet, and when an alien hits the ship.
 
+**Try It Yourself:** Add sounds that play when the game starts, when the ship is hit, and when the game is over. You might also want to add sounds for other events like passing certain scoring milestones.
+
 [top](#top)
 
 ## Automating Game Play
@@ -276,7 +278,11 @@ Then we run through three cases:
 
 That's it! Now when you run the game the ship will sweep right and left, firing constantly. It will clear the first screen, and probably many more screens if you let it.
 
-#### Refactoring
+[video?]
+
+[top](#top)
+
+### Refactoring
 
 The main while loop in `run_game()` is getting pretty long, so we should pull out the automation logic into a separate method.
 
@@ -284,9 +290,7 @@ cleaner structure: implement_strategy()
 
 speed up for development work
 
+randomized firing (accuracy statistics would be interesting to watch here)
+
 targeting a specific alien
 
-
-
-
-Try It Yourself: Add sounds that play when the game starts, when the ship is hit, and when the game is over. You might also want to add sounds for other events like passing certain scoring milestones.
