@@ -208,14 +208,77 @@ This is really satisfying, because we can sit back and watch the ship fire bulle
 You might also notice that the mouse is visible when the game is playing. That's because the code that hides the mouse is in the `_check_play_button()` method, which we never call. We can add that line to `run_game()`:
 
 ```python
-blah run_game()
+    def run_game(self):
+        """Replaces the original run_game(), so we can interject our own
+        controls.
+        """
+
+        # Start out in an active state, and hide the mouse.
+        self.ai_game.stats.game_active = True
+        pygame.mouse.set_visible(False)
+
+        # Start the main loop for the game.
+        while True:
+            --snip--
 ```
+
+Make sure you also add an `import pygame` statement at the top of the file.
 
 Now that you've seen how to take control of the game, feel free to try automating the ship's movement on your own. See [Challenge blah]() if you're interested in trying this on your own before moving on.
 
+[top](#top)
 
+### Moving the ship
 
-sweep
+We'll implement a really simple strategy now. We'll move the ship all the way to the right, firing whenever possible. Then we'll move the ship all the way to the left, again firing whenever possible. We'll do this over and over, until the game ends.
+
+All of this can be coded right in the while loop of the `run_game()` method:
+
+```python
+        # Start the main loop for the game.
+        while True:
+            # Still call ai_game._check_events(), so we can use keyboard to
+            #   quit.
+            self.ai_game._check_events()
+
+            # Sweep the ship right and left for the entire game.
+            ship = self.ai_game.ship
+            screen_rect = self.ai_game.screen.get_rect()
+
+            if not ship.moving_right and not ship.moving_left:
+                # Ship hasn't started moving yet; move to the right.
+                ship.moving_right = True
+            elif (ship.moving_right
+                        and ship.rect.right > screen_rect.right - 10):
+                # Ship about to hit right edge; move left.
+                ship.moving_right = False
+                ship.moving_left = True
+            elif ship.moving_left and ship.rect.left < 10:
+                ship.moving_left = False
+                ship.moving_right = True
+
+            if self.ai_game.stats.game_active:
+                self.ai_game.ship.update()
+                self.ai_game._update_bullets()
+                self.ai_game._update_aliens()
+                self.ai_game._fire_bullet()
+
+            self.ai_game._update_screen()
+```
+
+We first make assign the `self.ai_game.ship` object to a variable called `ship`, so we don't have to type out the longer reference repeatedly. We do the same for `screen_rect`.
+
+Then we run through three cases:
+
+- If the ship is not moving at all, the game must have just started. In this case, we set `moving_right` to `True`.
+- If the ship is moving right, and the right side of the ship is within 10 pixels of the right side of the screen, we change directions. We set `moving_right` to `False`, and set `moving_left` to `True`. (Remember if both of these are `True`, the ship will move both directions at once and remain in the same position.)
+- If the ship is moving left and it gets within 10 pixels of the left edge of the screen, we change directions.
+
+That's it! Now when you run the game the ship will sweep right and left, firing constantly. It will clear the first screen, and probably many more screens if you let it.
+
+#### Refactoring
+
+The main while loop in `run_game()` is getting pretty long, so we should pull out the automation logic into a separate method.
 
 cleaner structure: implement_strategy()
 
