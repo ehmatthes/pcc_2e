@@ -284,9 +284,149 @@ That's it! Now when you run the game the ship will sweep right and left, firing 
 
 ### Refactoring
 
-The main while loop in `run_game()` is getting pretty long, so we should pull out the automation logic into a separate method.
+The main while loop in `run_game()` is getting pretty long, so we should pull out the automation logic into a separate method. I made a new method called `_implement_strategy()`, and moved the code for moving the ship and firing bullets into this method:
 
-cleaner structure: implement_strategy()
+```python
+class AIPlayer:
+
+    def __init__(self, ai_game):
+        --init--
+
+    def run_game(self):
+        """Replaces the original run_game(), so we can interject our own
+        controls.
+        """
+
+        # Start out in an active state, and hide the mouse.
+        self.ai_game.stats.game_active = True
+        pygame.mouse.set_visible(False)
+
+        # Start the main loop for the game.
+        while True:
+            # Still call ai_game._check_events(), so we can use keyboard to
+            #   quit. Also call our own method to initiate events.
+            self.ai_game._check_events()
+            self._implement_strategy()
+
+            if self.ai_game.stats.game_active:
+                self.ai_game.ship.update()
+                self.ai_game._update_bullets()
+                self.ai_game._update_aliens()
+
+            self.ai_game._update_screen()
+
+    def _implement_strategy(self):
+        """Implement an automated strategy for playing the game."""
+
+        # Sweep the ship right and left for the entire game.
+        ship = self.ai_game.ship
+        screen_rect = self.ai_game.screen.get_rect()
+
+        if not ship.moving_right and not ship.moving_left:
+            # Ship hasn't started moving yet; move to the right.
+            ship.moving_right = True
+        elif (ship.moving_right
+                    and ship.rect.right > screen_rect.right - 10):
+            # Ship about to hit right edge; move left.
+            ship.moving_right = False
+            ship.moving_left = True
+        elif ship.moving_left and ship.rect.left < 10:
+            ship.moving_left = False
+            ship.moving_right = True
+
+        # Fire a bullet whenever possible.
+        self.ai_game._fire_bullet()
+```
+
+This is nice, because all of the code that handles the automation is in its own section of the file. Most of `_implement_strategy()` is currently focused on moving the ship. This method is going to get really long as soon as we start to do any other work, so let's move most of this code to a new method called `_control_ship()`:
+
+```python
+    def _implement_strategy(self):
+        """Implement an automated strategy for playing the game."""
+        self._control_ship()        
+
+        # Fire a bullet whenever possible.
+        self.ai_game._fire_bullet()
+
+    def _control_ship(self):
+        """Controls automated movement of the ship."""
+        # Sweep the ship right and left for the entire game.
+        ship = self.ai_game.ship
+        screen_rect = self.ai_game.screen.get_rect()
+
+        if not ship.moving_right and not ship.moving_left:
+            # Ship hasn't started moving yet; move to the right.
+            ship.moving_right = True
+        elif (ship.moving_right
+                    and ship.rect.right > screen_rect.right - 10):
+            # Ship about to hit right edge; move left.
+            ship.moving_right = False
+            ship.moving_left = True
+        elif ship.moving_left and ship.rect.left < 10:
+            ship.moving_left = False
+            ship.moving_right = True
+```
+
+This is nice and clear, and it should provide a consistent overall structure as we explore different strategies to optimize automated gameplay.
+
+Watching the automated game play is fun and satisfying, but it can be a little slow to watch the automated game at regular speed. Next we'll add a little code that speeds up the game during our development work.
+
+[top](#top)
+
+### Speeding up the game for development work
+
+When we want to see how effective a new automation strategy is, it would be nice to see the game play out more quickly than the standard speed that's good for human players. We can do this by modifying some of the games settings as a group.
+
+To do this, we'll write a new method called `_modify_speed()`, which we can call from `run_game()`:
+
+```python
+class AIPlayer:
+
+    def __init__(self, ai_game):
+        --snip--
+
+    def run_game(self):
+        """Replaces the original run_game(), so we can interject our own
+        controls.
+        """
+
+        # Start out in an active state, and hide the mouse.
+        self.ai_game.stats.game_active = True
+        pygame.mouse.set_visible(False)
+
+        # Speed up the game for development work.
+        self._modify_speed(10)
+
+        # Start the main loop for the game.
+        while True:
+            --snip--
+
+    def _implement_strategy(self):
+        --snip--
+
+    def _control_ship(self):
+        --snip--
+
+    def _modify_speed(self, speed_factor):
+        self.ai_game.settings.ship_speed *= speed_factor
+        self.ai_game.settings.bullet_speed *= speed_factor
+        self.ai_game.settings.alien_speed *= speed_factor
+```
+
+We want to be able to easily speed up the game when we're trying out new strategies, but also slow the game back down when we want to watch a game play out at the normal speed. We write `_modify_speed()` so it accepts an argument that controls how much to speed up the game. If you pass an argument of 1 the game will play at normal speed. Anything greater than 1 will speed up the game, and anything less than 1 will slow the game down.
+
+In `_modify_speed()` we adjust the speed of the ship, the bullets, and the aliens.
+
+Now when you play the game with a speed factor of something like 10, you'll see how effective the strategy is, and you'll see its weak points as well. For example I can see that the sweeping strategy is pretty effective at clearing out most of the fleet, but it's really inefficient when there's only one or two aliens left:
+
+[video, commit 75c8b8]
+
+You should be aware that speeding up the game affects the high score that your strategy will reach. You can see this by trying a couple very different speed factors. For example on my system a speedup scale of 10 with the current strategy ends with around 8,000,000 points at around level 18. With a speedup scale of 100, it only earns about 4,000 points, and it can't even clear the first screen. If you are comparing strategies, make sure you're using the same speed factor for each of your runs.
+
+[top](#top)
+
+
+
 
 speed up for development work
 
