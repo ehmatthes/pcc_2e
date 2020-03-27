@@ -100,6 +100,8 @@ We play the alien sound whenever there's a `collisions` dictionary, indicating t
 
 Now your game should sound much more interesting! You should hear a steady stream of sounds as you fire bullets and destroy aliens. You might also want to add sounds for destroying all aliens in the fleet, and when an alien hits the ship.
 
+[top](#top)
+
 ## Automating Game Play
 
 This is the really interesting part. If you want to try this on your own before reading ahead, you can see the [challenges here](). If you're new to programming, though, getting this set up can be pretty challenging. It's perfectly reasonable to read through this guide to get started, and then explore further automation algorithms on your own.
