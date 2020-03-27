@@ -153,7 +153,23 @@ if __name__ == '__main__':
     ai_player.run_game()
 ```
 
-We blah
+We define a class called `AIPlayer`. This is a simple class; it does not inherit from `AlienInvasion`, although it's perfectly reasonable to try that approach. The code you end up with using inheritance is a little less verbose, but it's also a little harder to reason about. If you're curious, feel free to try building an `AIPlayer` class that does inherit from `AlienInvasion`. One advantage is that you'll have more direct access to elements of the game, but there will also be a less clear distinction between what's part of the original game, and what's part of the automated player.
+
+In the approach shown here, the `AIPlayer` class needs an instance of the `AlienInvasion` class. The game object needs to be passed as an argument to `__init__()`, and we call this attribute `ai_game`. We attach it to `self`, to make sure the game object is available throughout the `AIPlayer` class.
+
+If we call the original `run_game()` method from `AlienInvasion`, we'll start a while loop that won't let us control any of the game elements. So instead we write a new `run_game()` method that we can call in place of the original `run_game()` method. This method needs to do anything that the original `run_game()` method did, but we'll be able to add code to this method when we want to take control of some of the game elements.
+
+In `run_game()`, we need the game to start out in an active state because we want it to start playing immediately. So we set `game_active` to `True`. We access game elements through the game object, so this line is written:
+
+```python
+self.ai_game.stats.game_active = True
+```
+
+It's worth looking closely at this line, because this is how we'll approach many aspects of automating the game play. The `self` here refers to an instance of `AIPlayer`, not `AlienInvasion`. The `ai_game` attribute refers to an instance of the `AlienInvasion` class, which represents the game as a whole. We then access the `stats` attribute in `AlienInvasion`, which refers to an instance of the `GameStats` class. Finally, we access the `game_active` attribute of `GameStats`, and set it to `True`.
+
+Next we need a while loop, so the automated game will do all of the updating that was being done in the original `run_game()` method. We still want to call the original `_check_events()`, because we'll want to be able to quit the game at some point. If the game is active, we still need to update the ship, update the bullets, and update the aliens. Finally, we need to update the screen on every pass through the loop. Since we need to do this when the game is active or inactive, the call to `_update_screen()` occurs outside of the if block.
+
+When we run this file, we need to make an instance of `AlienInvasion`, which we assign to `ai_game`. Then we need to make an instance of `AIPlayer`, which requires the `ai_game` object as an argument. Finally, we call the `run_game()` method associated with the `ai_player` object, not the one associated with `ai_game`.
 
 When you run this file, the game will start automatically. You could play the game with the keyboard, because we're calling the original `_check_events()`. Instead, let's write one line of code that fires bullets whenever possible:
 
@@ -161,18 +177,10 @@ When you run this file, the game will start automatically. You could play the ga
 class AIPlayer:
 
     def __init__(self, ai_game):
-        """Automatic player for Alien Invasion."""
-
-        # Need a reference to the game object.
-        self.ai_game = ai_game
+        --snip--
 
     def run_game(self):
-        """Replaces the original run_game(), so we can interject our own
-        controls.
-        """
-
-        # Start out in an active state.
-        self.ai_game.stats.game_active = True
+        --snip--
 
         # Start the main loop for the game.
         while True:
@@ -195,9 +203,19 @@ Now when you run the game, the ship will always fire a bullet whenever there are
 
 This is really satisfying, because we can sit back and watch the ship fire bullets all by itself. But it's not a very good game strategy. If we let this play until the game ends, the ship will only ever destroy the aliens in the middle columns, and then rest of the aliens will creep down and hit the ground. To make things more interesting, we need to make the ship move.
 
+You might also notice that the mouse is visible when the game is playing. That's because the code that hides the mouse is in the `_check_play_button()` method, which we never call. We can add that line to `run_game()`:
+
+```python
+blah run_game()
+```
+
 Now that you've seen how to take control of the game, feel free to try automating the ship's movement on your own. See [Challenge blah]() if you're interested in trying this on your own before moving on.
 
+
+
 sweep
+
+cleaner structure: implement_strategy()
 
 speed up for development work
 
