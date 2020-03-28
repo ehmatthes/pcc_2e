@@ -459,6 +459,8 @@ Next we'll look at targeting a specific alien.
 
 [top](#top])
 
+### Changing strategies mid-level
+
 Clearly the sweeping approach works well to destroy most of the fleet. But it struggles when there's just one alien left, and most of the bullets just fly up through an empty screen. It seems a good idea to respond differently at the start of a level, than when there's only a partial fleet.
 
 I don't want to give away all the best strategies, because it's a lot of fun to try different approaches. So I'll close out this guide by introducing two final ideas you can play with. The first is to use different strategies depending on the size of the remaining fleet. The second is to focus on a specific alien.
@@ -534,10 +536,70 @@ In the last section, we'll look at how you can pick out a specific alien and tar
 
 [top](#top)
 
+### Targeting a specific alien
 
+At some point you'll probably want to target a specific alien. You can develop some interesting strategies and game play by targeting specific aliens, or groups of aliens. In this section, I'll show you one such strategy and leave you to implement more effective strategies.
 
+In this approach we'll always target the right-most alien in the bottom row. We'll pick that alien from the group of aliens, and then always move the ship towards that alien. All of the code to do this goes in `_control_ship()`, and a new method called `_get_target_alien()`:
 
+```python
+    def _control_ship(self):
+        """Controls automated movement of the ship."""
 
-(accuracy statistics would be interesting to watch here)
+        # Get specific alien to chase.
+        target_alien = self._get_target_alien()
 
+        # Move toward target alien.
+        ship = self.ai_game.ship
+        if ship.rect.x < target_alien.rect.x:
+            ship.moving_right = True
+            ship.moving_left = False
+        elif ship.rect.x > target_alien.rect.x:
+            ship.moving_right = False
+            ship.moving_left = True
 
+    def _get_target_alien(self):
+        """Get a specific alien to target."""
+        # Find the right-most alien in the bottom row.
+        #   Pick the first alien in the group. Then compare all others, 
+        #   and return the alien with the greatest x and y rect attributes.
+        target_alien = self.ai_game.aliens.sprites()[0]
+        for alien in self.ai_game.aliens.sprites():
+            if alien.rect.y > target_alien.rect.y:
+                # This alien is farther down than target_alien.
+                target_alien = alien
+            elif alien.rect.y < target_alien.rect.y:
+                # This alien is above target_alien.
+                continue
+            elif alien.rect.x > target_alien.rect.x:
+                # This alien is in the same row, but farther right.
+                target_alien = alien
+        
+        return target_alien
+```
+
+In `_control_ship()`, we remove the call to `_sweep_left_right()`. We keep that method in the class, because we might want to use it in another strategy, but we remove the call to that method.
+
+Let's look at `_get_target_alien()`, because that's the first call we make in `_control_ship()`. We want to pick out the alien that's farthest on the right in the bottom row. There are number of ways to do this, and the approach I use here is not necessarily the best or most efficient approach. When writing for a wide audience, I usually choose an approach that's likely to be clear to many people over a more efficient approach that might be confusing to many people. If you know a more efficient approach to pick out the target alien, feel free to implement that approach.
+
+Remember that a Pygame group is similar to a list, but it's not an actual list. The elements in a group are not kept in a specific order, so you can't grab an element by using an index. The `sprites()` method puts the elements of the group into a list, but not in a predictable order. In `_get_target_alien()` we use `sprites()` to put the aliens in a list so we can grab an individual alien. Then we cycle through all the aliens in the list. If an alien is farther down the screen than `target_alien`, we assign the current alien to `target_alien`. If the alien is farther up the screen, we ignore this alien and continue the loop. Otherwise the alien is in the same row as `target_alien`, and we choose this alien if it's farther to the right than `target_alien`. 
+
+This if block was a little tricky to write; I didn't get it right the first time. My first attempt examined x and y at the same time, and ended up chasing aliens that were farther up the screen but also farther right than the rightmost alien in the bottom row. This is actually an interesting strategy, because it makes it harder for the fleet to descend. You might try implementing a strategy that aims at clearing the fleet one column at a time, starting from one of the edges.
+
+Once we have a target alien selected, we can position the ship. Back in `_control_ship()`, if the ship is to the left of the target alien we start moving right. If the ship is to the right of the target alien, we move left.
+
+When you run this code, you'll see that matching an alien's position exactly doesn't work all that well, because by the time the bullet reaches the alien's vertical position, the alien has moved away. The ship ends up chasing aliens until they're so low they can't get away. This is a case where introducing a bit of randomness into the firing can be effective. You can also explore strategies for targeting aliens, but not staying right underneath them. It's an interesting geometry exercise to try and work out how to make a bullet hit the desired alien every time. But if that's not your strong suit, there are plenty of ways to get near enough to specific aliens that you can reliably shoot them down. If you don't want to try working out an exact solution to hitting aliens, you can try adding some randomness to the ship's position as well. I imagine the right amount of randomness might cause the ship to end up in the right position often enough to hit the alien without getting into long stretches of alway firing behind the alien's position. You might also try stopping, and firing when the alien is a certain distance away to see if that results in a higher level of accuracy. There are lots of approaches you can try implementing, even if you can't work out the mathematically optimal approach. And many of these strategies are really interesting to watch at higher speeds.
+
+I also want to point out that I haven't optimized any of this code. I'm writing this guide to show people how you can start to automate the game play in Alien Invasion, and this is representative of how I approach some of my development work. Often times in exploratory work I jot a sentence or two about what I'm trying to do, then write some code to see how that idea works. Then if I like that approach but I'm not going to do anything more with it, I leave the unoptimized code in place. If I'm going to build on that code, I spend some more time thinking about how to make the code more efficient. Here, for example, we're looping through the list of aliens on every game cycle. That's really inefficient! But it doesn't appear to affect the game's performance, so I'm not too worried about it at the moment. If I was building on this project, I'd make the target alien an attribute of the class, and then only call `_get_target_alien()` if target alien does not exist, which should happen every time the target alien is destroyed. The loop would never run more than once per the number of aliens on the screen. If you are curious about this, try to implement this approach. You can code a counter to see how many times `_get_target_alien()` is called in the course of a game, and find out if your optimization made a difference or not.
+
+Sometimes, especially on a larger project or a project that I'm doing for someone else, I will plan out my overall approach much more carefully and build in some optimization from the beginning.
+
+[top](#top)
+
+## Closing Thoughts
+
+If you are getting into this project, you might want to implement a more refined approach to tracking statistics in the game. You can track hits and misses, and report a hit/miss ratio. Then you can compare different strategies not just on the high scores or completed levels they achieve, but on how efficiently they perform as well.
+
+Hopefully this guide helps you get started automating the game play in Alien Invasion. If you come up with an effective or interesting strategy, please share it! You can tag your solution with [#ai_player](https://twitter.com/hashtag/ai_player) on Twitter, or send it to me through email (ehmatthes at gmail). Good luck, and if this doesn't work for you please let me know as well.
+
+[top](#top)
