@@ -453,11 +453,90 @@ class AIPlayer:
             self.ai_game._fire_bullet()
 ```
 
-I'm not sure that this approach helps the current strategy, but I have found it a useful approach in some situations. If you want, you can put this in a new method called `_fire_bullet()`, and give it a parameter for the firing frequency. Then you could use different firing frequencies in specific situations, such as when there are only a certain number of aliens left on the screen.
+I don't think this approach helps the current strategy, but I have found it a useful approach in some situations. If you want, you can put this in a new method called `_fire_bullet()`, and give it a parameter for the firing frequency. Then you could use different firing frequencies in specific situations, such as when there are only a certain number of aliens left on the screen.
+
+Next we'll look at targeting a specific alien.
 
 [top](#top])
 
-targeting a specific alien
+Clearly the sweeping approach works well to destroy most of the fleet. But it struggles when there's just one alien left, and most of the bullets just fly up through an empty screen. It seems a good idea to respond differently at the start of a level, than when there's only a partial fleet.
+
+I don't want to give away all the best strategies, because it's a lot of fun to try different approaches. So I'll close out this guide by introducing two final ideas you can play with. The first is to use different strategies depending on the size of the remaining fleet. The second is to focus on a specific alien.
+
+For a simple approach to implementing different strategies, let's stop moving when the fleet is cut in half. To help this we'll make a parameter that represents the size of a full fleet.
+
+```python
+class AIPlayer:
+
+    def __init__(self, ai_game):
+        --snip--
+
+    def run_game(self):
+        --snip--
+
+        # Speed up the game for development work.
+        self._modify_speed(10)
+
+        # Get the full fleet size.
+        self.fleet_size = len(self.ai_game.aliens)
+
+        # Start the main loop for the game.
+        while True:
+            --snip--
+
+    def _implement_strategy(self):
+        """Implement an automated strategy for playing the game."""
+        self._control_ship()        
+
+        # Fire a bullet whenever possible.
+        firing_frequency = 1.0
+        if random() < firing_frequency:
+            self.ai_game._fire_bullet()
+
+    def _control_ship(self):
+        """Controls automated movement of the ship."""
+
+        # Sweep right and left until half the fleet is destroyed, then stop.
+        if len(self.ai_game.aliens) >= 0.5 * self.fleet_size:
+            self._sweep_left_right()
+        else:
+            self.ai_game.ship.moving_right = False
+            self.ai_game.ship.moving_left = False
+
+    def _sweep_left_right(self):
+        """Sweep the ship right and left continuously."""
+        ship = self.ai_game.ship
+        screen_rect = self.ai_game.screen.get_rect()
+
+        if not ship.moving_right and not ship.moving_left:
+            # Ship hasn't started moving yet; move to the right.
+            ship.moving_right = True
+        elif (ship.moving_right
+                    and ship.rect.right > screen_rect.right - 10):
+            # Ship about to hit right edge; move left.
+            ship.moving_right = False
+            ship.moving_left = True
+        elif ship.moving_left and ship.rect.left < 10:
+            ship.moving_left = False
+            ship.moving_right = True
+
+    def _modify_speed(self, speed_factor):
+        --snip--
+```
+
+First we create an attribute called `fleet_size`, which we initialize in `run_game()` before starting the while loop. We need to grab the fleet size before any of the aliens have been shot down.
+
+The method `_control_ship()` would get pretty long, and the if blocks would be nested deeper than we'd like if we left all of the ship movement logic in this one method. So we move all the sweeping left and right logic to a new method called `_sweep_left_right()`. In `_control_ship()`, we call `_sweep_left_right()` as long as the current fleet size, `len(self.ai_game.aliens)` is greater than half of the original fleet size. When half of the fleet has been destroyed, we stop the ship's movement and no longer call `_sweep_left_right()`.
+
+This is not an improvement on the basic sweeping strategy, but it does show you how to transition from one strategy to another as your automated player makes progress within a level. You could implement a new strategy when there's just one or two aliens left, or even have a series of strategies for increasingly specific situations.
+
+In the last section, we'll look at how you can pick out a specific alien and target that individual alien.
+
+[top](#top)
+
+
+
+
 
 (accuracy statistics would be interesting to watch here)
 
