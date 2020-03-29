@@ -104,6 +104,8 @@ Now your game should sound much more interesting! You should hear a steady strea
 
 [top](#top)
 
+---
+
 ## Automating Game Play
 
 This is the really interesting part. If you want to try this on your own before reading ahead, you can see the [challenges here](). If you're new to programming, though, getting this set up can be pretty challenging. It's perfectly reasonable to read through this guide to get started, and then explore further automation algorithms on your own.
@@ -595,6 +597,8 @@ I also want to point out that I haven't optimized any of this code. I'm writing 
 Sometimes, especially on a larger project or a project that I'm doing for someone else, I will plan out my overall approach much more carefully and build in some optimization from the beginning.
 
 [top](#top)
+
+---
 
 ## Closing Thoughts
 
