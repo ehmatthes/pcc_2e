@@ -594,7 +594,8 @@ The ship ends up chasing aliens until they're so low they can't get away. This i
 
 Here's a slightly better version that tries to position the ship in anticipation of where the alien will be by the time the bullet reaches the vertical position of the ship:
 
-[video 6]
+{% include vimeoPlayer.html id=402839185 %}
+
 
 I also want to point out that I haven't optimized any of this code. I'm writing this guide to show people how you can start to automate the game play in Alien Invasion, and this is representative of how I approach some of my development work. Often times in exploratory work I jot a sentence or two about what I'm trying to do, then write some code to see how that idea works. If I like that approach but I'm not going to do anything more with it, I leave the unoptimized code in place. If I'm going to build on that code, I spend some more time thinking about how to make the code more efficient. Here, for example, we're looping through the list of aliens on every game cycle. That's really inefficient! But it doesn't appear to affect the game's performance, so I'm not too worried about it at the moment. If I was building on this project, I'd make `target_alien` an attribute of the class, and then only call `_get_target_alien()` if `target_alien` doesn't exist, which should happen every time the target alien is destroyed. The loop would never run more than once per the number of aliens on the screen. If you're curious about this, try to implement this approach. You can code a counter to see how many times `_get_target_alien()` is called in the course of a game, and find out if your optimization made a difference or not.
 
