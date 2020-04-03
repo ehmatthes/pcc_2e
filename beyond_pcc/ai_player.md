@@ -25,7 +25,7 @@ If you want to take this as a challenge before reading this guide, feel free to 
 
 ### The Pygame Mixer module
 
-The Pygame Mixer Module manages music and sound effects. You can take a look at the [documentation](https://www.pygame.org/docs/ref/mixer.html); I also found this [Nerd Paradise post](https://nerdparadise.com/programming/pygame/part3) helpful.
+The Pygame Mixer Module manages music and sound effects. You can take a look at the [documentation](https://www.pygame.org/docs/ref/mixer.html); I also found this [Nerd Paradise post](https://nerdparadise.com/programming/pygame/part3) helpful. (If the official Pygame docs are "sleeping", try [this mirror site](https://blubbervision.neocities.org/pygame/ref/mixer.html).)
 
 There are lots of resources available for finding sound effects. I found some useful ones at [opengameart.org](https://opengameart.org). I chose [laser1.wav](https://opengameart.org/content/laser-fire) from user [dklon](https://opengameart.org/users/dklon) for firing bullets, and [Explosion_02.wav](https://opengameart.org/content/laser-fire) from Little Robot Sound Factory for an alien being hit. Make a new folder in your *alien_invasion* folder called *sounds*. This folder should be at the same directory level as your *images* folder. Store the sound files you want to use in your *sounds* folder.
 
@@ -42,7 +42,7 @@ bullet_sound = pygame.mixer.Sound('sounds/laser1.wav')
 alien_sound = pygame.mixer.Sound('sounds/Explosion_02.wav')
 ```
 
-We import `pygame`, and initialize the `mixer` module. Then we define two sounds, `bullet_sound` and `alien_sound`. To make a sound in Pygame you make an instance of the [Sound](https://www.pygame.org/docs/ref/mixer.html#pygame.mixer.Sound) class, with a path to the sound file as the only argument.
+We import `pygame`, and initialize the `mixer` module. Then we define two sounds, `bullet_sound` and `alien_sound`. To make a sound in Pygame you make an instance of the [Sound](https://www.pygame.org/docs/ref/mixer.html#pygame.mixer.Sound) class, with a path to the sound file as the only argument. (Here's the [mirror page](https://blubbervision.neocities.org/pygame/ref/mixer.html#pygame.mixer.Sound) for the `Sound` class.)
 
 ### Modifying *alien_invasion.py*
 
