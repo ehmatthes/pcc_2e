@@ -209,7 +209,7 @@ This one line of code is a call to `ai_game.fire_bullet()`, which runs on every 
 
 Now when you run the game, the ship will always fire a bullet whenever there are fewer than 3 bullets on the screen. It may look like one bullet at first, because the first three bullets are fired instantly on the first three game cycles.
 
-[video 1]
+{% include vimeoPlayer.html id=403210375 %}
 
 This is really satisfying, because we can sit back and watch the ship fire bullets all by itself. But it's not a very good game strategy. If we let this play until the game ends, the ship will only ever destroy the aliens in the middle columns, and then rest of the aliens will creep down and hit the ground. To make things more interesting, we need to make the ship move.
 
@@ -284,7 +284,7 @@ Then we run through three cases:
 
 That's it! Now when you run the game the ship will sweep right and left, firing constantly. It will clear the first screen, and probably many more screens if you let it.
 
-[video 2]
+{% include vimeoPlayer.html id=403210404 %}
 
 [top](#top)
 
@@ -426,7 +426,7 @@ In `_modify_speed()` we adjust the speed of the ship, the bullets, and the alien
 
 Now when you play the game with a speed factor of something like 10 you'll see how effective the strategy is, and you'll see its weak points as well. For example I can see that the sweeping strategy is pretty effective at clearing out most of the fleet, but it's really inefficient when there's only one or two aliens left:
 
-[video 3]
+{% include vimeoPlayer.html id=403210419 %}
 
 You should be aware that speeding up the game affects the high score that your strategy will reach. You can see this by trying a few very different speed factors. For example on my system a speedup scale of 10 with the current strategy ends with around 8,000,000 points, at around level 18. With a speedup scale of 100, it only earns about 4,000 points, and it can't even clear the first screen. If you're comparing strategies, make sure you use the same speed factor for each of your runs.
 
@@ -521,7 +521,7 @@ First we create an attribute called `fleet_size` (1). We need to initialize this
 
 In `_implement_strategy()`, we call `_sweep_right_left()` as long as the current fleet size, `len(self.ai_game.aliens)` is greater than half of the original fleet size (2). When half of the fleet has been destroyed, we stop the ship's movement and no longer call `_sweep_right_left()`. Note that I also bumped the firing frequency back up to 1.0 here (3).
 
-[video 4]
+{% include vimeoPlayer.html id=403210435 %}
 
 This is not an improvement on the basic sweeping strategy, but it does show you how to transition from one strategy to another as your automated player makes progress within a level. You could implement a new strategy when there's just one or two aliens left, or even have a series of strategies for increasingly specific situations.
 
@@ -588,7 +588,7 @@ Once we have a target alien selected, we can position the ship. Back in `_implem
 
 When you run this code, you'll see that matching an alien's position exactly doesn't work all that well, because by the time the bullet reaches the alien's vertical position, the alien has moved away.
 
-[video 5]
+{% include vimeoPlayer.html id=403210456 %}
 
 The ship ends up chasing aliens until they're so low they can't get away. This is a case where introducing a bit of randomness into the firing can be effective. You can also explore strategies for targeting specific aliens, but not staying right underneath them. It's an interesting geometry exercise to try and work out how to make a bullet hit the desired alien every time. But if that's not your strong suit, there are plenty of ways to get near enough to specific aliens that you can reliably shoot them down. If you don't want to try working out an exact solution to hitting aliens, you can try adding some randomness to the ship's position. I imagine the right amount of randomness might cause the ship to end up in the right position often enough to hit the alien without getting into long stretches of alway firing behind the alien's position. You might also try stopping, and firing when the alien is a certain distance away to see if that results in a higher level of accuracy. There are lots of approaches you can try implementing, even if you can't work out the most mathematically optimal approach. Many of these strategies are really interesting to watch at higher speeds.
 
