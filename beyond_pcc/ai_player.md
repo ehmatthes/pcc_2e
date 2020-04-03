@@ -10,7 +10,7 @@ nav_order: 25
 
 This section is broken into two parts. The first part focuses on adding sound to the Alien Invasion project, and the second focuses on writing a separate program that plays the game automatically. Adding sound doesn't take much code, but it makes the game much more interesting. Automating game play is more complicated, but it's a really interesting and satisfying exercise.
 
-You can find complete versions of this project in the *beyond_pcc/ai_player/* folder in the [downloadable resources](https://github.com/ehmatthes/pcc_2e/zipball/master/) for the book.
+You can find complete versions of this project in the *[beyond_pcc/ai_player/](https://github.com/ehmatthes/pcc_2e/tree/master/beyond_pcc/ai_player)* folder in the [downloadable resources](https://github.com/ehmatthes/pcc_2e/zipball/master/) for the book.
 
 ---
 
