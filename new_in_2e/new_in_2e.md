@@ -14,6 +14,7 @@ Python is a mature language, but like any programming language it continues to e
 Here is a summary of the changes that have been made to the book overall:
 
 - The second edition was written using Python 3.7; the first edition was written using Python 3.5.
+  - *Note: The book is completely up to date for Python 3.8.*
 - Python 2 support has been dropped, as Python 2 is nearing end-of-life.
 - The book uses f-strings instead of concatenation, which makes much of the syntax throughout the book simpler and less verbose.
 - Many Python packages have become easier to install, so setup and installation instructions are easier.
