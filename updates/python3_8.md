@@ -140,7 +140,7 @@ This will install the version of Requests that's compatible with Python 3.8.
 
 The stable version of Pygame has not been updated to work with Python 3.8 yet. However, there is a recent development version that works with Python 3.8. To install it, run the following command:
 
-    $ python -m pip install pygame==2.0.0.dev6
+    $ python -m pip install pygame==2.0.0.dev8
 
 You should use the same command you use to run a Python terminal session on your system, which might be `python`, `python3`, `py`, `python3.8`, or something else.
 
