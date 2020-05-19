@@ -21,7 +21,7 @@ You don't have to start here; many context-specific resources will introduce you
 
 ## Books and Print Resources
 
-### Automate the Boring Stuff with Python, by [Al Sweigart](https://twitter.com/AlSweigart)
+### Automate the Boring Stuff with Python (2nd Edition), by [Al Sweigart](https://twitter.com/AlSweigart)
 
 *Python Crash Course* and *Automate the Boring Stuff* are two of the most frequently recommended introductory Python books, and they are often recommended together. PCC builds a foundation in basic programming concepts and tools, and then jumps into a series of meaningful projects. ATBS introduces programming concepts and tools through a series of smaller projects that help people automate common tasks. PCC readers often follow up PCC with ATBS, to expand their understanding of how to apply Python to common tasks; ATBS readers often follow up ATBS with PCC to solidify their understanding of fundamental programming concepts, and to apply what they've learned to more in-depth projects.
 
@@ -41,6 +41,8 @@ The first group of cards covers *Concepts and Vocabulary*, to help you understan
 
 The cards haven't made a strong impression online, but when I've spent time at the No Starch booth at PyCon many people bought a set after seeing the cards in person. Teachers have also been [enthusiastic about them](https://twitter.com/i/web/status/1117159862037700608), as there are a number of ways they can be used in the classroom. If you like working with offline learning materials at times and like your learning in bite-size chunks, you might like the flash cards. You can buy them direct from [No Starch Press](https://nostarch.com/pythonflashcards) or through [Barnes and Noble](https://www.barnesandnoble.com/w/python-flash-cards-eric-matthes/1129141693?ean=9781593278960) or [Amazon](https://www.amazon.com/dp/1593278969/). You can also see them in person at Barnes and Noble stores.
 
+![](../../images/recommended_reading/pfc_cover.png)
+
 [top](#top)
 
 ### Fluent Python, by [Luciano Ramlho](https://twitter.com/ramalhoorg)
@@ -52,6 +54,18 @@ I was very happy to see *Fluent Python* appear in print. Luciano Ramalho has bee
 *Fluent Python* is closer to an advanced book than an intermediate book. It counts on you knowing basic and intermediate Python concepts, but it also expects you to have spent some time using Python in a variety of real-world projects. If you're not quite there yet, it's a great book to have in your library and work through over time. I haven't read much of it yet, but I eye it all the time and I'm really looking forward to making time to give it a proper reading. I'm sure it will make me a better Python programmer, and I appreciate Luciano for having put so much thought into how to present these concepts.
 
 You can read *Fluent Python* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920032519.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/fluent-python-luciano-ramalho/1124386594?ean=9781491946008) or [Amazon](https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1491946008).
+
+![](../../images/recommended_reading/fp_cover.png)
+
+[top](#top)
+
+### Learning Python (5th Edition), by Mark Lutz
+
+Weighing in at over 1600 pages, *Learning Python* is more of a referencee text than a book to read straight through. It was the first book I bought when I started using Python more seriously just over 10 years ago. Back then it was "only" 1150 pages, and I still didn't read through it cover to cover. I include it here because it's nice to have a thorough offline reference available to look at sometimes when you want to dig *really* deep into a specific Python topic. But I also see *Learning Python* recommended quite often, and I wish people would be more clear about how dense this book is when they recommend it. If you want a thorough reference, by all means go ahead and buy it. But don't be surprised when a 5-pound packages shows up at your door!
+
+You can read *Learning Python* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920028154.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/learning-python-mark-lutz/1100193238?ean=9781449355739) or [Amazon](https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730/).
+
+![](../../images/recommended_reading/lp_cover.png)
 
 [top](#top)
 
