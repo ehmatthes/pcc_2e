@@ -111,6 +111,26 @@ You could spend a lifetime reading the docs. Be careful not to get lost in the d
 
 [top](#top)
 
+### Real Python
+
+I've been using Python for almost 15 years now, which means I've been googling Python-related topics almost daily for 15 years. Recently I've noticed a lot more *Real Python* resources appearing in my search results, on a wide range of topics from beginner to advanced. And every article I've clicked on has been well-written and informative from beginning to end.
+
+*Real Python* features text and video articles, tutorials, interviews, quizzes, and much more. If you haven't already found your way there, [check them out](https://realpython.com).
+
+![](../../images/recommended_reading/real_python.png)
+
+[top](#top)
+
+### Corey Schafer's YouTube Channel, by [Corey Schafer](https://twitter.com/CoreyMSchafer)
+
+I visit [r/learnpython](https://www.reddit.com/r/learnpython/) almost every day, and one of the things I watch for is which learning resources are recommended. One of th most consistently-recommended resources is Corey Schafer's [YouTube channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g). There are videos about the core Python language, and all kinds of library- and application-specific topics as well. If you like learning from videos, this is a great resource to check out.
+
+![](../../images/recommended_reading/corey_schafer_channel.png)
+
+[top](#top)
+
+---
+
 ## Podcasts
 
 ## People to Follow
