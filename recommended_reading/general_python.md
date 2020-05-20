@@ -133,4 +133,20 @@ I visit [r/learnpython](https://www.reddit.com/r/learnpython/) almost every day,
 
 ## Podcasts
 
+### Talk Python To Me, by [Michael Kennedy](https://twitter.com/mkennedy)
+
+*Talk Python To Me* is a long-running Python podcast, with 265 episodes at the time of this writing. See episodes and listen at [talkpython.fm](https://talkpython.fm/home).
+
+### Python Bytes, by [Michael Kennedy](https://twitter.com/mkennedy) and [Brian Okken](https://twitter.com/brianokken)
+
+*Python Bytes* started as a spinoff from *Talk Python To Me*, with a shorter format and a focus more on news. It's at 182 episodes now, so there's a lot of content to look through if you're new to Python podcasts. Check it out at [pythonbytes.fm](https://pythonbytes.fm).
+
+### Podcast.\_\_init\_\_(), by [Tobias Macey](https://twitter.com/TobiasMacey)
+
+*Podcast.\_\_init\_\_()* has been running since 2014, and is currently on episode 263. Episodes focus on people and projects in the Python community. See episodes and listen at [pythonpodcast.com](https://www.pythonpodcast.com).
+
+[top](#top)
+
+---
+
 ## People to Follow
