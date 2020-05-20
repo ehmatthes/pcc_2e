@@ -69,7 +69,25 @@ You can read *Learning Python* through [O'Reilly's online platform](http://shop.
 
 [top](#top)
 
+---
+
 ## Online Resources
+
+### Official Python Documentation
+
+The official Python documentation is an important resource to be aware of, and it will likely become more meaningful to you as you gain more experience with the language. That said, it can be hard to know where to start. Here's a quick overview to help you start to make sense of the documentation:
+
+- The [home page](https://www.python.org/doc/) for the documentation lists a number of ways to start reading. There's a lot here, so let's focus on the latest release.
+- The home page for the [Python 3.8 documentation](https://docs.python.org/3/) is a good place to start.
+- You can see an overview of [what's new in Python 3.8](https://docs.python.org/3/whatsnew/3.8.html). New features in Python these days tend to focus on more advanced use cases. As you start to use Python in a variety of real-world projects, looking at the "What's New" page will be more interesting and relevant.
+ - The [official tutorial](https://docs.python.org/3/tutorial/index.html) is well worth going through. Much of it will look familar from what you saw in PCC, but it will also fill in some of the gaps of what was left out of PCC. I keep meaning to work through this myself, and I hope to make time for it before too long.
+ - The [standard library documentation](https://docs.python.org/3/library/index.html) is probably the section of the docs that I visit most often. This is where you'll find the full descriptions of how [lists](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) and [dictionaries](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) work, for example.
+
+You could spend a lifetime reading the docs. Be careful not to get lost in the docs or overwhelmed by them; they're meant as a reference, not as regular reading material. As you gain experience with the language you'll be able to interpret the official documentation more quickly and easily. Still, most people spend the bulk of their time learning from books, talks, blog posts, and articles.
+
+![](../../images/recommended_reading/standard_library.png)
+
+[top](#top)
 
 ## Podcasts
 
