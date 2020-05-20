@@ -69,6 +69,18 @@ You can read *Learning Python* through [O'Reilly's online platform](http://shop.
 
 [top](#top)
 
+### Effective Python, by [Brett Slatkin](https://twitter.com/haxor)
+
+I have only skimmed a few parts of Effective Python, but I really like what 've seen so far. The subtitle is *90 Specific Ways to Write Better Python*, and that's a pretty good description of how the book is structured. The 90 tips are well organized into topical groups, so the book is coherent overall but also nicely chunked for shorter reading sessions. It's a great book to read over coffee each morning, or on a commute, or just before bed when you don't want to be looking at a screen.
+
+The author assumes you've already learned Python, and his goal is to share how to use it more effeectively. It's really good at offering a broader perspective of how specific aspects of the Python language fit into the context of larger projects, and messy real-world projects. These tips are gleaned from years of real-world Python use, and they will definitely make you a better programmer.
+
+You can see more about the book at [effectivepython.com](https://effectivepython.com). You can also buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/effective-python-brett-slatkin/1130203296), or [Amazon](https://www.amazon.com/Effective-Python-Specific-Software-Development/dp/0134853989).
+
+![](../../images/recommended_reading/ep_cover.jpg)
+
+[top](#top)
+
 ---
 
 ## Online Resources
