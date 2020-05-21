@@ -20,6 +20,7 @@ I am really interested to hear from readers about which resources have worked we
 
 - [First Steps](../first_steps/)
 - [General Python Resources](../general_python/)
+- [Data Science Resources](../data_science/)
 
 ---
 
