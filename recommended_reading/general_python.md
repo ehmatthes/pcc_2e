@@ -149,4 +149,37 @@ I visit [r/learnpython](https://www.reddit.com/r/learnpython/) almost every day,
 
 ---
 
-## People to Follow
+## Talks
+
+Python conferences happen all over the world, and talks are the central feature of most conferences. Many of these talks are recorded, and they range from talks for absolute beginners to talks on the most advanced topics. Here are a couple talks I attended, and thoroughly enjoyed. Don't stop with these though, there are good talks almost any Python topic you might be interested in.
+
+### Beyond PEP 8 - Best practices for beautiful intelligible code, by [Raymond Hettinger](https://twitter.com/raymondh) (PyCon 2015)
+
+Raymond Hettinger is one of the core Python developers, and he's one of the most well-known Python presenters around. If you have the chance to attend one of his talks, get there early because they're always standing-room-only. There's something for everyone in [this talk](https://www.youtube.com/watch?v=wf-BqAjZb8M) where he focuses on refactoring and making your code more beautiful and elegant, in ways that go beyond just formatting. If you like this talk, he has another one called *Transforming Code into Beautiful, Idiomatic Python* [here](https://www.youtube.com/watch?v=OSGv2VnC0go).
+
+### The Dictionary Even Mightier, by [Brandon Rhodes](https://twitter.com/brandon_rhodes) (PyCon 2017)
+
+Dictionaries have been part of the Python language for decades, yet core developers are always looking for ways to make them more efficient. In [this talk](https://www.youtube.com/watch?v=66P5FMkWoVU) Brandon Rhodes dives into how dictionaries are implemented under the hood, and how they were made more efficient and more useful in recent years. You'll be amazed at the level of thinking that goes into something as fundamental as dictionaries
+
+
+### PyCon 2017 Keynote, by Lisa Guo and Hui Ding
+
+In [this talk](https://www.youtube.com/watch?v=66XoCk79kjM) Instagram engineers Lisa Guo and Hui Ding describe how Instagram manages to serve hundreds of millions of users on a daily basis, and how they migrated from Python 2 to Python 3 without any downtime. I will probably never work on a project at this scale, but it was fascinating and inspiring to hear people describe what it's like to work on a project like this.
+
+[top](#top)
+
+---
+
+## Email Lists
+
+### PyCoder's Weekly
+
+*PyCoder's Weekly* is a weekly newsletter that's been running since 2012. It highlights news in the Python community, discussion, open jobs, articles and tutorials, and new projects. You can see the latest issue and sign up for weekly emails at [pycoders.com](https://pycoders.com).
+
+### PCC Newsletter, by Eric Matthes
+
+I offer an email list for people who are interested in knowing when new resources related to *Python Crash Course* come out. I send an email about once a month; I only send emails when there is new content to share. If you're interested, you can sign up [here](https://emailoctopus.com/lists/95c27296-f1d4-11e9-be00-06b4694bee2a/forms/subscribe).
+
+[top](#top)
+
+---
