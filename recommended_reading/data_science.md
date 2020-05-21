@@ -27,23 +27,27 @@ This first recommendation is non-technical, because working with data is more th
 
 *Fundamentals of Data Visualization* is language-agnostic - there's no code in the book. Other texts mentioned here will show you how to change the colors in your visualizations; this text will tell you when and why to change the colors, and how that will impact the stories your data will tell.
 
-You can read *Fundamentals of Data Visualization* through [O'Reilly's online platform](), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/fundamentals-of-data-visualization-claus-o-wilke/1128580869) or [Amazon](https://www.amazon.com/Fundamentals-Data-Visualization-Informative-Compelling/dp/1492031089). You can also see all of the visualizations in the book, and an earlier draft of the text, at the [author's website](https://serialmentor.com/dataviz/).
+You can read *Fundamentals of Data Visualization* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920137733.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/fundamentals-of-data-visualization-claus-o-wilke/1128580869) or [Amazon](https://www.amazon.com/Fundamentals-Data-Visualization-Informative-Compelling/dp/1492031089). You can also see all of the visualizations in the book, and an earlier draft of the text, at the [author's website](https://serialmentor.com/dataviz/).
 
 ![](../../images/recommended_reading/fdv_cover.jpg)
 
 [top](#top)
 
-### book_title, by [author](author_link)
+### Python Data Science Handbook, by [Jake VanderPlas](https://twitter.com/jakevdp)
 
-book_desc
+Jake VanderPlas has been involved in the Python data science and visualization community for a long time. He has given many talks, and contributed to a number of prominent open source libraries in this area. *Python Data Science Handbook* came out in December of 2016, but it's still receiving strong reviews. I haven't read the book, but I have attended many of Jake's talks and learned a great deal from following his work. When I have time to do more reading, this is the first data science book I'll work through.
 
-![](../../images/recommended_reading/cover_image.png)
+You can read *Python Data Science Handbook* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920034919.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/python-data-science-handbook-jake-vanderplas/1124463128?ean=9781491912058) or [Amazon](https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057/). You can also find the entire text online at [the author's site](https://jakevdp.github.io/PythonDataScienceHandbook/).
+
+![](../../images/recommended_reading/pdsh_cover.jpeg)
 
 [top](#top)
 
 ### book_title, by [author](author_link)
 
 book_desc
+
+You can read *Book_Title* through [O'Reilly's online platform](), or you can buy it from [Barnes and Noble]() or [Amazon](). You can also find the entire text online at []().
 
 ![](../../images/recommended_reading/cover_image.png)
 
