@@ -35,7 +35,7 @@ You can read *Fundamentals of Data Visualization* through [O'Reilly's online pla
 
 ### Python Data Science Handbook, by [Jake VanderPlas](https://twitter.com/jakevdp)
 
-Jake VanderPlas has been involved in the Python data science and visualization community for a long time. He has given many talks, and contributed to a number of prominent open source libraries in this area. *Python Data Science Handbook* came out in December of 2016, but it's still receiving strong reviews. I haven't read the book, but I have attended many of Jake's talks and learned a great deal from following his work. When I have time to do more reading, this is the first data science book I'll work through.
+Jake VanderPlas has been involved in the Python data science and visualization community for a long time. He has given many talks, and contributed to a number of prominent open source libraries in this area. *Python Data Science Handbook* came out in December of 2016, but it's still receiving strong reviews. I haven't read the book, but I have attended many of Jake's talks and learned a great deal from following his work. This book covers common Python data science tools, loading and processing data, visualizing data, and getting started with machine learning. When I have time to do more reading, this is the first data science book I'll work through.
 
 You can read *Python Data Science Handbook* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920034919.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/python-data-science-handbook-jake-vanderplas/1124463128?ean=9781491912058) or [Amazon](https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057/). You can also find the entire text online at [the author's site](https://jakevdp.github.io/PythonDataScienceHandbook/).
 
@@ -44,6 +44,16 @@ You can read *Python Data Science Handbook* through [O'Reilly's online platform]
 [top](#top)
 
 ### Python for Data Analysis, by [Wes McKinney](https://twitter.com/wesmckinn)
+
+Wes McKinney is the creator of [pandas](https://pandas.pydata.org), a prominent Python library for loading and working with raw data. Wes knows pandas inside and out, so the information is accurate and reliable. There's some criticism that the material is dry and just like reading documentation, but if you like books better than documenation this book will probably be worthwhile. If you want to read a more detailed comparison between this book and *Python Data Science Handbook*, there's a nice writeup [here](http://sam-koblenski.blogspot.com/2019/02/tech-book-face-off-python-for-data.html).
+
+You can read *Python for Data Analysis* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920050896.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/python-for-data-analysis-wes-mckinney/1124074589) or [Amazon](https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662/). You can also find the code for the book online at [github.com/wesm/pydata-book/](https://github.com/wesm/pydata-book).
+
+![](../../images/recommended_reading/pda_cover.jpg)
+
+[top](#top)
+
+### book_title, by [author](author_link)
 
 book_desc
 
