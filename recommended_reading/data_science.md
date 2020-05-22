@@ -43,6 +43,16 @@ You can read *Python Data Science Handbook* through [O'Reilly's online platform]
 
 [top](#top)
 
+### Python for Data Analysis, by [Wes McKinney](https://twitter.com/wesmckinn)
+
+book_desc
+
+You can read *Book_Title* through [O'Reilly's online platform](), or you can buy it from [Barnes and Noble]() or [Amazon](). You can also find the entire text online at []().
+
+![](../../images/recommended_reading/cover_image.png)
+
+[top](#top)
+
 ### book_title, by [author](author_link)
 
 book_desc
