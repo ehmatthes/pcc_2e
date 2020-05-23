@@ -53,23 +53,23 @@ You can read *Python for Data Analysis* through [O'Reilly's online platform](htt
 
 [top](#top)
 
-### book_title, by [author](author_link)
+### Data Science from Scratch, by [Joel Grus](https://twitter.com/joelgrus)
 
-book_desc
+*Data Science from Scratch* should be a good followup to PCC if you're new to programming and data science. With the understanding of Python you've gained from PCC, you should be able to follow the code examples and learn the more data science-focused concepts the book presents. If you already understand data science and machine learning concepts and want to focus on using the latest libraries to implement these methods, a book like *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* is proably a better fit.
 
-You can read *Book_Title* through [O'Reilly's online platform](), or you can buy it from [Barnes and Noble]() or [Amazon](). You can also find the entire text online at []().
+You can read *Data Science from Scratch* through [O'Reilly's online platform](https://www.oreilly.com/library/view/data-science-from/9781492041122/), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/data-science-from-scratch-joel-grus/1121709189) or [Amazon](https://www.amazon.com/Joel-Grus/dp/1492041130/). You can see the [table of contents](https://www.oreilly.com/library/view/data-science-from/9781492041122/), and you can find the code for the book at the [author's GitHub site](https://github.com/joelgrus/data-science-from-scratch).
 
-![](../../images/recommended_reading/cover_image.png)
+![](../../images/recommended_reading/dss_cover.jpg)
 
 [top](#top)
 
-### book_title, by [author](author_link)
+### Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd Edition), by [Aurélien Géron](https://twitter.com/aureliengeron/)
 
-book_desc
+This book focuses on using the Scikit-Learn and TensorFlow libraries to do applied machine learning work. If you want to get straight to the point of using machine learn processes in code, this is probably a good book to consider.
 
-You can read *Book_Title* through [O'Reilly's online platform](), or you can buy it from [Barnes and Noble]() or [Amazon](). You can also find the entire text online at []().
+You can read *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* through [O'Reilly's online platform](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-aurelien-geron/1128814321?ean=9781492032649) or [Amazon](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/). You can also read the [table of contents here](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/).
 
-![](../../images/recommended_reading/cover_image.png)
+![](../../images/recommended_reading/hml_cover.jpg)
 
 [top](#top)
 
