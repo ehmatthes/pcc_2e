@@ -74,3 +74,54 @@ You can read *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow
 [top](#top)
 
 ---
+
+## Data Science Tools and Libraries
+
+If you're interested in data science using Python, there are a nubmer of tools and libraries you should be aware of. All of these tools are covered to differing degrees in the books above, and whichever resources you choose to work from you should be aware of these different libraries.
+
+### Jupyter Notebooks and IPython
+
+Jupyter Notebooks are a really powerful tool with many uses, and one of the most prominent uses is exploratory data analysis. Jupyter Notebooks run in a browser, and they're made up of cells. Each cell can be a code cell or a text cell. When a code cell is run, all the variables and objects created in that cell are then available to the other code cells in the notebook. Text cells are implemented in markdown, a text-based formatting language that's used extensively in technical documentation work.
+
+Jupyter Notebooks ar prominent in data analysis and scientific fields becasuse you can write all the explanatory text you want around your code. They're not perfect; you can sometimes run into difficulty when code cells affect each other in unexpected ways. Code cells can also be run in any order; this is good most of the time, but can generate reproducibilty issues without a clear set of guidelines for how a notebook is used.
+
+IPython is an enhanced version of a Python terminal session. Jupyter Notebooks are built on top of IPython, but IPython itself is still used in many areas.
+
+The Jupyter homepage is at [jupyter.org](https://jupyter.org), and the official documentation is [here](https://jupyter.readthedocs.io/en/latest/). The documentation for IPython is [here](https://ipython.readthedocs.io/en/stable/).
+
+### pandas
+
+The pandas library is a critical tool in the Python data science ecosystem. pandas is used to load, clean, and analyze data before feeding the data into a visualization package. It's also heavily used in machine learning applications.
+
+The homepage for pandas is at [pandas.pydata.org](https://pandas.pydata.org).
+
+### NumPy
+
+NumPy is a math-focused Python package which focuses on making a wide range of mathematical operations efficient and easy to work with from within Python. For example, NumPy offers an efficient and powerful representation of multidimensional arrays. NumPy also provides an interface for working with mathematical code written in other languages such as Fortran and C++. Many other Python data science projects depend on NumPy. Even if you rarely work with NumPy directly, you're probably using it under the hood through the other data science-focused libraries you're working with.
+
+The NumPy homepage is at [numpy.org](https://numpy.org).
+
+### Scikit-Learn
+
+Scikit-Learn is a library focused on implementing machine learning algorithms. It's used for classification, regression, clustering, modeling, and more.
+
+The homepage is at [scikit-learn.org](https://scikit-learn.org/stable/).
+
+### PyTorch
+
+PyTorch is another Python machine learning library. 
+
+The homepage is at [pytorch.org](https://pytorch.org).
+
+### TensorFlow
+
+TensorFlow was originally developed for internal use at Google. It was later released for public use. TensorFlow is focused on deep learning, and working with larger data sets.
+
+The homepage for TensorFlow is at [tensorflow.org](https://www.tensorflow.org).
+
+
+
+
+### Anaconda
+
+[top](#top)
