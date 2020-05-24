@@ -12,7 +12,7 @@ Data Science is one of the most popular areas of programming right now, and that
 
 *Python Crash Course* just scratches the surface of what you can do with Python in this field. If you'd like to go further with Python in Data Science, there are a large number of resouces available. I hope this helps you figure out where to go next, and if you have feedback about any of these recommendations please don't hesitate to reach out.
 
-Note: Some of the resources mentioned in the [General Python Resources](../general_python/) have sections focused on data science. I won't repeat those resources here, but you should check them out.
+Note: Some of the resources mentioned in the [General Python Resources](../general_python/) have sections focused on data science. I won't repeat those resources here, but you should check them out as well.
 
 * 
 {:toc}
@@ -97,7 +97,7 @@ The homepage for pandas is at [pandas.pydata.org](https://pandas.pydata.org).
 
 ### NumPy
 
-NumPy is a math-focused Python package which focuses on making a wide range of mathematical operations efficient and easy to work with from within Python. For example, NumPy offers an efficient and powerful representation of multidimensional arrays. NumPy also provides an interface for working with mathematical code written in other languages such as Fortran and C++. Many other Python data science projects depend on NumPy. Even if you rarely work with NumPy directly, you're probably using it under the hood through the other data science-focused libraries you're working with.
+NumPy is a math-focused Python package which focuses on making a wide range of mathematical operations efficient and easy to work with from within Python. For example, NumPy offers an efficient and powerful representation of multidimensional arrays, as well as providing an interface for working with mathematical code written in other languages such as Fortran and C++. Many other Python data science projects depend on NumPy; even if you rarely work with NumPy directly, you're probably using it under the hood through the other data science-focused libraries you're working with.
 
 The NumPy homepage is at [numpy.org](https://numpy.org).
 
@@ -109,19 +109,62 @@ The homepage is at [scikit-learn.org](https://scikit-learn.org/stable/).
 
 ### PyTorch
 
-PyTorch is another Python machine learning library. 
+PyTorch is another Python machine learning library, focused on deep learning and working with larger datasets.
 
 The homepage is at [pytorch.org](https://pytorch.org).
 
 ### TensorFlow
 
-TensorFlow was originally developed for internal use at Google. It was later released for public use. TensorFlow is focused on deep learning, and working with larger data sets.
+TensorFlow was originally developed for internal use at Google, and was later released for public use. TensorFlow is focused on deep learning, and working with larger data sets.
 
 The homepage for TensorFlow is at [tensorflow.org](https://www.tensorflow.org).
 
+### Keras
 
+Keras is a neural network library written in Python. Keras is built on top of TensorFlow, and can make it simpler to work with TensorFlow. Keras can also be used as an interface to other deep learning libraries in addition to TensorFlow.
+
+The homepage is at [keras.io](https://keras.io).
 
 
 ### Anaconda
 
+Anaconda is a Python distribution that includes many of the most commonly used data science libaries such as Jupyter, NumPy, pandas, Matplotlib, SciPy, and many others. It also comes with its own package manager, conda, which is used in place of pip to install packages. There are free and paid versions of Anaconda, as well as a smaller version called Miniconda.
+
+The home page for Anacaonda is at [anaconda.com](https://www.anaconda.com).
+
 [top](#top)
+
+---
+
+## Podcasts
+
+blah
+
+---
+
+## Talks
+
+There are so many data science-focused talks it's hard to make recommendations, but here are a few to get you started:
+
+### Put down the deep learning: When not to use neural networks and what to do instead, by [Rachael Tatman](https://twitter.com/rctatman/) (PyCon 2019)
+
+Once people become aware of machine learning techniques, they're tempted to throw it at everything. This talk is a reminder that in many situations, simpler approaches are more appropriate.
+
+Watch it [on YouTube](https://www.youtube.com/watch?v=qw5dBdTXLEs).
+
+### The Python Visualization Landscape, by [Jake VanderPlas]() (PyCon 2017)
+
+Jake Vanderplas is the author of *Python Data Science Handbook*, and has contributed to a number of the more prominent Python data science packages. Here he gives a great overview of the various Python visualization libraries, explaining their indvidual strengths and why they each came to be.
+
+Watch [on YouTube](https://www.youtube.com/watch?v=FytuB8nFHPQ). You can also find a list of his other talks [here](http://vanderplas.com/speaking.html).
+
+### Python Data Sonification for Science and Discovery, by [Erin Braswell](https://twitter.com/erinspaced) (PyCon 2018)
+
+In this talk, Erin Braswell shows how data can be turned into sound, which is sometimes a better way to identify patterns than through visualization.
+
+Watch it [on YouTube](https://www.youtube.com/watch?v=3EXvR1shVFQ).
+
+[top](#top)
+
+---
+
