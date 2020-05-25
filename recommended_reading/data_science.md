@@ -138,7 +138,47 @@ The home page for Anacaonda is at [anaconda.com](https://www.anaconda.com).
 
 ## Podcasts
 
-blah
+### Towards Data Science
+
+Towards Data Science is a group that produces data-science related articles, newsletters, and now a podcast. I've listened to one episode so far about building a career in data science, and it was really good. They're at 34 episodes as of this writing.
+
+You can find a [list of episodes here](https://anchor.fm/towardsdatascience), and a brief [description of their podcast series here](https://towardsdatascience.com/our-podcast-c5c1129bc5cf). The home page for TDS is at [towardsdatascience.com](https://towardsdatascience.com/our-podcast-c5c1129bc5cf).
+
+### Data Skeptic
+
+Data Skeptic is a weekly podcast covering a variety of topics in the data science and AI world.
+
+Listen at [dataskeptic.com](https://towardsdatascience.com/our-podcast-c5c1129bc5cf).
+
+### Data Stories
+
+Data Stories focuses on data visualization. There's a balance of technical conversations about how to produce visualizations, and discussions of what people take away from the visualizations we produce. There are currently 160 episodes.
+
+Listen at [datastori.es](https://datastori.es).
+
+### Women in Data Science
+
+Women are significantly underrepresented in data science, and it's important to highlight their perspectives and their work.
+
+Listen at [widsconference.org](https://www.widsconference.org/podcast.html).
+
+### AI in Business
+
+AI in Business focuses on the use of AI and data science in businesses.
+
+Listen at [techemergence.libsyn.com](http://techemergence.libsyn.com).
+
+### Talking Machines: Human Conversations About Machine Learning
+
+This is a long running podcast with a focus on helping technical and non-technical people understand the impact of data science on the world.
+
+Listen at [talkingmachines.com](https://www.thetalkingmachines.com).
+
+### More Podcasts
+
+There are more data science podcasts than I can review indidivually. For additional recommendations, see some [recommendations from Real Python](https://realpython.com/data-science-podcasts/), from [Towards Data Science](https://towardsdatascience.com/5-data-science-podcasts-you-should-be-listening-to-72d8efd0b9ec), and [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2018/01/10-data-science-machine-learning-ai-podcasts-must-listen/). If you have specific podcasts that you think would be of interest to PCC readers, please [let me know](../../contact/).
+
+[top](#top)
 
 ---
 
