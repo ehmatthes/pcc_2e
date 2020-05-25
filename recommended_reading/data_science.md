@@ -8,9 +8,9 @@ nav_order: 30
 # Data Science Resources
 {: .no_toc }
 
-Data Science is one of the most popular areas of programming right now, and that makes sense. There's a lot of data available to work with, and the better we understand that data the more we can do with it.
+Data Science is one of the most popular areas of programming right now, and it's easy to understand why. There's a lot of data available to work with, and the better we understand that data the more we can do with it.
 
-*Python Crash Course* just scratches the surface of what you can do with Python in this field. If you'd like to go further with Python in Data Science, there are a large number of resouces available. I hope this helps you figure out where to go next, and if you have feedback about any of these recommendations please don't hesitate to reach out.
+*Python Crash Course* just scratches the surface of what you can do with Python in this field. If you'd like to go further with Python in Data Science, there are a large number of resources available. I hope this helps you figure out where to go next, and if you have feedback about any of these recommendations please don't hesitate to reach out.
 
 Note: Some of the resources mentioned in the [General Python Resources](../general_python/) have sections focused on data science. I won't repeat those resources here, but you should check them out as well.
 
@@ -35,7 +35,7 @@ You can read *Fundamentals of Data Visualization* through [O'Reilly's online pla
 
 ### Python Data Science Handbook, by [Jake VanderPlas](https://twitter.com/jakevdp)
 
-Jake VanderPlas has been involved in the Python data science and visualization community for a long time. He has given many talks, and contributed to a number of prominent open source libraries in this area. *Python Data Science Handbook* came out in December of 2016, but it's still receiving strong reviews. I haven't read the book, but I have attended many of Jake's talks and learned a great deal from following his work. This book covers common Python data science tools, loading and processing data, visualizing data, and getting started with machine learning. When I have time to do more reading, this is the first data science book I'll work through.
+Jake VanderPlas has been involved in the Python data science and visualization community for a long time. He has given many talks, and contributed to a number of prominent open source libraries in this area. *Python Data Science Handbook* came out in December of 2016, but it's still receiving strong reviews. I haven't read the book, but I have attended many of Jake's talks and learned a great deal from following his work. This book covers common Python data science tools, loading and processing data, visualizing data, and getting started with machine learning. When I have time to do more reading, this is probably the next data science book I'll work through.
 
 You can read *Python Data Science Handbook* through [O'Reilly's online platform](http://shop.oreilly.com/product/0636920034919.do), or you can buy it from [Barnes and Noble](https://www.barnesandnoble.com/w/python-data-science-handbook-jake-vanderplas/1124463128?ean=9781491912058) or [Amazon](https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057/). You can also find the entire text online at [the author's site](https://jakevdp.github.io/PythonDataScienceHandbook/).
 
@@ -81,9 +81,9 @@ If you're interested in data science using Python, there are a nubmer of tools a
 
 ### Jupyter Notebooks and IPython
 
-Jupyter Notebooks are a really powerful tool with many uses, and one of the most prominent uses is exploratory data analysis. Jupyter Notebooks run in a browser, and they're made up of cells. Each cell can be a code cell or a text cell. When a code cell is run, all the variables and objects created in that cell are then available to the other code cells in the notebook. Text cells are implemented in markdown, a text-based formatting language that's used extensively in technical documentation work.
+Jupyter Notebooks are a really powerful tool with many uses, and one of the most prominent uses is exploratory data analysis. Jupyter Notebooks run in a browser, and they're made up of cells. Each cell can be a code cell or a text cell. When a code cell is run, all the variables and objects created in that cell are then available to the other code cells in the notebook. Text cells are implemented in [markdown](https://www.markdownguide.org), a text-based formatting language that's used extensively in technical documentation work.
 
-Jupyter Notebooks ar prominent in data analysis and scientific fields becasuse you can write all the explanatory text you want around your code. They're not perfect; you can sometimes run into difficulty when code cells affect each other in unexpected ways. Code cells can also be run in any order; this is good most of the time, but can generate reproducibilty issues without a clear set of guidelines for how a notebook is used.
+Jupyter Notebooks are prominent in data analysis and scientific fields becasuse you can write all the explanatory text you want around your code. They're not perfect; you can sometimes run into difficulty when code cells affect each other in unexpected ways. Code cells can also be run in any order; this is good most of the time, but can generate reproducibilty issues without a clear set of guidelines for how a notebook is used.
 
 IPython is an enhanced version of a Python terminal session. Jupyter Notebooks are built on top of IPython, but IPython itself is still used in many areas.
 
@@ -140,7 +140,7 @@ The home page for Anacaonda is at [anaconda.com](https://www.anaconda.com).
 
 ### Towards Data Science
 
-Towards Data Science is a group that produces data-science related articles, newsletters, and now a podcast. I've listened to one episode so far about building a career in data science, and it was really good. They're at 34 episodes as of this writing.
+Towards Data Science is a group that produces data-science related articles, newsletters, and now a podcast. I've listened to one episode so far about [building a career in data science](https://anchor.fm/towardsdatascience/episodes/28--Emily-Robinson---Building-a-Career-in-Data-Science-ebovhr), and it was really good. They're at 34 episodes as of this writing.
 
 You can find a [list of episodes here](https://anchor.fm/towardsdatascience), and a brief [description of their podcast series here](https://towardsdatascience.com/our-podcast-c5c1129bc5cf). The home page for TDS is at [towardsdatascience.com](https://towardsdatascience.com/our-podcast-c5c1129bc5cf).
 
@@ -176,7 +176,7 @@ Listen at [talkingmachines.com](https://www.thetalkingmachines.com).
 
 ### More Podcasts
 
-There are more data science podcasts than I can review indidivually. For additional recommendations, see some [recommendations from Real Python](https://realpython.com/data-science-podcasts/), from [Towards Data Science](https://towardsdatascience.com/5-data-science-podcasts-you-should-be-listening-to-72d8efd0b9ec), and [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2018/01/10-data-science-machine-learning-ai-podcasts-must-listen/). If you have specific podcasts that you think would be of interest to PCC readers, please [let me know](../../contact/).
+There are more data science podcasts than I can review indidivually. For additional recommendations, see some [recommendations from Real Python](https://realpython.com/data-science-podcasts/), from [Towards Data Science](https://towardsdatascience.com/5-data-science-podcasts-you-should-be-listening-to-72d8efd0b9ec), and from [Analytics Vidhya](https://www.analyticsvidhya.com/blog/2018/01/10-data-science-machine-learning-ai-podcasts-must-listen/). If you have specific podcasts that you think would be of interest to PCC readers, please [let me know](../../contact/).
 
 [top](#top)
 
@@ -194,7 +194,7 @@ Watch it [on YouTube](https://www.youtube.com/watch?v=qw5dBdTXLEs).
 
 ### The Python Visualization Landscape, by [Jake VanderPlas]() (PyCon 2017)
 
-Jake Vanderplas is the author of *Python Data Science Handbook*, and has contributed to a number of the more prominent Python data science packages. Here he gives a great overview of the various Python visualization libraries, explaining their indvidual strengths and why they each came to be.
+Jake Vanderplas is the author of *Python Data Science Handbook*, and has contributed to a number of prominent Python data science packages. Here he gives a great overview of the various Python visualization libraries, explaining their indvidual strengths and why they each came to be.
 
 Watch [on YouTube](https://www.youtube.com/watch?v=FytuB8nFHPQ). You can also find a list of his other talks [here](http://vanderplas.com/speaking.html).
 
