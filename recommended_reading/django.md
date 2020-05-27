@@ -45,11 +45,13 @@ If you're interested in any of these books, you can see more about them and buy 
 
 [top](#top)
 
-### book_title, by [author](author_link)
+### Django Crash Course, by [Daniel Feldroy](https://twitter.com/pydanny/) and [Audrey Feldroy](https://twitter.com/audreyr)
 
-book_blurb
+Daniel and Audrey Feldroy are the authors of *Two Scoops of Django*, which focuses on more advanced aspects of Django. *Django Crash Course* (which has no affiliation with *Python Crash Course*) is their foray into introductory Django topics. *Django Crash Course* is based on materials that Daniel and Audrey have used for years in corporate training programs. They have repackaged their material to be accessible to anyone already familiar with Python, but not necessarily having a background in Django. They are planning a series of extensions to the book which will cover specific topics that build on the material in this book.
 
-![](../../images/recommended_reading/cover_file)
+*Django Crash Course* is available now as an ebook. You can preorder a paperback, coil-bound, or hardbound copy as well. All of these versions are available [here](https://www.feldroy.com/products/django-crash-course).
+
+![](../../images/recommended_reading/dcc_cover.png)
 
 [top](#top)
 
