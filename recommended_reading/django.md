@@ -55,19 +55,13 @@ Daniel and Audrey Feldroy are the authors of *Two Scoops of Django*, which focus
 
 [top](#top)
 
-### book_title, by [author](author_link)
+### Two Scoops of Django 3.x: Best Practices for the Django Web Framework, by [Daniel Feldroy](https://twitter.com/pydanny/) and [Audrey Feldroy](https://twitter.com/audreyr)
 
-book_blurb
+*Two Scoops of Django* is not a good resource to read immediately after *Python Crash Course*. It is, however, a really good book to be aware of as you gain more experience with Django. TSD is aimed at people who have built a number of Django projects, and are looking to better understand how to manage all the working parts of a significant webapp project built in Django. The recommendations in this book come from years of experiencing building and maintaining many Django-based sites of various sizes, and years of training professional Django developers.
 
-![](../../images/recommended_reading/cover_file)
+You can see a full table of contents and order an electronic version of the book [here](). A print version of the book should be available soon.
 
-[top](#top)
-
-### book_title, by [author](author_link)
-
-book_blurb
-
-![](../../images/recommended_reading/cover_file)
+![](../../images/recommended_reading/tsd_cover.jpg)
 
 [top](#top)
 
