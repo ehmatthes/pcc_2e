@@ -1,0 +1,17 @@
+.cip_box {
+    border: 0px solid black;
+    margin: 20px 50px 20px 50px;
+}
+
+.cip_title {
+    border: 0px solid black;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cip_text {
+    padding: 10px 50px;
+    font-size: 20px;
+}
