@@ -1,0 +1,36 @@
+.cip_body {
+    background-color: #1a1a1a;
+    color: #aaaaaa;
+}
+
+.cip_box {
+    border: 0px solid black;
+    margin: 50px 50px 20px 50px;
+}
+
+.cip_title {
+    border: 0px solid black;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    color: #cccccc;
+}
+
+.cip_text {
+    padding: 10px 50px;
+    font-size: 20px;
+}
+
+.cip_pcc_link {
+    border-top: 1px solid #cccccc;
+    margin: 50px 50px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: #cccccc;
+    text-decoration: none;
+}
