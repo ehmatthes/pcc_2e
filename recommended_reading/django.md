@@ -8,6 +8,8 @@ nav_order: 40
 # Django Resources
 {: .no_toc }
 
+*Note: This is a work in progress. I will be adding to this as I have time over the next week or so.*
+
 Django has been one of the most prominent Python web frameworks for almost 15 years now. Django is downloaded about 200,000 times each day, and powers millions of websites. You can use it for small projects where you're the only user, or for projects that just serve the teams you work with. But it's also powerful enough to serve some of the most popular sites on the internet such as Instagram, Pinterest, and Disqus.
 
 You can use books to get started with Django, but once you learn the overall structure of Django projects and how to do common tasks, you'll want to become familiar with the official documenation and some other online resources. Django has some of the best documentation of any open source project, and it's well worth your time to become familiar wtih it. This section will help you find some good followup resources after working through the Learning Log project, and also familiarize you with resources you're likely to use as long as you're an active Django developer.
@@ -104,7 +106,7 @@ If you buy the book [direct from No Starch Press](https://nostarch.com/practical
 Django's official documentation is some of the clearest technical documentation you'll find for an open source project. It's well-organized and has clear and accurate writing throughout. Here's a brief list of sections to start looking at:
 
 - The Django home page is at [djangoproject.com](https://www.djangoproject.com). Here's you'll find some highlights of the framework, and a bunch of information for Django developers of all levels.
-- The [download]() page tells you how to install the latest official version. But it also lets you download development versions of upcoming releases, so you can see whether your code will continue to work on upcoming versions. You can also see a chart of how long each version will receive updates.
+- The [download](https://www.djangoproject.com/download/) page tells you how to install the latest official version. But it also lets you download development versions of upcoming releases, so you can see whether your code will continue to work on upcoming versions. You can also see a chart of how long each version will receive updates.
 - The main page for the technical documentation is at [docs.djangoproject.com](https://docs.djangoproject.com/en/3.0/). Here you'll find installation instructions, a lengthy tutorial, places to get help, a guide to the overall documentation, and numerous ways to start exploring different areas of the documentation.
 - There's a [community](https://www.djangoproject.com/community/) page that links to an active forum, a couple mailing lists, an IRC channel, and more.
 - The Django code is in a [GitHub repository](https://github.com/django/django). Django is a large project so it will probably take you a while to start understanding how the codebase works, but it's a great example of a well-architected larger project.
@@ -112,6 +114,18 @@ Django's official documentation is some of the clearest technical documentation 
 - The [about](https://www.djangoproject.com/foundation/) page covers the Django Software Foundation, and how you can get involved in supporting development and maintenance of Django.
 
 If you're going to continue working with Django, you'll almost certainly be spending time reading through the official documentation. If you haven't done so already, take a quick look now so it's familiar when you need it.
+
+### Learn Django
+
+*Learn Django* is Will Vincent's site, which has a variety of Django resources including the books described above. Will recently reorganized his online resources at [learndjango.com](https://learndjango.com). The site highlights his books, but there's also a collection of excellent [tutorials](https://learndjango.com/tutorials/) about a variety of specific Django topics.
+
+### Simple is Better Than Complex
+
+[Vitor Freitas](https://twitter.com/vitorfs) started a [blog](https://simpleisbetterthancomplex.com) a while back about Python and Django, and I've found his articles and tutorials quite helpful as I've worked on numerous projects. It's worth checking out, and if you see one of his tutorials in your search results, it's probably a good resource to use.
+
+### r/django
+
+The [r/django](https://www.reddit.com/r/django/) subreddit has over 70k members, so it's a fairly active community. If you have questions as you work through your own projects, this is a pretty reasonable place to ask for help.
 
 [top](#top)
 
