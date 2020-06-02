@@ -23,7 +23,7 @@ has_toc: false
   </div>
 
   <div class="cip_pcc_link">
-    <a href="../regular_index/">online resources</a> for Python Crash Course
+    <a href="../pcc_2e/regular_index/">online resources</a> for Python Crash Course
   </div>
 
 </div>
