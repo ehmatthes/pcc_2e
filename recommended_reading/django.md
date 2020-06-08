@@ -8,8 +8,6 @@ nav_order: 40
 # Django Resources
 {: .no_toc }
 
-*Note: This is a work in progress. I will be adding to this as I have time over the next week or so.*
-
 Django has been one of the most prominent Python web frameworks for almost 15 years now. Django is downloaded about 200,000 times each day, and powers millions of websites. You can use it for small projects where you're the only user, or for projects that just serve the teams you work with. But it's also powerful enough to serve some of the most popular sites on the internet such as Instagram, Pinterest, and Disqus.
 
 You can use books to get started with Django, but once you learn the overall structure of Django projects and how to do common tasks, you'll want to become familiar with the official documenation and some other online resources. Django has some of the best documentation of any open source project, and it's well worth your time to become familiar wtih it. This section will help you find some good followup resources after working through the Learning Log project, and also familiarize you with resources you're likely to use as long as you're an active Django developer.
@@ -37,7 +35,7 @@ You can start with an [overview](https://docs.djangoproject.com/en/3.0/intro/) o
 
 ### Django for Beginners, Django for APIs, and Django for Professionals, by [Will Vincent](https://twitter.com/wsv3000)
 
-I haven't read any of thse books, but I've read many of Will Vincent's articles about specific topics in Django. Every article has been accurate and up to date, with clear instructions and explanations. I have no doubt his books are of the same quality. Will is also a board member of the [Django Software Foundation](https://www.djangoproject.com/foundation/), and he co-hosts the [Django Chat] podcast and co-curates the weekly [Django News](https://django-news.com) newsletter.
+I haven't read any of thse books, but I've read many of Will Vincent's articles about specific topics in Django. Every article has been accurate and up to date, with clear instructions and explanations. I have no doubt his books are of the same quality. Will is also a board member of the [Django Software Foundation](https://www.djangoproject.com/foundation/), and he co-hosts the [Django Chat](https://djangochat.com/) podcast and co-curates the weekly [Django News](https://django-news.com) newsletter.
 
 *Django for Beginners* walks you through building a series of increasingly complex websites using Django. *Django for APIs* shows you how to build web apps where Django is used for the backend and a JavaScript library (React in this case) is used for the frontend. *Django for Professionals* takes you from the tutorial-focused world to the real world by building a professional-quality project complete with support for payments through Stripe.
 
@@ -133,17 +131,62 @@ The [r/django](https://www.reddit.com/r/django/) subreddit has over 70k members,
 
 ## Podcasts
 
-[top](#top)
+### Django Chat
 
----
+Django Chat is hosted by [Will Vincent](https://twitter.com/wsv3000) and [Carlton Gibson](https://twitter.com/carltongibson). Will is the author of [several Django books](#django-for-beginners-django-for-apis-and-django-for-professionals-by-will-vincent). Carlton is a Django fellow who helps maintain the Django framework, and maintains several prominent Django libraries as well. Each week they either interview people who use Django for a variety of purposes, or discuss notable aspects of Django themselves. I've been listening for several months, and I feel much more connected to the Django community and have a better understanding of Django internals and best practices as well. There are 66 episodes as of this writing.
 
-## Talks
+You can listen at [djangochat.com](https://djangochat.com), and you can listen on Spotify and Apple Podcasts as well.
 
 [top](#top)
 
 ---
 
 ## Libraries and Packages
+
+We used one package in the Learning Log project, `django-bootstrap4`. There are many third-party libraries that are really helpful if you're going to continue working with Django. Here's a short list to help you start exploring the Django package ecosystem. You can find a more complete list of third party packages and other resources at [Awesome Django](https://github.com/wsvincent/awesome-django), a curated GitHub repository of Django resources.
+
+### django-debug-toolbar
+
+Django Debug Toolbar is really helpful for development work. It's an app that puts a sidebar on your project, giving you a range of useful information during development. There are panels that tell you how long your request took to process, what settings are in effect, information about the `request` object, queries that were executed, and much more. Using the toolbar will give you a lot of insight into everything that happens behind the scenes to render a page in your project.
+
+The online documentation is at [django-debug-toolbar.readthedocs.io](https://django-debug-toolbar.readthedocs.io/en/latest/), and the code is [here](https://github.com/jazzband/django-debug-toolbar).
+
+### django-allauth
+
+In Learning Log, we just had users provide a username and create a password. In real world projects you'll probably want to work with emails, and third-party authentication workflows. The `django-allauth` package takes care of much of this for you.
+
+The online documentation is at [django-allauth.readthedocs.io](https://django-allauth.readthedocs.io/en/latest/), and the code is [here](https://github.com/pennersr/django-allauth).
+
+### django-extensions
+
+The `django-extensions` package provides a number of resources that are helpful in developing your Django projects. For example, there is a `shell_plus` extension that makes the Django much easier to work with by automatically importing all of your models and other resources.
+
+The online documentation is [here](https://django-extensions.readthedocs.io/en/latest/runserver_plus.html), and the code is [here](https://github.com/django-extensions/django-extensions).
+
+### Django REST framework
+
+Many sites use an API at some point to provide access to data. This can be used within the project itself, for example to feed data to a JavaScript framework for a responsive frontend, or to provide a way for users to query for data programatically. Django REST framework, or DRF for short, is the go-to package for creating and managing APIs within Django projects.
+
+The online documentation is at [django-rest-framework.org](https://www.django-rest-framework.org), and the code is [here](https://github.com/encode/django-rest-framework).
+
+### django-fakery and Faker
+
+When you're developing a project, it's really helpful to populate your project with sample data. In Learning Log we did this by making a couple topics, and typing in a couple entries. It's impossible to generate large amounts of sample data this way, and if you've entered all of your sample data by hand you'll be really reluctant to rebuild your database, even if that would help your development process.
+
+`Faker` is a Python project that makes it easier to generate fake data such as words, sentences, paragraphs, names, and more. `django-fakery` is built on top of Faker, and it tries to automate the task of assigning values to all the fields in your models when generating sample data. These packages can be really helpful in making a meaningful amount of sample data for your development work.
+
+The online documentation for `django-fakery` is at [django-fakery.readthedocs.io](https://django-fakery.readthedocs.io/en/stable/), and the code is [here](https://github.com/fcurella/django-fakery). The online documentation for `Faker` is at [faker.readthedocs.io](https://faker.readthedocs.io/en/master/), and the code is [here](https://github.com/joke2k/faker).
+
+[top](#top)
+
+---
+
+## Email Lists
+
+### Django News
+
+*Django News* is a weekly newsletter featuring news, articles, projects, and more. It's curated by [Jeff Triplett](https://twitter.com/webology) and [Will Vincent](https://twitter.com/wsv3000). You can see the latest issue and sign up for weekly emails at [django-news.com](https://django-news.com).
+
 
 [top](#top)
 
