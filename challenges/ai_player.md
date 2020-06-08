@@ -12,7 +12,7 @@ In this investigation, you'll start out by writing a program that takes control 
 
 The automated player is a lot more interesting to watch if your game has sound effects. You can see [how to add sounds to your game here](../../beyond_pcc/ai_player/), if you'd like to do that before trying these challenges. Also, this can be a fairly complex challenge to get started on, so there's [a guide](../../beyond_pcc/ai_player/) that can help you if you're not sure how to approach the overall challenge.
 
-I've had a lot of fun writing my own game mods related to this challenge, so if you make something interesting please [share it](../../)!
+I've had a lot of fun writing my own game mods related to this challenge, so if you make something interesting please [share it](../../contact/)!
 
 *Note: If you aren't familiar with Git or a comparable version control system, you might want to work through Appendix D before trying these challenges. In a larger project like this, it's really nice to be able to experiment with your code, and then go back to a known working state of your project when things stop working.*
 
