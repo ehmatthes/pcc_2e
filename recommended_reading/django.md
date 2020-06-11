@@ -33,9 +33,9 @@ You can start with an [overview](https://docs.djangoproject.com/en/3.0/intro/) o
 
 ## Books and Print Resources
 
-### Django for Beginners, Django for APIs, and Django for Professionals, by [Will Vincent](https://twitter.com/wsv3000)
+### Django for Beginners, Django for APIs, and Django for Professionals, by [Will Vincent](https://wsvincent.com/about/)
 
-I haven't read any of thse books, but I've read many of Will Vincent's articles about specific topics in Django. Every article has been accurate and up to date, with clear instructions and explanations. I have no doubt his books are of the same quality. Will is also a board member of the [Django Software Foundation](https://www.djangoproject.com/foundation/), and he co-hosts the [Django Chat](https://djangochat.com/) podcast and co-curates the weekly [Django News](https://django-news.com) newsletter.
+I haven't read any of these books, but I've read many of Will Vincent's articles about specific topics in Django. Every article has been accurate and up to date, with clear instructions and explanations. I have no doubt his books are of the same quality. Will is also a board member of the [Django Software Foundation](https://www.djangoproject.com/foundation/), and he co-hosts the [Django Chat](https://djangochat.com/) podcast and co-curates the weekly [Django News](https://django-news.com) newsletter.
 
 *Django for Beginners* walks you through building a series of increasingly complex websites using Django. *Django for APIs* shows you how to build web apps where Django is used for the backend and a JavaScript library (React in this case) is used for the frontend. *Django for Professionals* takes you from the tutorial-focused world to the real world by building a professional-quality project complete with support for payments through Stripe.
 
@@ -133,7 +133,7 @@ The [r/django](https://www.reddit.com/r/django/) subreddit has over 70k members,
 
 ### Django Chat
 
-Django Chat is hosted by [Will Vincent](https://twitter.com/wsv3000) and [Carlton Gibson](https://twitter.com/carltongibson). Will is the author of [several Django books](#django-for-beginners-django-for-apis-and-django-for-professionals-by-will-vincent). Carlton is a Django fellow who helps maintain the Django framework, and maintains several prominent Django libraries as well. Each week they either interview people who use Django for a variety of purposes, or discuss notable aspects of Django themselves. I've been listening for several months, and I feel much more connected to the Django community and have a better understanding of Django internals and best practices as well. There are 66 episodes as of this writing.
+Django Chat is hosted by [Will Vincent](https://wsvincent.com/about/) and [Carlton Gibson](https://twitter.com/carltongibson). Will is the author of [several Django books](#django-for-beginners-django-for-apis-and-django-for-professionals-by-will-vincent). Carlton is a Django fellow who helps maintain the Django framework, and maintains several prominent Django libraries as well. Each week they either interview people who use Django for a variety of purposes, or discuss notable aspects of Django themselves. I've been listening for several months, and I feel much more connected to the Django community and have a better understanding of Django internals and best practices as well. There are 66 episodes as of this writing.
 
 You can listen at [djangochat.com](https://djangochat.com), and you can listen on Spotify and Apple Podcasts as well.
 
@@ -185,7 +185,7 @@ The online documentation for `django-fakery` is at [django-fakery.readthedocs.io
 
 ### Django News
 
-*Django News* is a weekly newsletter featuring news, articles, projects, and more. It's curated by [Jeff Triplett](https://twitter.com/webology) and [Will Vincent](https://twitter.com/wsv3000). You can see the latest issue and sign up for weekly emails at [django-news.com](https://django-news.com).
+*Django News* is a weekly newsletter featuring news, articles, projects, and more. It's curated by [Jeff Triplett](https://twitter.com/webology) and [Will Vincent](https://wsvincent.com/about/). You can see the latest issue and sign up for weekly emails at [django-news.com](https://django-news.com).
 
 
 [top](#top)
