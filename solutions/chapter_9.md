@@ -548,7 +548,7 @@ Privileges:
 
 ## 9-9: Battery Upgrade
 
-Use the final version of *electric_car.py* from this section. Add a method to the `Battery` class called `upgrade_battery()`. This method should check the battery size and set the capacity to 85 if it isn't already. Make an electric car with a default battery size, call `get_range()` once, and then call `get_range()` a second time after upgrading the battery. You should see an increase in the car's range.
+Use the final version of *electric_car.py* from this section. Add a method to the `Battery` class called `upgrade_battery()`. This method should check the battery size and set the capacity to 100 if it isn't already. Make an electric car with a default battery size, call `get_range()` once, and then call `get_range()` a second time after upgrading the battery. You should see an increase in the car's range.
 
 ```python
 class Car():
@@ -595,7 +595,6 @@ class Battery():
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
-        
     def get_range(self):
         """Print a statement about the range this battery provides."""
         if self.battery_size == 75:
@@ -628,32 +627,24 @@ class ElectricCar(Car):
         self.battery = Battery()
 
 
-print("Make an electric car, and check the battery:")
+print("Make an electric car, and check the range:")
 my_tesla = ElectricCar('tesla', 'roadster', 2019)
-my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
 
-print("\nUpgrade the battery, and check it again:")
+print("\nUpgrade the battery, and check the range again:")
 my_tesla.battery.upgrade_battery()
-my_tesla.battery.describe_battery()
-
-print("\nTry upgrading the battery a second time.")
-my_tesla.battery.upgrade_battery()
-my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
 ```
 
 Output:
 
 ```
-Make an electric car, and check the battery:
-This car has a 75-kWh battery.
+Make an electric car, and check the range:
+This car can go approximately 260 miles on a full charge.
 
-Upgrade the battery, and check it again:
+Upgrade the battery, and check the range again:
 Upgraded the battery to 100 kWh.
-This car has a 100-kWh battery.
-
-Try upgrading the battery a second time.
-The battery is already upgraded.
-This car has a 100-kWh battery.
+This car can go approximately 315 miles on a full charge.
 ```
 
 [top](#top)
