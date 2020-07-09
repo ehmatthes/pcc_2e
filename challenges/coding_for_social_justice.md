@@ -28,6 +28,18 @@ When addressing social justice issues, there is rarely a nice, clean, official, 
 
 To support these exercises, I've identified a number of datasets that you can start working with. If you find this work meaningful, you'll probably want to find your own data sets to work with, especially for local work, and as new broader-scale projects emerge. When you're starting out, however, it can be helpful to not have to find your own data. There's a [separate page](../social_justice_datasets/) describing these data sets, and individual exercises below will focus on specific data sets from this small collection. Feel free to apply any of the exercises below to a data set you have identified in your own work.
 
+## Critical Skills
+{: .no_toc }
+
+This collection of exercises and challenges will help you develop the ability to:
+
+- Store relevant data
+- Think critically about a problem area
+- Connect the pieces of data you're interested in
+- Examine the data you have collected
+- Present data
+- Find meaningful sources of data
+
 ---
 
 ## Exercises
@@ -64,7 +76,7 @@ Consider doing some research to learn the names of less well-known victims from 
 
 ### CSJ 3-2: Helping Organizations
 
-One of the reasons police violence is so entrenched is that the police are the first group called not just for acute threatening situations, but also for situations involving addiciton, domestic violence, mental health, and much more.
+One of the reasons police violence is so entrenched is that the police are the first group called not just for acute threatening situations, but also for situations involving addiction, domestic violence, mental health, and much more.
 
 To help ground our thinking in what other resources we have available in our communities, make a list of several non-police organizations in your community that address any or all of these issues. Use the `print()` function to output the names of each of these organizations.
 
@@ -74,11 +86,13 @@ To help ground our thinking in what other resources we have available in our com
 
 ## Chapter 4
 
-In Chapter 4, we learn to work more efficiently with lists. There are just a few exercises here because while we can do the work from Chapter 3 more efficiently, we can't add much to this.
+In Chapter 4, we learn to work more efficiently with lists.
 
 ### CSJ 4-1: Efficient Output
 
-Take one or more of your Chapter 3 programs from this set of challenges, and replace your series of `print()` calls with a single loop. If you had different messages that can't be automated, consider writing a more general message that can be repeated for the entire list.
+Take one of your Chapter 3 programs from this set of challenges, and replace your series of `print()` calls with a single loop. If you had different messages that can't be automated, consider writing a more general message that can be repeated for the entire list.
+
+
 
 [top](#top)
 
@@ -86,7 +100,7 @@ Take one or more of your Chapter 3 programs from this set of challenges, and rep
 
 ## Chapter 5
 
-In Chapter 5, we learn blah
+In Chapter 5, we learn about conditional statements.
 
 [top](#top)
 
@@ -106,7 +120,15 @@ To put things in perspective, it's helpful to know how the rates of police viole
 
 Store your selected data in a dictionary, where the keys are the country names or abbreviations and the values are the rates of police violence in those countries. Use a loop to summarize your data about each country.
 
+### CSJ 6-3: Incarceration Rates
 
+Incarceration is an important part of the criminal justice system to understand. Take a look at this list of [incarceration rates by country](https://en.wikipedia.org/wiki/List_of_countries_by_incarceration_rate), and choose several countries to focus on. Store the names of these countries as the keys in a dictionary, and the incarceration rate as the values. Use a loop to print a series of statements that summarize the incarceration rates for each country.
+
+### CSJ 6-4: Police Killings and Incarceration Rates
+
+One of the values of bringing programming abilities to data analysis work is the ability to bring together information from different data sets. Complete CSJ 6-2 and CSJ 6-3, focusing on the same countries for each exercise.
+
+Now, make a dictionary where the keys are the country names, and the values are a list with two items each. The first item is the rate of police killings for the country, and the second is the rate of incarceration for the country. Write a loop that summarizes the information you have stored about each country, for all countries in your dictionary.
 
 [top](#top)
 
@@ -114,7 +136,7 @@ Store your selected data in a dictionary, where the keys are the country names o
 
 ## Chapter 7
 
-In Chapter 7, we learn blah
+In Chapter 7, we learn about while loops and user input.
 
 [top](#top)
 
@@ -122,7 +144,7 @@ In Chapter 7, we learn blah
 
 ## Chapter 8
 
-In Chapter 8, we learn blah
+In Chapter 8, we learn about functions.
 
 [top](#top)
 
@@ -130,7 +152,13 @@ In Chapter 8, we learn blah
 
 ## Chapter 9
 
-In Chapter 9, we learn blah
+In Chapter 9, we learn about classes. With classes, you can model the data that you're interested in, which will make it easier to build, analyze, and present exactly the data you're interested in, even if that data comes from multiple sources.
+
+### CSJ 9-1: National Data Modeling
+
+Write a class that represents a country, and some data about that country. Include attributes that allow you to store the following information about the country: name, population, percent of the population that identifies as Black, rate of police killings, and incarceration rate. Write a method that summarizes demographic information about the country, and another method that summarizes social justice statistics for the country.
+
+Make objects representing several countries, and assign data for each attribute. Store these objects in a list, and write a loop that summarizes information about each country, by calling each of your methods.
 
 [top](#top)
 
@@ -138,7 +166,7 @@ In Chapter 9, we learn blah
 
 ## Chapter 10
 
-In Chapter 10, we learn blah
+In Chapter 10, we learn about files and exceptions.
 
 [top](#top)
 
@@ -146,7 +174,7 @@ In Chapter 10, we learn blah
 
 ## Chapter 11
 
-In Chapter 11, we learn blah
+In Chapter 11, we learn how to test code.
 
 [top](#top)
 
@@ -154,15 +182,39 @@ In Chapter 11, we learn blah
 
 ## Chapter 15
 
-In Chapter 15, we learn blah
+In Chapter 15, we learn how to make simple graphs with data that's generated within our program. We can use this same approach to plot data that we enter manually.
 
-[top](#top)
+### CSJ 15-1: Simple Bar Graph
 
----
+Choose one of the earlier exercises from Chapter 6, such as [CSJ 6-1]() or [CSJ 6-2](). Use Plotly to create a bar graph of the data you chose for these exercises.
 
-## Chapter 16
+### Chapter 16
 
-In Chapter 16, we learn blah
+In Chapter 16, we learn how to make charts with data that we've downloaded.
+
+## CSJ 16-1: Police Killings by State (CSV)
+
+In the resources [available for download](https://github.com/ehmatthes/pcc_2e/zipball/master/), you can find a CSV file containing data about police killings by state in the US for the period 2013-2019. The file is at *challenges/social_justice_datasets/police_killings_by_state_2013-2019.csv*. This file was generated from the Excel workbook available from Mapping Police Violence.
+
+Copy this file to an appropriate location, and use what you've learned from Chapter 16 to pull the state and number of Black people killed by police from 2013-2019 into lists. Make a visualization of this data.
+
+The data is stored in alphabetical order by state. Consider sorting your 
+
+### CSJ 16-2: CSV from Spreadsheet
+
+Most spreadsheet applications such as Excel or LibreOffice Calc will allow you to save a spreadsheet as a CSV file. You can only save one worksheet at a time, but this is often what you want anyway. Download the spreadsheet from Mapping Police Violence, and click on the worksheet named *2013-2019 Killings by State*. Save this worksheet as a CSV file. Make a visualization of one of the columns of data in your CSV file.
+
+Combined with what you've already learned in Chapter 16, this workflow will allow you to analyze data and create visualizations from JSON files, CSV files, and spreadsheet files.
+
+### CSJ 16-3: Multiple Columns
+
+Analyzing data about police violence usually makes more sense when it's put into context. One simple way to do this is to plot several different kinds of data on one visualization. Using the Mapping Police Violence spreadsheet, choose two or more columns to plot together. For example, you might plot the percentage of each state's population that identifies as African American, and the percentage of people killed by police who are African American.
+
+### repeat by extracting directly from excel
+
+### pull data you're interested in
+
+### generate objects from a class about states, and plot data using your objects
 
 [top](#top)
 
@@ -170,7 +222,15 @@ In Chapter 16, we learn blah
 
 ## Chapter 17
 
-In Chapter 17, we learn blah
+In Chapter 17, we learn how to request data through an API, and then work with that data.
+
+### CSJ 17-1: Using api
+
+blah
+
+### CSJ 17-2: Sorting Data
+
+In this chapter we also saw how to use `itemgetter()` to sort a list of dictionaries by one of the keys. In many of the challenges listed here, the data is sorted alphabetically by state or country. Choose one of the previous exercises listed here, and sort the data in a non-alphabetical way. For example, you might sort a comparison of US states by the rate of police violence instead of alphabetically.
 
 [top](#top)
 

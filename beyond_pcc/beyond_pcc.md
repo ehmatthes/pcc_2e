@@ -47,3 +47,9 @@ Enjoy!
     Pillow is an imaging library that lets you load and work with existing images, and also lets you create images from a blank canvas. This guide is used for the set of challenges about [making your own photo filters](../../challenges/photo_filters/).
 
     *This section will make sense after you've worked through Chapter 10.*
+
+- ## [Extracting Data from Excel Files](../extracting_from_excel/)
+
+    In the book you learn how to extract data from JSON files and CSV files. That's a good start, but there's also a huge amount of data stored in spreadsheets. This resource shows how to extract the data directly from an Excel file, which will greatly expand the number of external resources you'll be able to work with. This guide is used for some of the challenges in [Coding for Social Justice](../../challenges/coding_for_social_justice/).
+
+    *This seciton will make sense after you've worked through Chapter 16.*
