@@ -42,3 +42,8 @@ Each of these sets is made up of a series of smaller challenges. You don't have 
 
     *You can start on this challenge after you have completed Chapter 14.*
 
+- [Coding for Social Justice](../coding_for_social_justice/)
+
+    You don't have to wait until you've learned how to program in order to start focusing on serious topics. This set of challenges focuses on issues related to the Black Lives Matter movement. The current challenges focus on the issue of police violence specifically, but I intend to expand the challenges to cover a wider range of issues such as inequity in the criminal justice system, education, housing, health care, and other relevant issues.
+
+    *You can start on these challenges as early as Chapter 2.*

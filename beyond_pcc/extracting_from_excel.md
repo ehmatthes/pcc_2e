@@ -8,11 +8,11 @@ nav_order: 50
 # Extracting Data from Excel Files
 {: .no_toc }
 
-When people save data in the JSON or CSV format, they're intending for that data to be accessed programmatically. But much of the world's data is stored in spreadsheet files, and many of those files are in the Excel format. Excel is used because people can manipulate it easily, and it's a powerful tool in its own right. However, there is a lot of automation that can be done by extracting data from a spreadsheet, and this process also allows you to bring data from multiple sources into one program.
+When people save data in the JSON or CSV format, they're intending for that data to be accessed programmatically. But much of the world's data is stored in spreadsheet files, and many of those files are in the Excel format. Excel is used because people can manipulate it easily, and it's a powerful tool in its own right. However, there is a lot of automation that can be done by extracting data from a spreadsheet, and this process also allows you to bring data from multiple kinds of sources into one program.
 
-We'll first take a quick look at how to save an Excel file as a CSV file. This is sometimes the quickest and easiest way to extract data. But it's a manual process, so you would have to open the file in Excel and save it as a CSV again every time the file is updated. It's much better in many situations to just extract the data from Excel directly.
+We'll first take a quick look at how to save an Excel file as a CSV file. This is sometimes the quickest and easiest way to extract data. But it's a manual process, so you'd have to open the file in Excel and save it as a CSV again every time the file is updated. It's much better in many situations to just extract the data from Excel directly.
 
-The example we'll use is the data you can download from [Mapping Police Violence](). If you can't download this from the site for some reason, you can also find a snapshot of this spreadsheet from 6/19/20 in the `beyond_pcc/social_justice_datasets/` directory of the online resources for Python Crash Course.
+The example we'll use is the data you can download from [Mapping Police Violence](https://mappingpoliceviolence.org/). If you can't download this file from the site for some reason, you can also find a snapshot of this spreadsheet from 6/19/20 in the `beyond_pcc/social_justice_datasets/` directory of the [online resources](https://github.com/ehmatthes/pcc_2e/zipball/master/) for Python Crash Course.
 
 * 
 {:toc}
@@ -27,7 +27,7 @@ To look at the file and make sure it contains the data you expect it to, locate 
 
 [top](#top)
 
-## Installing `openpyxl`
+## Installing *openpyxl*
 
 We'll be using the [openpyxl](https://openpyxl.readthedocs.io/en/stable/) library to access the data in an Excel file. You can install this library with pip:
 
@@ -39,9 +39,9 @@ $ pip install --user openpyxl
 
 ## Opening an Excel File
 
-To follow along with this tutorial, make a folder somewhere on your system called *extracting_from_excel*. Make a *data* folder inside this directory; it's a good idea to keep your data files in their own directory. I have saved the file *mapping_police_violence_snapshot_061920.xlsx* in my *data* directory; you can work with any .xls or .xlsx file you're interested in.
+To follow along with this tutorial, make a folder somewhere on your system called *extracting_from_excel*. Make a *data* folder inside this directory; it's a good idea to keep your data files in their own directory. I saved the file *mapping_police_violence_snapshot_061920.xlsx* in my *data* directory; you can work with this file, or any .xls or .xlsx file you're interested in.
 
-The following code will open the Excel file and _____:
+The following code will open the Excel file and print the names of all worksheets in the file:
 
 ```python
 from openpyxl import load_workbook
@@ -73,7 +73,7 @@ Police Killings of Black Men
 
 ## Accessing Data in a Worksheet
 
-We want to access the actual data in a specific worksheet. To do this, we grab the worksheet we're interested in, and then extract the data from all rows in the worksheet:
+We want to access the actual data in a specific worksheet. To do this we grab the worksheet we're interested in, and then extract the data from all rows in the worksheet:
 
 ```python
 from openpyxl import load_workbook
@@ -94,7 +94,7 @@ for row in all_rows[:5]:
     print(row)
 ```
 
-Worksheets are accessed by name through the workbook object. Here we assign a worksheet to `ws`. Once you have a worksheet object, you can access all the rows through the `ws.rows` attribute. This attribute is a *generator*, a Python object that efficiently returns one item at a time from a collection. We can convert this to the more familar list through the `list()` function. Here we create a list of all the rows in the workbook. We then print a message about how many rows were found, and print the first few rows of data:
+Worksheets are accessed by name through the workbook object. Here we assign a worksheet to `ws`. Once you have a worksheet object, you can access all the rows through the `ws.rows` attribute. This attribute is a *generator*, a Python object that efficiently returns one item at a time from a collection. We can convert this to the more familar list using the `list()` function. Here we create a list of all the rows in the workbook. We then print a message about how many rows were found, and print the first few rows of data:
 
 ```
 Found 55 rows of data.
@@ -140,7 +140,7 @@ African-American Alone
 % African-American
 % Victims Black
 Disparity
--- snip --
+--snip--
 ```
 
 [top](#top)
@@ -149,7 +149,7 @@ Disparity
 
 The previous example is helpful, perhaps, when looking at a list of headings for a worksheet over a remote connection. But usually when we're analyzing the data from a spreadsheet we can just open the file in Excel, look for the information we want, and then write code to extract that information. We usually aren't interested in every single cell in a row, though. We're often interested in selected cells in every row in the sheet.
 
-The following example pulls data from three specific columns in each row in the file except the header row:
+The following example pulls data from three specific columns in each row in the file containing the data we're interested in:
 
 ```python
 from openpyxl import load_workbook
@@ -164,17 +164,17 @@ ws = wb['2013-2019 Killings by State']
 all_rows = list(ws.rows)
 
 # Pull information from specific cells.
-for row in all_rows[1:5]:
+for row in all_rows[1:52]:
     state = row[0].value
     percent_aa = row[3].value
     percent_aa_victims = row[4].value
 
     print(f"{state}")
-    print(f"  % residents who are African American: {percent_aa}")
-    print(f"  % killed by police who are African American: {percent_aa_victims}")
+    print(f" {percent_aa}% of residents are African American")
+        print(f" {percent_aa_victims}% killed by police were African American")
 ```
 
-Here we loop through the first four rows after the header row. For each row, we pull the values at index 0, 3, and 4, and assign each of these to an appropriate variable name. We then print a statement summarizing what these values mean.
+Here we loop through the all of the rows that contain the states' data. For each row, we pull the values at index 0, 3, and 4, and assign each of these to an appropriate variable name. We then print a statement summarizing what these values mean.
 
 The output isn't quite what we expect:
 
@@ -191,9 +191,7 @@ Arizona
  =C4/B4% of residents are African American
  =G4/N4% killed by police were African American
 
-Arkansas
- =C5/B5% of residents are African American
- =G5/N5% killed by police were African American
+--snip--
 ```
 
 The values in these cells are actually formulas. If we want the values computed from these formulas, we need to pass the `data_only=True` flag when we load the workbook:
@@ -211,7 +209,7 @@ ws = wb['2013-2019 Killings by State']
 all_rows = list(ws.rows)
 
 # Pull information from specific cells.
-for row in all_rows[1:5]:
+for row in all_rows[1:52]:
     state = row[0].value
     percent_aa = row[3].value
     percent_aa_victims = row[4].value
@@ -236,16 +234,14 @@ Arizona
  0.04052054304611518% of residents are African American
  0.09037900874635568% killed by police were African American
 
-Arkansas
- 0.15428931814955016% of residents are African American
- 0.27184466019417475% killed by police were African American
+--snip--
 ```
 
 Data analysis almost always involves some degree of reformatting. For this output, we'll round the percentages to two decimal places, and turn them into neatly-formatted integers for display:
 
 ```python
 # Pull information from specific cells.
-for row in all_rows[1:5]:
+for row in all_rows[1:52]:
     state = row[0].value
     percent_aa = int(round(row[3].value, 2) * 100)
     percent_aa_victims = int(round(row[4].value, 2) * 100)
@@ -266,14 +262,14 @@ Arizona
  4% of residents are African American
  9% killed by police were African American
 
-Arkansas
- 15% of residents are African American
- 27% killed by police were African American
+--snip--
 ```
 
 Be careful about rounding data during the processing phase. If you were going to pass this data to a plotting library, you probably want to do the rounding in the plotting code. This can affect your visualization. For example if two percentages round to the same value in two decimal places but they're different in the third decimal place, you'll lose the ability to sort items precisely. In this situation, it's important to ask whether the third decimal place is meaningful or not.
 
 Also, note that you will often need to identify the specific rows that need to be looped over. Spreadsheets are nice and structured, but people are also free to write anything they want in any cell. Many spreadsheets have some notes in a few cells after all the rows of data. These can be notes about sources of the raw data, dates of data collection, authors, and more. You will probably need to exclude these rows, either by looping over a slice as shown here, or using a try/except block to only extract data if the operation for each row is successful.
+
+Finally, you should be aware that people can modify the hard-coded values in a spreadsheet without updating the values derived from formulas that use those values. If you have any doubt about whether the spreadhseet you're working from has been updated, you should re-run the formulas yourself before using the `data_only=True` flag when loading a workbook.
 
 [top](#top)
 
@@ -304,7 +300,7 @@ for row in all_rows[1:5]:
     print(f" {percent_aa_victims}% killed by police were African American")
 ```
 
-If all we wanted to do was generate a text summary of this data, this code is probably fine. But we're probably going to do some visualization work, and maybe we want to bring in some data from another file. If we're going to do anything further, it's worth breaking this in to a couple functions. Here's how we might organize this code:
+If all we wanted to do was generate a text summary of this data, this code would probably be fine. But we're probably going to do some visualization work, and maybe we want to bring in some additional data from another file. If we're going to do anything further, it's worth breaking this into a couple functions. Here's how we might organize this code:
 
 ```python
 from openpyxl import load_workbook
@@ -347,9 +343,7 @@ We organize the code into two functions, one for retrieving data and one for sum
 
 ## Further Reading
 
-There's a lot more you can do with Excel files in your Python programs. For example, you can modify data in an existing Excel file, or you can extract the data you're interested in and generate an entirely new Excel file. To learn more about this, see the [openpyxl documentation](https://openpyxl.readthedocs.io/en/stable/index.html).
-
-You can also extract the data from Excel and rewrite it in any other data format such as JSON or CSV.
+There's a lot more you can do with Excel files in your Python programs. For example, you can modify data in an existing Excel file, or you can extract the data you're interested in and generate an entirely new Excel file. To learn more about these possibilities, see the [openpyxl documentation](https://openpyxl.readthedocs.io/en/stable/index.html). You can also extract the data from Excel and rewrite it in any other data format such as JSON or CSV.
 
 ---
 

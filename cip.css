@@ -24,8 +24,17 @@
 
 .cip_pcc_link {
     border-top: 1px solid #cccccc;
-    margin: 50px 50px;
+    /*margin: 50px 50px;*/
+    margin: 50px 50px 0px 50px;
     padding: 10px 0px;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.cip_csj_link {
+    border-top: 0px solid #cccccc;
+    margin: 0px 50px;
+    padding: 0px 0px;
     font-size: 16px;
     color: #cccccc;
 }
