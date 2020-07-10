@@ -8,12 +8,14 @@ has_toc: false
 
 # Updates
 
-When looking for updates it's helpful to know which printing you're working from, as minor corrections are made every time the book goes through another print run. Right now, the book is on its fourth printing. You can see which printing you have by looking on the copyright page, which is on the [back of the second page in the physical book](../which_printing/).
+When looking for updates it's helpful to know which printing you're working from, as minor corrections are made every time the book goes through another print run. Right now, the book is on its fifth printing. You can see which printing you have by looking on the copyright page, which is on the [back of the second page in the physical book](../which_printing/).
 
 - [First printing](../first_printing/)
 - [Second printing](../second_printing/)
 - [Third printing](../third_printing/)
 - [Fourth printing](../fourth_printing/)
+- [Fifth printing](../fifth_printing/)
+
 
 ---
 
