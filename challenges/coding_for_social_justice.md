@@ -11,7 +11,7 @@ nav_order: 40
 ## Overview
 {: .no_toc }
 
-As I wrote in [Coding is Political](/), learning to code gives you power. But what does that power look like? How do you begin to exercise that power?
+As I wrote in [Coding is Political](/pcc_2e/), learning to code gives you power. But what does that power look like? How do you begin to exercise that power?
 
 A full answer to these kinds of questions is lengthy, and I intend to write about that in the near future. One kind of power that you can focus on even if you're new to programming is the ability to collect and analyze data independently, rather than relying on the work of others. Learning to work with social justice related data means you no longer have to take politicans and others in power at their word when they tell you what "the data" says. You can find data, evalute it, analyze it, and present your own findings. This will help you decide who you can trust, and help you find a voice in speaking truth to power.
 
