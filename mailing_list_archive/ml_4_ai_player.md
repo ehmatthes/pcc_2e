@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Finding Employment, Understanding Django, and more (2/28/20)
+title: Adding Sound and Automating Game Play in Alien Invasion (4/3/20)
 parent: Mailing List
 nav_order: 970
 ---
