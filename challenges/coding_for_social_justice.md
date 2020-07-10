@@ -88,7 +88,7 @@ Visit the [National Trends](https://mappingpoliceviolence.org/nationaltrends) pa
 
 ### CSJ 6-2: International Rates of Police Killings
 
-To put things in perspective, it's helpful to know how the rates of police violence in the US compare to the rates of police violence in other nations. Wikipedia maintains a list of [international rates of killings by law enforcement officers](https://en.wikipedia.org/wiki/List_of_countries_by_incarceration_rate). Read through this list, and pick 5-10 countries to focus on.
+To put things in perspective, it's helpful to know how the rates of police violence in the US compare to the rates of police violence in other nations. Wikipedia maintains a list of [international rates of killings by law enforcement officers](https://en.wikipedia.org/wiki/List_of_killings_by_law_enforcement_officers_by_country). Read through this list, and pick 5-10 countries to focus on.
 
 Store your selected data in a dictionary, where the keys are the country names or abbreviations and the values are the rates of police violence in those countries. Use a loop to summarize your data about each country.
 
@@ -124,7 +124,7 @@ In Chapter 15, we learn how to make simple graphs with data that's generated wit
 
 ### CSJ 15-1: Simple Bar Graph
 
-Choose one of the earlier exercises from Chapter 6, such as [CSJ 6-1]() or [CSJ 6-2](). Use Plotly to create a bar graph of the data you chose for these exercises.
+Choose one of the earlier exercises from Chapter 6, such as [CSJ 6-1](#csj-6-1-annual-incidents-of-us-police-killings) or [CSJ 6-2](#csj-6-2-international-rates-of-police-killings). Use Plotly to create a bar graph of the data you chose for these exercises.
 
 [top](#top)
 
