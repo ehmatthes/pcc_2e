@@ -17,7 +17,7 @@ Back to [solutions](../solutions).
 
 ## 2-2: Simple Messages
 
-Store a message in a variable, and print that message. Then change the value of your variable to a new message, and print the new message.
+Assign a message to a variable, and print that message. Then change the value of your variable to a new message, and print the new message.
 
 ```python
 msg = "I love learning to use Python."
@@ -58,7 +58,7 @@ never tried anything new."
 
 ## 2-7: Stripping Names
 
-Store a person's name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once.
+Use a variable to represent a person's name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once.
 
 Print the name once, so the whitespace around the name is displayed. Then print the name using each of the three stripping functions, `lstrip()`, `rstrip()`, and `strip()`.
 
@@ -100,7 +100,7 @@ Eric Matthes
 
 ## 2-9: Favorite Number
 
-Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+Use a variable to represent your favorite number. Then, using that variable, create a message that reveals your favorite number. Print that message.
 
 ```python
 fav_num = 42
