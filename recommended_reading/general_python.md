@@ -97,6 +97,8 @@ You can [download a sample section](https://static.realpython.com/python-tricks-
 
 Don't expect to read this book through and understand everything in it. I recommend skimming through the table of contents, and then skimming the sections that seem somewhat accessible and relevant to the work you're doing. This way you'll know what's in the book, and when those issues come up in your own projects you'll know to read through the relevant sections more closely. The book discusses how to structure a serious Python project, professional approaches to interrnal documentation, how to deal with dates and times in a reliable manner, how to distribute your software, testing, optimizing your code, and more.
 
+Update: I just finished reading this book cover to cover, and wrote a [full review here](http://ehmatthes.com/blog/review_serious_python/).
+
 If you buy the book [direct from No Starch Press](https://nostarch.com/seriouspython) you'll get the ebook for free. You can also order a copy from [Barnes and Noble](https://www.barnesandnoble.com/w/serious-python-julien-danjou/1127728250) or [Amazon](https://www.amazon.com/Serious-Python-Black-Belt-Deployment-Scalability/dp/1593278780/). You can see the table of contents [here](https://nostarch.com/download/SeriousPython_TOC.pdf).
 
 ![](../../images/recommended_reading/sp_cover.jpg)
