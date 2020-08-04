@@ -1,6 +1,8 @@
 ---
 layout: default
-nav_exclude: true
+title: Django 3.0
+parent: Updates
+nav_order: 1000
 ---
 
 # Django 3.0
