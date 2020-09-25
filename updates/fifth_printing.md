@@ -19,6 +19,33 @@ If you find an error in the book or can't get something to work, please let me k
 
 ## Updates
 
+### Chapter 17
+
+##### Running *hn_submissions.py* sometimes results in a KeyError (page 373)
+
+The program *hn_submissions.py* makes a series of API calls to get information about each of the articles on the front page of [Hacker News](https://news.ycombinator.com). When processing the data associated with each article, the code looks for the `'descendants'` key, which tells us how many comments the article has associated with it. Hacker News is maintained partially as a promotional tool for the startup accelerator [YCombinator](https://www.ycombinator.com), and YC companies can make special posts on Hacker News that are exempt from comments. For example, YC companies can make hiring posts that sit on the front page of HN for a while, with comments disabled.
+
+If you run *hn_submissions.py* when one of these posts is on the front page, you'll get a `KeyError` because there is no `'descendants'` key for these posts. This doesn't happen all that often, but if you run into this issue you can catch the `KeyError` and continue the loop when one of these posts is present:
+
+```python
+-- snip --
+for submission_id in submission_ids[:30]:
+    -- snip --
+    # Build a dictionary for each article.
+    try:
+        submission_dict = {
+            'title': response_dict['title'],
+            'hn_link': f"http://news.ycombinator.com/item?id={submission_id}",
+            'comments': response_dict['descendants'],
+        }
+    except KeyError:
+        # This is a special YC post with comments disabled.
+        continue
+    else:
+        submission_dicts.append(submission_dict)
+-- snip --
+```
+
 ### Chapter 20
 
 ##### The `psycopg2` package (page 448)
