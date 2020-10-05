@@ -2,12 +2,13 @@
 
 # print (message)
 
-# message = "New fucky message."
+# message = "New message."
 
 # print(message)
 
 # print(type(2+5))
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### function
 # def greeting():
 #     name = input("what is your name? ")
@@ -45,6 +46,7 @@
 
 # print(sumOfSquares(4, 10))
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Module - Calendar
 # import calendar
 
@@ -71,10 +73,13 @@
 # random.shuffle(deck) 
 # print(deck) # original deck is shuffled, but the var is not reassigned
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Tuple
+# Order is preserved
 # patient1_data = ("Pippa", "Luigi", 7, "cat")
 # print (patient1_data[2])
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Conditionals
 # raining = input("Is it raining today? ")
 # if raining == "yes":
@@ -100,6 +105,7 @@
 # else:
 #     print("Outside you go.")
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Foor Loop - Vowels
 # word = "excorite" # to critize harshly
 # vowels = ["a", "e", "i", "o", "u"]
@@ -115,6 +121,7 @@
 # for i in list:
 #     print(i)
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### For Loop - Range()
 # range(start, stop, step) built-in function
 # for i in range(8): #stop required, exclusive. Here there will be 8 iterations (0, ..., 7)
@@ -129,6 +136,7 @@
 # for i in vowels:
 #     print(i)
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### While Loop - Len()
 ## Len() input: squence. output: length of sequence
 # vowels = ["a", "e", "i", "o", "u"]
@@ -159,6 +167,7 @@
 # random.shuffle(cats)
 # print(cats)
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Recursion
 # definition: defining something in terms of itself to achieve your objective.
 # A function is recursive if the body of the function calls the function itself. 
@@ -199,6 +208,7 @@
 # #   12  |   sum_of_digits(1) + 2  
 # #   1   |   1 
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Classes
 # class Dog():
 #     def __init__(self, name, age):   #self is bound to the Dog object
@@ -228,6 +238,7 @@
 # print(Waluigi.name)
 # Waluigi.is_stinky()
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Strings (are immutable)
 # s = 'foo'
 # t = 'bar'
@@ -250,11 +261,13 @@
 # all info stored as nums. ord() returns ASCII
 # ord('a') #output: 97
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### String Indexing
 # s = 'timbucktoo'
 # s[4] #output: 'u'
 # s[-3] #output: 't'
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### String Slicing, inclusive of first, exclusive of last index
 # s = 'excoriate'
 # s[2:5] #output: 'cor'
@@ -279,13 +292,13 @@
 # s = 'If Comrade Napoleon says it, it must be right.'
 # s[::-1] # '.thgir eb tsum ti ,ti syas noelopaN edarmoC fI'
 
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### f-string aka Formatted String Literal
 # no more crappy concatination
 # var = 'Bark'
 # print(f'A dog says {var}!')
 # print(f'''A dog says {var}!''')
 
-# i need to leave a comment
 """
 i need to leave a really long comment
 i need to leave a really long comment
@@ -296,17 +309,7 @@ i need to leave a really long comment
 # var = 'James'
 # print(f'{var} is sexy')
 
-### Exception obj for Error Handling
-# No Error Handling
-# result = 5/0
-# print(result)
-
-# Yes Error Handling
-# try:
-#     print(5/0)
-# except ZeroDivisionError:
-#     print('The denominator cannot be 0. Try again.')
-
+### f strings
 # s='f-strings aka Formatted String Literal and super dope'
 # s[0:4]
 # s[::3]
@@ -327,8 +330,21 @@ i need to leave a really long comment
 # else:
 #     print(answer)
 
-# -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
-stars = ['Sol', 'Alpha Centauri', 'Bernard', 'Wolf 369']
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+### Exception Obj and Error Handling
+
+# No Error Handling
+# result = 5/0
+# print(result)
+
+# Yes Error Handling
+# try:
+#     print(5/0)
+# except ZeroDivisionError:
+#     print('The denominator cannot be 0. Try again.')
+
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+# stars = ['Sol', 'Alpha Centauri', 'Bernard', 'Wolf 369']
 # print(stars[3])
 
 # peaks_on_plates = {
@@ -343,7 +359,7 @@ stars = ['Sol', 'Alpha Centauri', 'Bernard', 'Wolf 369']
 
 # print(peaks_on_plates['Pacific'])
 
-# -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Iteration/Loop over a collection
 # for i in stars:
 #     print(i)
@@ -365,10 +381,18 @@ stars = ['Sol', 'Alpha Centauri', 'Bernard', 'Wolf 369']
 #     print(fruits[i])
 #     i += 1
 
-i = 1
-while i <= 5:
-    mySum = i
-    mySum = mySum + i
-    i +=1
+# i = 1
+# while i <= 5:
+#     mySum = i
+#     mySum = mySum + i
+#     i +=1
 
-print(mySum)
+# print(mySum)
+
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+### Modules
+import testmodule
+
+testmodule.mult(10, 5)
+
+### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
