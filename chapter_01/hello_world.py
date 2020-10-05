@@ -228,3 +228,101 @@
 # print(Waluigi.name)
 # Waluigi.is_stinky()
 
+### Strings (are immutable)
+# s = 'foo'
+# t = 'bar'
+# u = 'baz'
+
+# print(s+t)
+# print(s+t+u)
+# print(s*4)
+# print(u*-1) # output: ''
+# print('foobar' * -2) # output: ''
+# s in 'That\'s food for thought' # output: True
+# s not in 'That\'s good for thought' # output: True
+
+# int() # str --> int
+# chr() # int --> character
+# ord() # character --> int
+# len() # returns length
+# str() # stringify
+
+# all info stored as nums. ord() returns ASCII
+# ord('a') #output: 97
+
+### String Indexing
+# s = 'timbucktoo'
+# s[4] #output: 'u'
+# s[-3] #output: 't'
+
+### String Slicing, inclusive of first, exclusive of last index
+# s = 'excoriate'
+# s[2:5] #output: 'cor'
+# s[:4] # 'exco'
+# s[2:] # 'coriate'
+# s[:n] + s[n:] = s # true if 0 <oreq n <oreq len(s)
+# s[2:2] # ''
+# s[4:2] # ''
+# s[-5:-2] == s[1:4] # true
+
+## Adding a third index designates a stride (also called a step)
+# s = 'excoriate'
+# s[0:9:2] # 'ecrae'
+
+# s = '12345' * 5 # '1234512345123451234512345'
+# s[::5] # '11111'
+
+# s = 'foobar'
+# s[5:0:-2] # 'rbo'
+
+## Reverse a string in Python
+# s = 'If Comrade Napoleon says it, it must be right.'
+# s[::-1] # '.thgir eb tsum ti ,ti syas noelopaN edarmoC fI'
+
+### f-string aka Formatted String Literal
+# no more crappy concatination
+# var = 'Bark'
+# print(f'A dog says {var}!')
+# print(f'''A dog says {var}!''')
+
+# i need to leave a comment
+"""
+i need to leave a really long comment
+i need to leave a really long comment
+i need to leave a really long comment
+i need to leave a really long comment
+"""
+
+# var = 'James'
+# print(f'{var} is sexy')
+
+### Exception obj for Error Handling
+# No Error Handling
+# result = 5/0
+# print(result)
+
+# Yes Error Handling
+# try:
+#     print(5/0)
+# except ZeroDivisionError:
+#     print('The denominator cannot be 0. Try again.')
+
+s='f-strings aka Formatted String Literal and super dope'
+# s[0:4]
+# s[::3]
+# s.upper()
+# s.lower().count('s') #4
+# s.lower().count('s', 0, 20) #2
+
+# 'foobar'.endswith('bar') #True
+
+# # Returns the lowest index in s where substring <sub> is found.
+# s.find('aka') #10 if sub not found, returns -1
+# s.index('aka', 11) # ValueError: substring not found
+
+try:
+    answer = s.index('aka', 11)
+except ValueError:
+    print('Substring \'aka\' it not a part of the original string.')
+else:
+    print(answer)
