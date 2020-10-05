@@ -307,7 +307,7 @@ i need to leave a really long comment
 # except ZeroDivisionError:
 #     print('The denominator cannot be 0. Try again.')
 
-s='f-strings aka Formatted String Literal and super dope'
+# s='f-strings aka Formatted String Literal and super dope'
 # s[0:4]
 # s[::3]
 # s.upper()
@@ -320,9 +320,55 @@ s='f-strings aka Formatted String Literal and super dope'
 # s.find('aka') #10 if sub not found, returns -1
 # s.index('aka', 11) # ValueError: substring not found
 
-try:
-    answer = s.index('aka', 11)
-except ValueError:
-    print('Substring \'aka\' it not a part of the original string.')
-else:
-    print(answer)
+# try:
+#     answer = s.index('aka', 11)
+# except ValueError:
+#     print('Substring \'aka\' it not a part of the original string.')
+# else:
+#     print(answer)
+
+# -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+stars = ['Sol', 'Alpha Centauri', 'Bernard', 'Wolf 369']
+# print(stars[3])
+
+# peaks_on_plates = {
+#     'African':'Kilimanjaro',
+#     'Antarctic':'Vinson',
+#     'Australian':'Puncak Jaya',
+#     'Eurasian':'Everest',
+#     'North_America':'Denali',
+#     'Pacific':'Mauna Kea',
+#     'South_America':'Aconcagua'
+# }
+
+# print(peaks_on_plates['Pacific'])
+
+# -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+### Iteration/Loop over a collection
+# for i in stars:
+#     print(i)
+# print('This is executed after the for loop is complete. \nNotice the lack of indentation.')
+
+### Iterate until task complete
+# print('Count to 100 by 5\'s')
+# i = 5     #iterator
+# while i <= 100: 
+#     print(i)
+#     i += 5
+# print('The task is complete.')
+
+### Print the names of fruits in the 
+# fruits = ['apples', 'bananas', 'dragon fruits', 'mangoes', 'nectarines', 'pears']
+
+# i = 0
+# while i < len(fruits):
+#     print(fruits[i])
+#     i += 1
+
+i = 1
+while i <= 5:
+    mySum = i
+    mySum = mySum + i
+    i +=1
+
+print(mySum)

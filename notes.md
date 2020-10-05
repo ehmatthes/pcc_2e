@@ -12,4 +12,3 @@
 ## Object Oriented Programming
 
 * Every object is an instance of a class
-* 
