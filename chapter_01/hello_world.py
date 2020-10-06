@@ -391,8 +391,12 @@ i need to leave a really long comment
 
 ### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
 ### Modules
-import testmodule
+# import testmodule
 
-testmodule.mult(10, 5)
+# testmodule.mult(10, 5)
 
 ### -=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=
+### modules ---> Package or library (set of tools, use as wish) ---> FRAMEWORK (how you accomplish task)
+## Framework: some decisions are made for you. Make sure you undersand how to code within the framework.
+## Frameworks (Django, Flask)
+# OR Use 1+ libraries in your App (ex: TensorFlow, pandas, NumPy, SciPy)
