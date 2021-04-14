@@ -24,6 +24,8 @@ I haven't included solutions for Chapters 12-14 and 18-20, because the exercises
 - [Chapter 10](../chapter_10/)
 - [Chapter 11](../chapter_11/)
 - [Chapter 12](../chapter_12/)
+- [Chapter 13](../chapter_13/)
+- [Chapter 14](../chapter_14/)
 - [Chapter 15](../chapter_15/)
 - [Chapter 16](../chapter_16/)
 - [Chapter 17](../chapter_17/)
