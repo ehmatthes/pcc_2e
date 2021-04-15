@@ -14,6 +14,8 @@ If you haven't already seen the [cheat sheets](../../cheat_sheets/cheat_sheets/)
 
 Also, it's helpful to have a look through some of the [Pygame documentation](https://www.pygame.org/docs/) as you work on these exercises. There are also direct links to specific pages in the documentation that are helpful for certain exercises.
 
+If you've enjoyed the Alien Invasion project, make sure to check out the section about [adding sound and automating gameplay](../../beyond_pcc/ai_player/). You can add sounds to the game in about ten lines of code, and if you're curious you can do a bit more work and make an automated player for the game.
+
 ---
 
 * 
