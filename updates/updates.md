@@ -16,6 +16,9 @@ When looking for updates it's helpful to know which printing you're working from
 - [Fourth printing](../fourth_printing/)
 - [Fifth printing](../fifth_printing/)
 - [Sixth printing](../sixth_printing/)
+- [Seventh printing](../seventh_printing/)
+- [Eighth printing](../eighth_printing/)
+- [Ninth printing](../ninth_printing/)
 
 
 ---
