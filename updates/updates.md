@@ -37,12 +37,6 @@ Django 3.2 was released in April 2021. Read [more about this release](../django3
 
 Everything in the Learning Log project (Chapters 18-20) should work on Django 3.2, with only minor changes in the second half of Chapter 20. For these updates, see the section [Deploying to Heroku](../django3_2#deploying-to-heroku).
 
-### Pygame on macOS
-
-If you've had any issues running Pygame on macOS, see the section [Pygame on Python 3.8](../python3_8#pygame-on-python-38), even if you're not using Python 3.8 yet.
-
-The version of Pygame that works with Python 3.8 also works with older versions of Python, and it addresses every issue I've heard people running into on macOS, such as game elements not appearing on the screen.
-
 ---
 
 If you find an error in the book or can't get something to work, please let me know! You can reach me through email at ehmatthes@gmail.com, or on Twitter at [@ehmatthes](https://twitter.com/ehmatthes).
