@@ -31,11 +31,11 @@ The latest version of Python 3.8 was released on October 14th, 2019. Read [more 
 
 Everything in the book should still work with Python 3.8, except you might need to install a specific version of Pygame. For that update, see the section [Pygame on Python 3.8](../python3_8#pygame-on-python-38).
 
-### Django 3.1 is out
+### Django 3.2 is out
 
-Django 3.1 was released on August 4, 2020. Read [more about this release](../django3_1/).
+Django 3.2 was released in April 2021. Read [more about this release](../django3_2).
 
-Everything in the Learning Log project (Chapters 18-20) should work on Django 3.1, with only minor changes in the second half of Chapter 20. For these updates, see the section [Deploying to Heroku](../django3_1#deploying-to-heroku).
+Everything in the Learning Log project (Chapters 18-20) should work on Django 3.2, with only minor changes in the second half of Chapter 20. For these updates, see the section [Deploying to Heroku](../django3_2#deploying-to-heroku).
 
 ### Pygame on macOS
 

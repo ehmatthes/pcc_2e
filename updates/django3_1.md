@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Django 3.1
-parent: Updates
-nav_order: 1010
 ---
 
 # Django 3.1
