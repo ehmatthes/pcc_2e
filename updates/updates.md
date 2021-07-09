@@ -25,11 +25,11 @@ When looking for updates it's helpful to know which printing you're working from
 
 ## Recent Updates
 
-### Python 3.8 is out
+### Python 3.9 is out
 
-The latest version of Python 3.8 was released on October 14th, 2019. Read [more about the Python 3.8 release](../python3_8/).
+The latest version of Python 3.9 was released on October 5th, 2020. Read [more about the Python 3.9 release](../python3_9/).
 
-Everything in the book should still work with Python 3.8, except you might need to install a specific version of Pygame. For that update, see the section [Pygame on Python 3.8](../python3_8#pygame-on-python-38).
+Everything in the book works with Python 3.9.
 
 ### Django 3.2 is out
 
