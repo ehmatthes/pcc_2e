@@ -1,1 +1,3 @@
 print("Hello Python world!")
+if __name__ == '__main__':
+    ...
