@@ -1,0 +1,1 @@
+# Uzduotis 3. isspausdinkinte savo varda - pirma raide mazoji, o kitos didziosios.
