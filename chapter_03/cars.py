@@ -3,3 +3,5 @@ print(cars)
 
 cars.reverse()
 print(cars)
+cars.append('mercedes')
+print(cars)
