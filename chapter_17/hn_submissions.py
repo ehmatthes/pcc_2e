@@ -18,11 +18,16 @@ for submission_id in submission_ids[:10]:
     response_dict = r.json()
     
     # Build a dictionary for each article.
+    try:
     submission_dict = {
         'title': response_dict['title'],
         'hn_link': f"http://news.ycombinator.com/item?id={submission_id}",
         'comments': response_dict['descendants'],
     }
+    except KeyError:
+        # This is a special YC post with comments disabled.
+        continue
+    else:
     submission_dicts.append(submission_dict)
     
 submission_dicts = sorted(submission_dicts, key=itemgetter('comments'),
