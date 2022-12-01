@@ -59,4 +59,14 @@ This is per-project, however. So you can use a number of Eco dynos to deploy a f
 
 ### Monitoring your costs
 
+When you're logged into the [Heroku website](https://heroku.com), the main page you see is your dashboard. To see your current charges, click your profile image and then click *Account Settings*. Click the *Billing* tab. You'll see the credit card you have on file, and your current charges ("Current Usage"):
+
+![](../../images/deploying_django/heroku_usage.png)
+
+If you click the *View Details* link, you'll see a breakdown of your dyno costs and add-on costs:
+
+![](../../images/deploying_django/heroku_usage_details.png)
+
+I don't have any charges at this point, because I've done all of my test deployments up to this point using the free tier. My usage charges are going to start to be a bunch of charges of around $0.01 each, because most of my deployments are quick test pushes that are destroyed in a matter of minutes.
+
 ## Deploying Learning Log
