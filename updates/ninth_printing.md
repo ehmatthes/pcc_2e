@@ -46,6 +46,10 @@ for submission_id in submission_ids[:30]:
 -- snip --
 ```
 
+### Chapter 20
+
+See [Deploying Django Projects](../../deploying_django).
+
 ## Errata
 
 No errata have been reported for the ninth printing at this time.

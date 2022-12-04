@@ -25,17 +25,9 @@ When looking for updates it's helpful to know which printing you're working from
 
 ## Recent Updates
 
-### Python 3.9 is out
+### Deploying the Learning Log project
 
-The latest version of Python 3.9 was released on October 5th, 2020. Read [more about the Python 3.9 release](../python3_9/).
-
-Everything in the book works with Python 3.9.
-
-### Django 3.2 is out
-
-Django 3.2 was released in April 2021. Read [more about this release](../django3_2).
-
-Everything in the Learning Log project (Chapters 18-20) should work on Django 3.2, with only minor changes in the second half of Chapter 20. For these updates, see the section [Deploying to Heroku](../django3_2#deploying-to-heroku).
+The second half of Chapter 20 walks you through deploying the Learning Log project to Heroku. However, Heroku has recently dropped their free tier. For updates, see the [Deploying Django Projects](../../deploying_django) section.
 
 ---
 
