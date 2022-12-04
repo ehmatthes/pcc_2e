@@ -8,7 +8,7 @@ nav_order: 10
 # Deploying to Heroku
 {: .no_toc }
 
-You can still deploy to Heroku, using the same process that's described in the book. There are some things you should know about Heroku's pricing plans. This page also includes a summary of the deployment process, but the explanations in the book are more complete.
+You can still deploy to Heroku, using the same process that's described in the book. There are some things you should know about Heroku's pricing plans. This page also includes a summary of the deployment process and some minor updates, but the explanations in the book are more complete.
 
 * 
 {:toc}
@@ -19,12 +19,12 @@ You can still deploy to Heroku, using the same process that's described in the b
 
 Heroku uses "dynos" and "add-ons". You can think of a dyno as an app, and an add-on as a service. In the context of the Learning Log project, the dyno will handle the Django code, and an add-on will take care of the database.
 
-Most of the pricing information you see summarized here is coming from Heroku's [Pricing](https://www.heroku.com/pricing) page. Heroku has restructured their lowest-cost offerings, so the [Low-Cost Plans FAQ](https://help.heroku.com/KP5RQQVO/low-cost-plans-faq) page is helpful to look at as well.
+Most of the pricing information you see summarized here is based on the information on Heroku's [Pricing](https://www.heroku.com/pricing) page. Heroku has restructured their lowest-cost offerings, so the [Low-Cost Plans FAQ](https://help.heroku.com/KP5RQQVO/low-cost-plans-faq) page is helpful to look at as well.
 
 ### Basic dynos
 
 This is where Heroku's pricing model is most complicated. If you don't specify a dyno type, Heroku will provision a Basic dyno.
-- A Basic dyno costs \~$0.01 per hour, to a maximum of $7 per month.
+- A Basic dyno costs \~$0.01 per hour, up to a maximum of $7 per month.
 - Basic dyno costs are prorated to the second.
 - Basic dynos never sleep.
 
@@ -34,19 +34,19 @@ This is a common pricing approach for hosting platforms. "Prorated to the second
 
 You can specify an *Eco* dyno instead. Heroku's Eco offering is really a class of dynos.
 - Eco dynos are a flat rate of $5/month.
-- I believe you must subscribe to the Eco plan before you can specify an Eco dyno. (This is a brand new offering, and I have not had a chance to try it yet.)
+- I believe you must subscribe to the Eco plan before you can specify an Eco dyno. (This is a brand new offering, and I have not had a chance to use it yet.)
 - You get 1000 hours of usage across all of your Eco dynos. If you exceed this, all of your Eco dynos sleep until the start of the next billing cycle.
 - There is no way to buy more Eco hours. If you need any of your apps to keep running, you would have to convert them to Basic dynos (or a higher level dyno).
 
 This offering is Heroku's way to support people who want to deploy a number of small lightly-used projects, without racking up a $5/month per project bill. These are new, and it will be interesting to see how people start to use them.
 
-Eco dynos are new, so if you're interested in using them you should visit Heroku's [Eco Dyno Hours](https://devcenter.heroku.com/articles/eco-dyno-hours) documentation page. It may also help to read their short [How do Eco dyno hours work?](https://help.heroku.com/Q8OBM85C/how-do-eco-dyno-hours-work) help page.
+If you're interested in using Eco dynos you should visit Heroku's [Eco Dyno Hours](https://devcenter.heroku.com/articles/eco-dyno-hours) documentation page. It may also help to read their short [How do Eco dyno hours work?](https://help.heroku.com/Q8OBM85C/how-do-eco-dyno-hours-work) help page.
 
 ### Choosing between Basic and Eco dynos
 
 If you want to deploy a number of test projects and keep them running for a while, a set of Eco dynos seems like a good choice. You know you won't exceed $5/month for all the dynos, although you should understand how your databases will impact your overall cost.
 
-If you want to deploy a test project with the intention of destroying it in a short time, anywhere from a day to two weeks, a Basic dyno may be the best choice. You'll get the advantage of prorated costs.
+If you want to deploy a test project with the intention of destroying it in a short time, for a couple hours or a few days, a Basic dyno may be the best choice. You'll get the advantage of prorated costs.
 
 
 ### Database pricing
@@ -297,6 +297,8 @@ Running migrations:
   Applying learning_logs.0003_topic_owner... OK
   Applying sessions.0001_initial... OK
 ```
+
+The command `heroku run python manage.py migrate` tells Heroku to run the migrate command on the server where your project is hosted.
 
 Now you should be able to use the deployed project just as you used it on your local system. Note that the deployed project won't have any data; we didn't copy the local database to the live project. Local data is usually test data, so it's common that the deployed project starts with an empty database.
 

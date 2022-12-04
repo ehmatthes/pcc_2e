@@ -21,9 +21,9 @@ From a high-level view, the deployment process is fairly simple:
 However, there are a number of factors that make deployment more complicated than that:
 
 - Your OS is probably different than the server's OS.
-- The server's resources are almost certainly much more limited than your local system.
-- The load on the server can be much higher than the load on your local system, if people start using your site.
+- The server's resources are almost almost always more limited than your local system.
+- The load on the hosting server can be much higher than the load on your local system, if people start using your site.
 - The internet is a hostile place! Bots are constantly attacking deployed projects, even tiny test projects.
-- People are constantly trying to abuse hosting platforms' free and intro offerings.
+- People are constantly trying to abuse hosting platforms' free and intro offerings. People try to run crypo miners, botnets, malware, and more.
 
 That last point is one of the main reasons the hosting landscape is changing so rapidly. Years ago, hosts could offer generous free plans that let you try out the deployment process, often without submitting credit card info. These days, any hosting service that lets you sign up without a credit card is inviting massive spamming attempts from crypto farmers and spammers, and many other fraudulent users.

@@ -27,3 +27,7 @@ The only inaccurate part of the deployment section of Chapter 20 is the statemen
 If you are willing to pay for hosting, you can still deploy to Heroku. Pricing for most plans is pro-rated to the second, so deploying a project and then destroying it can cost very little. The cheapest ongoing deployment is about $10-$12 month.
 
 [Deploy to Heroku](deploying_to_heroku)
+
+### Deploying to Platform.sh
+
+The third edition of Python Crash Course walks through deployment to Platform.sh, which as of this writing does not require a credit card. Instructions for deploying to Platform.sh will be posted here shortly.
