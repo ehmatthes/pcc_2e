@@ -88,12 +88,14 @@ Visit [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) documen
 Install the following packages, which make it possible to serve Django projects in a production environment:
 
 ```
-(ll_env)learning_log$ pip install psycopg2==2.7.*
+(ll_env)learning_log$ pip install psycopg2
 (ll_env)learning_log$ pip install django-heroku
 (ll_env)learning_log$ pip install gunicorn
 ```
 
 The `psycopg2` packages lets Django talk to the Postgres database. The `django-heroku` package helps configure the project to run on Heroku's servers. The `gunicorn` package efficiently runs the actual Django code.
+
+**Note:** If you have trouble installing `psycopg2`, you may need to install Postgres first. You can find [Windows installers here](https://www.postgresql.org/download/windows/). On macOS, you can install Postgres with Homebrew using the command `brew install postgresql@14`. For a brief guide to installing Postgres on Ubuntu-flavored versions of Linux, see [here](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart).
 
 ### Create a *requirements.txt* file
 
@@ -106,7 +108,17 @@ Generate a *requirements.txt* file with the following command:
 This looks at all the packages that have been installed to support the Learning Log project, and makes sure Heroku will install the same versions of those packages on its servers. You can open this file and see exactly which versions will be installed:
 
 ```
-FILL
+asgiref==3.5.2
+beautifulsoup4==4.11.1
+dj-database-url==1.0.0
+Django==4.1.3
+django-bootstrap4==22.3
+django-heroku==0.3.1
+gunicorn==20.1.0
+psycopg2==2.9.5
+soupsieve==2.3.2.post1
+sqlparse==0.4.3
+whitenoise==6.2.0
 ```
 
 These are the most up to date versions at the time of this writing. If you see different versions in your output, you should keep those versions.
@@ -119,7 +131,7 @@ If you don't know which version you have installed, you can check:
 
 ```
 (ll_env)learning_log$ python --version
-FILL
+Python 3.10.8
 ```
 
 I'm going to specify Python 3.10.8. Make a file called *runtime.txt*, and enter the Python version exactly as you saw it on the Heroku page:
@@ -317,4 +329,4 @@ We run `python manage.py createsuperuser` just like we did in Chapter 18, answer
 
 ### Continuing the deployment
 
-At this point, you can return to page 456 in the book, and refine your deployment. The rest of the chapter shows you how to update your project once its deployed. The focus is on making a few important security modifications, and adding custom error pages.
+At this point, you can return to page 456 in the book, and refine your deployment. The rest of the chapter shows you how to update your project once its deployed. The focus is on making a few important security modifications, and adding custom error pages. You'll also see how to destroy the deployed version of the project.
