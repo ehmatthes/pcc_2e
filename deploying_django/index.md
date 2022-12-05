@@ -30,4 +30,6 @@ If you are willing to pay for hosting, you can still deploy to Heroku. Pricing f
 
 ### Deploying to Platform.sh
 
-The third edition of Python Crash Course walks through deployment to Platform.sh, which as of this writing does not require a credit card. Instructions for deploying to Platform.sh will be posted here shortly.
+The third edition of Python Crash Course walks through deployment to Platform.sh, which as of this writing does not require a credit card. If you'd rather deploy to Platform.sh, you can follow the instructions here:
+
+[Deploy to Platform.sh](deploying_to_platformsh)
