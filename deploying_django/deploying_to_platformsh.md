@@ -137,3 +137,94 @@ You don't need to understand everything here, but you should skim it and get an 
 The `relationships` section defines other services the project needs, in this case a database. The `web` section tells the server how to respond to incoming requests for specific pages, and resources needed to build pages.
 
 We're requesting 512MB of disk space, and we're setting up a place for log files. Finally, in the `hooks` section, we tell the server which packages to install (from the *requirements.txt* and *requirements_remote.txt* files). We also run the `migrate` command during the deployment process.
+
+#### The *.platform/services.yaml* file
+
+Make a new folder called *.platform*, in the same directory as *manage.py*. Make sure you include the dot at the beginning of the name. Inside that folder, make a file called *services.yaml* and enter (or paste) the following:
+
+```yaml
+# Each service listed will be deployed in its own container as part of your
+#   Platform.sh project.
+
+db:
+    type: postgresql:12
+    disk: 1024
+```
+
+This file defines one service, a Postgres database.
+
+### Modify *settings.py* for Platform.sh
+
+Copy and paste the following section into the end of *settings.py*:
+
+```python
+--snip--
+
+# Platform.sh settings.
+from platformshconfig import Config
+
+config = Config()
+if config.is_valid_platform():
+    ALLOWED_HOSTS.append('.platformsh.site')
+    DEBUG = False
+
+    if config.appDir:
+        STATIC_ROOT = Path(config.appDir) / 'static'
+    if config.projectEntropy:
+        SECRET_KEY = config.projectEntropy
+
+    if not config.in_build():
+        db_settings = config.credentials('database')
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.postgresql',
+                'NAME': db_settings['path'],
+                'USER': db_settings['username'],
+                'PASSWORD': db_settings['password'],
+                'HOST': db_settings['host'],
+                'PORT': db_settings['port'],
+    },
+}
+```
+
+This imports the `platformshconfig` package, and then makes configuration changes that are specific to the deployed version of the project. It allows the project to be served by hosts ending in *.platformsh.site*, handles static files correctly, and configures the `SECRET_KEY` and `DATABASE` settings.
+
+### Use Git to track the project
+
+Git is a source code management tool. Git is used for almost all deployment workflows, because you can make "snapshots" of your projects called *commits*. If your deployment stops working, you can use Git to revert back to the last working commit of your project, and avoid significant downtime in your projects.
+
+#### Installing Git
+
+Check if Git is already installed on your system:
+
+```
+(ll_env)learning_log$ git --version
+git version 2.30.1
+```
+
+If you need to install Git on Windows or macOS, go to [Git's website](https://git-scm.com) to download an installer. On apt-based Linux systems, the command `sudo apt install git-all` should work.
+
+#### Configuring Git
+
+If this is the first time you're using Git, you'll need to set your username and email:
+
+```
+(ll_env)learning_log$ git config --global user.name "username"
+(ll_env)learning_log$ git config --global user.email "username@example.com"
+```
+
+You can use your actual email address, or an address ending in example.com.
+
+#### Make a *.gitignore* file
+
+Git shouldn't track every file in the project, so we'll write a *.gitignore* file telling Git which files it doesn't need to track:
+
+```
+ll_env/
+__pycache__/
+*.sqlite3
+```
+
+We don't want to push the virtual environment, Python's cached files, or the local database. If you're on macOS, you can add `.DS_Store` to this file as well.
+
+Make sure you save this file with a dot in front of it; it needs to be called `.gitignore`, not `gitignore`. It also can't have a file ending such as `.txt`.
