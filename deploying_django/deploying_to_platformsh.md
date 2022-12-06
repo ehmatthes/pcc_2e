@@ -35,17 +35,13 @@ Visit [The Platform.sh CLI](https://docs.platform.sh/administration/cli.html) do
 
 The `platformshconfig` package helps detect whether the project is running on your local system, or on a Platform.sh server. It also handles some configuration work on the remote server. Use `pip` to install it:
 
-```
-(ll_env)learning_log$ pip install platformshconfig
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>pip install platformshconfig</b></code></pre>
 
 ### Create a *requirements.txt* file
 
 Generate a *requirements.txt* file with the following command:
 
-```
-(ll_env)learning_log$ pip freeze > requirements.txt
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>pip freeze > requirements.txt</b></code></pre>
 
 This looks at all the packages that have been installed to support the Learning Log project, and makes sure Platform.sh will install the same versions of those packages on its servers. You can open this file and see exactly which versions will be installed:
 
@@ -60,7 +56,7 @@ These are the most up to date versions at the time of this writing. If you see d
 The remote server will require two additional packages, that you don't need to install locally. Make a new file called *requirements_remote.txt*, and add the following two packages to it:
 
 ```
-# Requirements for live projectt.
+# Requirements for live project.
 gunicorn
 psycopg2
 ```
@@ -197,10 +193,8 @@ Git is a source code management tool. Git is used for almost all deployment work
 
 Check if Git is already installed on your system:
 
-```bash
-(ll_env)learning_log$ git --version
-git version 2.30.1
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git --version</b>
+git version 2.30.1</code></pre>
 
 If you need to install Git on Windows or macOS, go to [Git's website](https://git-scm.com) to download an installer. On apt-based Linux systems, the command `sudo apt install git-all` should work.
 
@@ -208,10 +202,8 @@ If you need to install Git on Windows or macOS, go to [Git's website](https://gi
 
 If this is the first time you're using Git, you'll need to set your username and email:
 
-```bash
-(ll_env)learning_log$ git config --global user.name "username"
-(ll_env)learning_log$ git config --global user.email "username@example.com"
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git config --global user.name "username"</b>
+(ll_env)learning_log$ <b>git config --global user.email "username@example.com"</b></code></pre>
 
 You can use your actual email address, or an address ending in example.com.
 
@@ -233,13 +225,12 @@ Make sure you save this file with a dot in front of it; it needs to be called `.
 
 The Learning Log project still runs locally, and is now configured for deployment to Platform.sh as well. Log in to the Platform.sh CLI in the terminal:
 
-```bash
-(ll_env)learning_log$ platform login
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform login</b>
 Opened URL: http://127.0.0.1:5000
 Please use the browser to log in.
 --snip--
-Do you want to create an SSH configuration file automatically? [Y/n] Y
-```
+Do you want to create an SSH configuration file automatically? [Y/n] <b>Y</b>
+</code></pre>
 
 A browser tab will open where you can log in. Once you're logged in you can close the browser tab. If you're prompted about creating an *SSH configuration file*, enter **Y** so you can connect to the remote server later.
 
@@ -270,4 +261,63 @@ Enter a number to choose:
   * Storage (--storage)
   The amount of storage per environment, in GiB
   Default: 5
-> <b>5</b></code></pre>
+> <b>5</b>
+
+Default branch (--default-branch)
+The default Git branch name for the project (the production environment)
+Default: main
+> <b>main</b>
+
+Git repository detected: /Users/eric/.../learning_log
+Set the new project ll_project as the remote for this repository? [Y/n] <b>Y</b>
+
+The estimated monthly cost of this project is: $10 USD
+Are you sure you want to continue? [Y/n] <b>Y</b>
+
+The Platform.sh Bot is activating your project
+  ▀▄   ▄▀  
+█▄█▀███▀█▄█
+▀█████████▀
+ ▄▀     ▀▄ 
+           
+  The project is now ready!</code></pre>
+
+You'll be prompted for a name to use for the deployed project, which is `ll_project` in the output shown here. Then you'll be prompted to choose a region near you; for me that's `us-3.platform.sh`. You'll be prompted to choose a plan type, the number of environments, a storage amount, and the main branch name. The default options should work for all of these. You'll need to answer **Y** to set the remote repository, and confirm what the cost of the plan would be if you continue to use it beyond the free tier.
+
+You'll see a dancing robot while your project is activated.
+
+### Pushing the project
+
+The last step before seeing the live version of the project is to push your code to the remote server, using the `platform push` command:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform push</b>
+Are you sure you want to push to the main (production) branch? [Y/n] <b>Y</b>
+--snip--
+The authenticity of host 'git.us-3.platform.sh (...)' can't be established.
+RSA key fingerprint is SHA256:Tvn...7PM
+Are you sure you want to continue connecting (yes/no/[fingerprint])? <b>Y</b>
+Pushing HEAD to the existing environment main
+  --snip--
+  To git.us-3.platform.sh:3pp3mqcexhlvy.git
+   * [new branch]      HEAD -> main</code></pre>
+
+You'll be asked for one more confirmation that you actually want to push the project. You might see a message about confirming th authenticity of Platform.sh as well.
+
+After these final prompts, you should see a bunch of output scroll by as your code is copied to the server, and the project is built out on the remote server.
+
+**Note:** If realize you made a mistake such as a typo in a configuration file, fix the mistake and then reissue the `git commit` command. Then you can run `platform push` again. You shouldn't need to repeat the `platform create` command, as that would just make an additional project on your Platform.sh account.
+
+### Viewing the project
+
+You can see your project using the `platform url` command:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform url</b>
+Enter a number to open a URL
+  [0] https://main-bvxea6i-wmye2fx7wwqgu.us-3.platformsh.site/
+  --snip--
+> <b>0</b></code></pre>
+
+The `platform url` command lists the URLs associated with a deployed project. Choose one, and your project should open in a new browser tab.
+
+**Note:** When you deploy your project using a trial account, don’t be surprised if it sometimes takes longer than usual for a page to load. On most hosting platforms, free resources that are idle are often suspended and only restarted when new requests come in. Most platforms are much more responsive on paid hosting plans.
+
