@@ -321,3 +321,40 @@ The `platform url` command lists the URLs associated with a deployed project. Ch
 
 **Note:** When you deploy your project using a trial account, don’t be surprised if it sometimes takes longer than usual for a page to load. On most hosting platforms, free resources that are idle are often suspended and only restarted when new requests come in. Most platforms are much more responsive on paid hosting plans.
 
+### Creating a superuser
+
+The database for the live project has been set up, but it's completely empty. To create a superuser on the deployed project, we'll start an SSH session where we can run management commands on the remote server:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform environment:ssh</b>
+
+   ___ _      _    __                    _
+  | _ \ |__ _| |_ / _|___ _ _ _ __    __| |_
+  |  _/ / _` |  _|  _/ _ \ '_| '  \ _(_-< ' \
+  |_| |_\__,_|\__|_| \___/_| |_|_|_(_)__/_||_|
+
+   Welcome to Platform.sh.
+
+web@ll_project.0:~$ <b>ls</b>
+users learning_logs ll_project logs manage.py requirements.txt
+    requirements_remote.txt static
+web@ll_project.0:~$ <b>python manage.py createsuperuser</b>
+Username (leave blank to use 'web'): <b>ll_admin_live</b>
+Email address:
+Password:
+Password (again):
+Superuser created successfully.
+web@ll_project.0:~$ <b>exit</b>
+logout
+Connection to ssh.us-3.platform.sh closed.
+(ll_env)learning_log$</code></pre>
+
+When you first run the command `platform environment:ssh`, you may get another prompt about the authenticity of this host. If you see this, enter `Y` and you should be logged into a remote terminal session.
+
+After running the `ssh` command, your terminal acts just like a terminal on the remote server. Your prompt will change to indicate that you're in a *web* session associated with the project named *ll_project*. Issuing the `ls` command will list the files that were pushed to the remote server.
+
+Issue the same `createsuperuser` command you used in Chapter 18. This time I used the name `ll_admin_live`, so I have a separate username that's clearly associated with the deployed project. When you're finished, enter `exit` to end the SSH session. You'll see from the prompt that you're back in your local system.
+
+**Note:** Windows users will use the same commands shown here (such as `ls` instead of `dir`), because you’re running a Linux terminal through a remote connection.
+
+### Securing the project
+
