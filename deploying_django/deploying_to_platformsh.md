@@ -197,7 +197,7 @@ Git is a source code management tool. Git is used for almost all deployment work
 
 Check if Git is already installed on your system:
 
-```
+```bash
 (ll_env)learning_log$ git --version
 git version 2.30.1
 ```
@@ -208,7 +208,7 @@ If you need to install Git on Windows or macOS, go to [Git's website](https://gi
 
 If this is the first time you're using Git, you'll need to set your username and email:
 
-```
+```bash
 (ll_env)learning_log$ git config --global user.name "username"
 (ll_env)learning_log$ git config --global user.email "username@example.com"
 ```
@@ -228,3 +228,46 @@ __pycache__/
 We don't want to push the virtual environment, Python's cached files, or the local database. If you're on macOS, you can add `.DS_Store` to this file as well.
 
 Make sure you save this file with a dot in front of it; it needs to be called `.gitignore`, not `gitignore`. It also can't have a file ending such as `.txt`.
+
+### Creating a project on Platform.sh
+
+The Learning Log project still runs locally, and is now configured for deployment to Platform.sh as well. Log in to the Platform.sh CLI in the terminal:
+
+```bash
+(ll_env)learning_log$ platform login
+Opened URL: http://127.0.0.1:5000
+Please use the browser to log in.
+--snip--
+Do you want to create an SSH configuration file automatically? [Y/n] Y
+```
+
+A browser tab will open where you can log in. Once you're logged in you can close the browser tab. If you're prompted about creating an *SSH configuration file*, enter **Y** so you can connect to the remote server later.
+
+Now you can create a project. There are a few prompts that will come up. Start by issuing the `platform create` command:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform create</b>
+* Project title (--title)
+Default: Untitled Project
+> <b>ll_project</b>
+
+* Region (--region)
+The region where the project will be hosted
+  --snip--
+  [us-3.platform.sh] Moses Lake, United States (AZURE) [514 gC02eq/kWh]
+> <b>us-3.platform.sh</b>
+* Plan (--plan)
+Default: development
+Enter a number to choose:
+  [0] development
+  --snip--
+> <b>0</b>
+
+  * Environments (--environments)
+  The number of environments
+  Default: 3
+> <b>3</b>
+
+  * Storage (--storage)
+  The amount of storage per environment, in GiB
+  Default: 5
+> <b>5</b></code></pre>
