@@ -356,5 +356,26 @@ Issue the same `createsuperuser` command you used in Chapter 18. This time I use
 
 **Note:** Windows users will use the same commands shown here (such as `ls` instead of `dir`), because you’re running a Linux terminal through a remote connection.
 
-### Securing the project
+### Finishing Chapter 20
 
+You can now go back to the book and pick up on page 458, at the *Creating Custom Error Pages* section. The only difference you'll need to keep in mind is that you'll use the commmand `platform push` when you see `git push heroku main` in the book.
+
+### Deleting a project on Platform.sh
+
+When you're finished with your deployed project, you can either keep it running with a paid plan, or destroy the project. To destroy the project, use the `platform project:delete` command:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>platform project:delete</b></code></pre>
+
+You'll be prompted to confirm that you want to take this destructive acction. Respond to the prompts, and your project will be deleted.
+
+You can also delete a project’s resources by logging in to the Platform.sh website and visiting your [dashboard](https://console.platform.sh). This page lists all your active projects. Click the three dots in a project’s box, and click **Edit Plan**. This is a pricing page for the project; click the **Delete Project** button at the bottom of the page, and you’ll be shown a confirmation page where you can follow through with the deletion. Even if you deleted your project using the CLI, it’s a good idea to familiarize yourself with the dashboard of any hosting provider you deploy to.
+
+**Note:** If you haven't put a credit card on file, Platform.sh should just put your project to sleep when your free trial ends. But it's a really good idea to destroy a test deployment if you're not actively planning to continue maintaining it. It's easy to end up with deployed projects that do start to accrue charges if you're not careful.
+
+The command `platform create` also set up a reference to the remote repository. You can remove this remote from the command line as well:
+
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git remote</b>
+platform
+(ll_env)learning_log$ <b>git remote remove platform</b></code></pre>
+
+The command `git remote` lists the names of all remote URLs associated with the current repository. The command `git remote remove remote_name` deletes these remote URLs from the local repository.
