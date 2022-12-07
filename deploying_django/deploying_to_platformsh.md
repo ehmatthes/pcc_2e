@@ -17,8 +17,6 @@ The description of the deployment process shown here is not as thorough as what 
 
 ---
 
-## Deploying Learning Log
-
 ### Make a Platform.sh account
 
 Go to the [Platform.sh](https://platform.sh) home page and make an account.
@@ -46,7 +44,13 @@ Generate a *requirements.txt* file with the following command:
 This looks at all the packages that have been installed to support the Learning Log project, and makes sure Platform.sh will install the same versions of those packages on its servers. You can open this file and see exactly which versions will be installed:
 
 ```
-FILL
+asgiref==3.5.2
+beautifulsoup4==4.11.1
+Django==4.1.3
+django-bootstrap4==22.3
+platformshconfig==2.4.0
+soupsieve==2.3.2.post1
+sqlparse==0.4.3
 ```
 
 These are the most up to date versions at the time of this writing. If you see different versions in your output, you should keep those versions.
@@ -96,7 +100,7 @@ web:
     upstream:
         socket_family: unix
     commands:
-        start: "gunicorn -w 4 -b unix:$SOCKET ll_project.wsgi:application"
+        start: "gunicorn -w 4 -b unix:$SOCKET learning_log.wsgi:application"
     locations:
         "/":
             passthru: true
@@ -151,7 +155,7 @@ This file defines one service, a Postgres database.
 
 ### Modify *settings.py* for Platform.sh
 
-Copy and paste the following section into the end of *settings.py*:
+Copy and paste the following section into the end of *settings.py*, (don't copy the `--snip--`):
 
 ```python
 --snip--
@@ -179,8 +183,8 @@ if config.is_valid_platform():
                 'PASSWORD': db_settings['password'],
                 'HOST': db_settings['host'],
                 'PORT': db_settings['port'],
-    },
-}
+            },
+        }
 ```
 
 This imports the `platformshconfig` package, and then makes configuration changes that are specific to the deployed version of the project. It allows the project to be served by hosts ending in *.platformsh.site*, handles static files correctly, and configures the `SECRET_KEY` and `DATABASE` settings.
@@ -220,6 +224,37 @@ __pycache__/
 We don't want to push the virtual environment, Python's cached files, or the local database. If you're on macOS, you can add `.DS_Store` to this file as well.
 
 Make sure you save this file with a dot in front of it; it needs to be called `.gitignore`, not `gitignore`. It also can't have a file ending such as `.txt`.
+
+#### Committing the project
+
+Now we'll commit the current state of the project:
+
+```
+(ll_env)learning_log$ git init
+Initialized empty Git repository in /home/eric/pcc/learning_log/.git/
+
+(ll_env)learning_log$ git add .
+(ll_env)learning_log$ git commit -am "Ready for deployment to Platform.sh."
+[main (root-commit) 79fef72] Ready for deployment to Platform.sh.
+ 45 files changed, 712 insertions(+)
+ create mode 100644 .platform.app.yaml
+ create mode 100644 .platform/services.yaml
+ create mode 100644 requirements_remote.txt
+--snip--
+create mode 100644 users/views.py
+
+(ll_env)learning_log$ git status
+On branch main
+nothing to commit, working tree clean
+```
+
+There are four commands used here:
+- `git init` initializes Git; it sets Git up to track changes in this project.
+- `git add .` tells Git to start tracking every file in this project that's not listed in `.gitignore`.
+- `git commit -am "commit_message` tells Git to take a snapshot of the project, and record the given commit message.
+- `git status` This verifies that the commit was successful. When you run this command, you should see the brach you're currently working on, and the message that there's nothing to commit and that the working tree is "clean".
+
+You may see a different main branch name, such as `master` or `trunk`.
 
 ### Creating a project on Platform.sh
 
@@ -335,8 +370,8 @@ The database for the live project has been set up, but it's completely empty. To
    Welcome to Platform.sh.
 
 web@ll_project.0:~$ <b>ls</b>
-users learning_logs ll_project logs manage.py requirements.txt
-    requirements_remote.txt static
+learning_logs ll_project logs manage.py requirements.txt
+    requirements_remote.txt static users
 web@ll_project.0:~$ <b>python manage.py createsuperuser</b>
 Username (leave blank to use 'web'): <b>ll_admin_live</b>
 Email address:
