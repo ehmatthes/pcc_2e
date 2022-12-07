@@ -229,12 +229,11 @@ Make sure you save this file with a dot in front of it; it needs to be called `.
 
 Now we'll commit the current state of the project:
 
-```
-(ll_env)learning_log$ git init
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git init</b>
 Initialized empty Git repository in /home/eric/pcc/learning_log/.git/
 
-(ll_env)learning_log$ git add .
-(ll_env)learning_log$ git commit -am "Ready for deployment to Platform.sh."
+(ll_env)learning_log$ <b>git add .</b>
+(ll_env)learning_log$ <b>git commit -am "Ready for deployment to Platform.sh."</b>
 [main (root-commit) 79fef72] Ready for deployment to Platform.sh.
  45 files changed, 712 insertions(+)
  create mode 100644 .platform.app.yaml
@@ -243,10 +242,9 @@ Initialized empty Git repository in /home/eric/pcc/learning_log/.git/
 --snip--
 create mode 100644 users/views.py
 
-(ll_env)learning_log$ git status
+(ll_env)learning_log$ <b>git status</b>
 On branch main
-nothing to commit, working tree clean
-```
+nothing to commit, working tree clean</code></pre>
 
 There are four commands used here:
 - `git init` initializes Git; it sets Git up to track changes in this project.
