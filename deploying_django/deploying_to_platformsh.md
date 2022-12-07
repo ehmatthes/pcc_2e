@@ -27,7 +27,7 @@ When dealing with hosting services, you are entirely responsible for your bill. 
 
 Visit [The Platform.sh CLI](https://docs.platform.sh/administration/cli.html) documentation page for instructions about how to install the Platform.sh CLI on your system.
 
-**Note:** On Windows, you'll need to use the Windows Subsystem for Linux (WSL) a Git Bash terminal, or another Bash-compatible terminal. See [add external page]().
+**Note:** On Windows, you'll need to use the Windows Subsystem for Linux (WSL) a Git Bash terminal, or another Bash-compatible terminal. See [Installing the Platform.sh CLI on Winodws](../platformsh_cli_windows).
 
 ### Install `platformshconfig`
 
