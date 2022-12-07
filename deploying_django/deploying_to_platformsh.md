@@ -340,6 +340,8 @@ You'll be asked for one more confirmation that you actually want to push the pro
 
 After these final prompts, you should see a bunch of output scroll by as your code is copied to the server, and the project is built out on the remote server.
 
+**Note:** If you're on Windows and you see a popup stating "The authenticity of host *host_address* can't be established", enter **yes**. Deployment should continue after this. 
+
 **Note:** If realize you made a mistake such as a typo in a configuration file, fix the mistake and then reissue the `git commit` command. Then you can run `platform push` again. You shouldn't need to repeat the `platform create` command, as that would just make an additional project on your Platform.sh account.
 
 ### Viewing the project
