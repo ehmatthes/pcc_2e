@@ -87,11 +87,9 @@ Visit [The Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) documen
 
 Install the following packages, which make it possible to serve Django projects in a production environment:
 
-```
-(ll_env)learning_log$ pip install psycopg2
-(ll_env)learning_log$ pip install django-heroku
-(ll_env)learning_log$ pip install gunicorn
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>pip install psycopg2</b>
+(ll_env)learning_log$ <b>pip install django-heroku</b>
+(ll_env)learning_log$ <b>pip install gunicorn</b></code></pre>
 
 The `psycopg2` packages lets Django talk to the Postgres database. The `django-heroku` package helps configure the project to run on Heroku's servers. The `gunicorn` package efficiently runs the actual Django code.
 
@@ -101,9 +99,7 @@ The `psycopg2` packages lets Django talk to the Postgres database. The `django-h
 
 Generate a *requirements.txt* file with the following command:
 
-```
-(ll_env)learning_log$ pip freeze > requirements.txt
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>pip freeze > requirements.txt</b></code></pre>
 
 This looks at all the packages that have been installed to support the Learning Log project, and makes sure Heroku will install the same versions of those packages on its servers. You can open this file and see exactly which versions will be installed:
 
@@ -129,10 +125,8 @@ Heroku needs to know what version of Python to use. See the current [supported r
 
 If you don't know which version you have installed, you can check:
 
-```
-(ll_env)learning_log$ python --version
-Python 3.10.8
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>python --version</b>
+Python 3.10.8</code></pre>
 
 I'm going to specify Python 3.10.8. Make a file called *runtime.txt*, and enter the Python version exactly as you saw it on the Heroku page:
 
@@ -176,10 +170,8 @@ Git is a source code management tool. Git is used for almost all deployment work
 
 Check if Git is already installed on your system:
 
-```
-(ll_env)learning_log$ git --version
-git version 2.30.1
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git --version</b>
+git version 2.30.1</code></pre>
 
 If you need to install Git on Windows or macOS, go to [Git's website](https://git-scm.com) to download an installer. On apt-based Linux systems, the command `sudo apt install git-all` should work.
 
@@ -187,10 +179,8 @@ If you need to install Git on Windows or macOS, go to [Git's website](https://gi
 
 If this is the first time you're using Git, you'll need to set your username and email:
 
-```
-(ll_env)learning_log$ git config --global user.name "username"
-(ll_env)learning_log$ git config --global user.email "username@example.com"
-```
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git config --global user.name "username"</b>
+(ll_env)learning_log$ <b>git config --global user.email "username@example.com"</b></code></pre>
 
 You can use your actual email address, or an address ending in example.com.
 
@@ -220,12 +210,11 @@ Many operating systems "hide" files and folders that begin with a dot. If this i
 
 Now we'll commit the current state of the project:
 
-```
-(ll_env)learning_log$ git init
+<pre class="highlight"><code>(ll_env)learning_log$ <b>git init</b>
 Initialized empty Git repository in /home/eric/pcc/learning_log/.git/
 
-(ll_env)learning_log$ git add .
-(ll_env)learning_log$ git commit -am "Ready for deployment to heroku."
+(ll_env)learning_log$ <b>git add .</b>
+(ll_env)learning_log$ <b>git commit -am "Ready for deployment to heroku."</b>
 [main (root-commit) 79fef72] Ready for deployment to heroku.
  45 files changed, 712 insertions(+)
  create mode 100644 .gitignore
@@ -233,10 +222,9 @@ Initialized empty Git repository in /home/eric/pcc/learning_log/.git/
 --snip--
 create mode 100644 users/views.py
 
-(ll_env)learning_log$ git status
+(ll_env)learning_log$ <b>git status</b>
 On branch main
-nothing to commit, working tree clean
-```
+nothing to commit, working tree clean</code></pre>
 
 There are four commands used here:
 - `git init` initializes Git; it sets Git up to track changes in this project.
@@ -250,26 +238,24 @@ You may see a different main branch name, such as `master` or `trunk`.
 
 We're finally ready to push the project to Heroku:
 
-```
-(ll_env)learning_log$ heroku login
+<pre class="highlight"><code>(ll_env)learning_log$ <b>heroku login</b>
 heroku: Press any key to open up the browser to login or q to exit:
 Logging in... done
 Logged in as eric@example.com
 
-(ll_env)learning_log$ heroku create
+(ll_env)learning_log$ <b>heroku create</b>
 Creating app... done, secret-lowlands-82594
 https://secret-lowlands-82594.herokuapp.com/ |
     https://git.heroku.com/secret-lowlands-82594.git
 
-(ll_env)learning_log$ git push heroku main
+(ll_env)learning_log$ <b>git push heroku main</b>
 --snip--
 remote: -----> Launching...
 remote:        Released v5
 remote:        https://secret-lowlands-82594.herokuapp.com/ deployed to Heroku
 remote: Verifying deploy... done.
 To https://git.heroku.com/secret-lowlands-82594.git
- * [new branch]      main -> main
-```
+ * [new branch]      main -> main</code></pre>
 
 Three commands were used here:
 - `heroku login` makes sure you're logged in through Heroku's CLI.
@@ -286,8 +272,7 @@ To view the deployed project, run `heroku open`. This will open the project in a
 
 To create the live database, you need to run the `migrate` command on the deployed project:
 
-```
-(ll_env)learning_log$ heroku run python manage.py migrate
+<pre class="highlight"><code>(ll_env)learning_log$ <b>heroku run python manage.py migrate</b>
 Running 'python manage.py migrate' on secret-lowlands-82594... up, run.3060
   --snip--
 Running migrations:
@@ -295,8 +280,7 @@ Running migrations:
   Applying learning_logs.0001_initial... OK
   Applying learning_logs.0002_entry... OK
   Applying learning_logs.0003_topic_owner... OK
-  Applying sessions.0001_initial... OK
-```
+  Applying sessions.0001_initial... OK</code></pre>
 
 The command `heroku run python manage.py migrate` tells Heroku to run the migrate command on the server where your project is hosted.
 
@@ -306,24 +290,22 @@ Now you should be able to use the deployed project just as you used it on your l
 
 You can create a superuser, so you can use the deployed project's admin site:
 
-```
-(ll_env)learning_log$ heroku run bash
+<pre class="highlight"><code>(ll_env)learning_log$ <b>heroku run bash</b>
 Running 'bash' on secret-lowlands-82594... up, run.9858
 
-~ $ ls
+~ $ <b>ls</b>
 learning_log learning_logs manage.py Procfile requirements.txt runtime.txt
 staticfiles users
 
-~ $ python manage.py createsuperuser
+~ $ <b>python manage.py createsuperuser</b>
 Username (leave blank to use ' u47318'): ll_admin
 Email address:
 Password:
 Password (again):
 Superuser created successfully.
 
-~ $ exit
-exit
-```
+~ $ <b>exit</b>
+exit</code></pre>
 
 The command `heroku run bash` brings up a terminal session that lets you interact directly with the remote server. Running the command `ls` lists the files that are available on the remote server. These are the same files we just pushed to the server in the `git push heroku main` command.
 
