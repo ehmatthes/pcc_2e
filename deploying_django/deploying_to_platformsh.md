@@ -72,7 +72,7 @@ The `gunicorn` package handles live requests just like `runserver` does locally,
 Platform.sh deployments need two configuration files:
 
 - ***.platform.app.yaml*** This is the main configuration file for the project.
-- ***.platform/services.yaml*** THis file defines additional services the project needs.
+- ***.platform/services.yaml*** This file defines additional services the project needs.
 
 The first is a single file that needs to start with a dot. The second is a file called *services.yaml*, in a folder called *.platform*. Files and folders that start with a dot are called *dotfiles*, or *hidden files*, because they're often hidden by file browsers.
 
@@ -251,7 +251,7 @@ nothing to commit, working tree clean
 There are four commands used here:
 - `git init` initializes Git; it sets Git up to track changes in this project.
 - `git add .` tells Git to start tracking every file in this project that's not listed in `.gitignore`.
-- `git commit -am "commit_message` tells Git to take a snapshot of the project, and record the given commit message.
+- `git commit -am "commit_message"` tells Git to take a snapshot of the project, and record the given commit message.
 - `git status` This verifies that the commit was successful. When you run this command, you should see the brach you're currently working on, and the message that there's nothing to commit and that the working tree is "clean".
 
 You may see a different main branch name, such as `master` or `trunk`.
