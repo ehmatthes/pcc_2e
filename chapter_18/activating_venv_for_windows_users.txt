@@ -1,0 +1,7 @@
+Resolve activating the virtual environment on page 381 (Chapter 18) of PCC2e
+
+
+For Windows users, activating the virtual environment may not work if the ExecutionPolicy is restricted. To check your ExecutionPolicy settings, in an active terminal session, type 'Get-ExecutionPolicy' without the quotation marks and hit the enter key. If it shows 'Restricted', type 'Set-ExecutionPolicy Unrestricted -Scope Process' (without the quotation marks) and hit enter. This then allows you to activate your virtual environment by using the command 'll_env\Scripts\activate' (without the quotation marks). 
+
+
+Look at this Stack Overflow thread for more information on this https://stackoverflow.com/questions/18713086/virtualenv-wont-activate-on-windows.
