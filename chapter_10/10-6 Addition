@@ -1,0 +1,13 @@
+print(' enter two numbers to find the sum')
+try:
+    x= int(input('enter first number : '))
+    y=int(input('enter second number : '))
+    z= x + y
+except ValueError:
+    print('entered data is not numerical')
+
+
+    
+   
+else:
+    print(f" the sum of 2 numbers is {z}")
