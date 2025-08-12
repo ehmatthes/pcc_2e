@@ -13,11 +13,3 @@ I get questions from readers on a regular basis. Many of those are individual in
 
 - Alien Invasion
   - [What is the role of `self` and `ai_game` in the code that creates the ship?](../reader_questions/ship_self/)
-
----
-
-If you're stuck on something and what you see here isn't helping, please feel free to get in touch.
-
-Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
-
-Twitter: [@ehmatthes](https://twitter.com/ehmatthes/)

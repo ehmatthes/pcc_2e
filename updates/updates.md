@@ -30,5 +30,3 @@ When looking for updates it's helpful to know which printing you're working from
 The second half of Chapter 20 walks you through deploying the Learning Log project to Heroku. However, Heroku has recently dropped their free tier. For updates, see the [Deploying Django Projects](../../deploying_django) section.
 
 ---
-
-If you find an error in the book or can't get something to work, please let me know! You can reach me through email at ehmatthes@gmail.com, or on Twitter at [@ehmatthes](https://twitter.com/ehmatthes).

@@ -13,14 +13,14 @@ If you have any questions about Python Crash Course, or any feedback about what 
 
 Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
 
-Twitter: [@ehmatthes](https://twitter.com/ehmatthes)
-
 Mastodon: [@ehmatthes@fosstodon.org](https://fosstodon.org/@ehmatthes)
+
+Bluesky: [@ehmatthes.bsky.social](https://bsky.app/profile/ehmatthes.bsky.social)
 
 ---
 
-I write a weekly newsletter at [Mostly Python](https://mostlypython.substack.com), if you're curious what I'm up to in the Python world.
+I write a weekly newsletter at [Mostly Python](https://www.mostlypython.com), if you're curious what I'm up to in the Python world.
 
-I'd love to know what you think of *Python Crash Course*! Please consider taking a [brief survey](https://docs.google.com/forms/d/e/1FAIpQLSez7B3mKB9hmOKoiE7LS5ZmpaWME_KNOiLsznH4zb0UtSoxsA/viewform?usp=sf_link).
+I'd love to know what you think of *Python Crash Course*! Please consider taking a [brief survey](https://docs.google.com/forms/d/e/1FAIpQLSfiVAFj9SwGKFR6m-SelLcw4jz-0zBmVbLNkE-0j0ktjz6VBg/viewform).
 
 ---

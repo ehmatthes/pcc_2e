@@ -15,9 +15,6 @@ People often ask what they should read after finishing Python Crash Course. This
 This section recommends a few first steps, and then offers a number of recommendations depending on what you're most interested in as a programmer.
 {: .fs-6 .fw-300 }
 
-I am really interested to hear from readers about which resources have worked well after PCC. I can't possibly keep up with everything that's available at the intermediate level, so if you have some recommendations please get in touch. I'm [@ehmatthes](https://twitter.com/ehmatthes) on Twitter, and my email is ehmatthes at gmail.
-{: .fs-6 .fw-300 }
-
 - [First Steps](../first_steps/)
 - [General Python Resources](../general_python/)
 - [Data Science Resources](../data_science/)
