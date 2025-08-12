@@ -7,3 +7,7 @@ notes/
 *_env*/
 
 *.DS_Store
+
+.jekyll-metadata
+.ruby-version
+_site/
