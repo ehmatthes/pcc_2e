@@ -8,6 +8,22 @@ description: "Online resources for Python Crash Course."
 # Python Crash Course, Second Edition
 {: .fs-9 }
 
+**Note:** The second edition of *Python Crash Course* has been out of print since 2023, and is significantly out of date at this point. The third edition is fully up to date.
+{: .fs-6 .fw-300 }
+
+All resources for the third edition can be found [here](https://ehmatthes.github.io/pcc_3e/).
+{: .fs-6 .fw-300 }
+
+<a href="https://ehmatthes.github.io/pcc_3e/"><img src="../images/pcc_3e_cover-170px.png" /></a>
+
+---
+
+Below are the archived resources for the second edition.
+
+---
+
+
+
 This is a collection of resources for [Python Crash Course (2nd Ed.)](https://www.nostarch.com/pythoncrashcourse2e/), an introductory programming book from [No Starch Press](https://www.nostarch.com) by Eric Matthes.
 {: .fs-6 .fw-300 }
 
