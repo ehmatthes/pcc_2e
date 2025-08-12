@@ -14,7 +14,7 @@ description: "Online resources for Python Crash Course."
 All resources for the third edition can be found [here](https://ehmatthes.github.io/pcc_3e/).
 {: .fs-6 .fw-300 }
 
-[![Python Crash Course 3e cover](images/pcc_3e_cover-170px.png)](https://ehmatthes.github.io/pcc_3e/)
+<a href="https://ehmatthes.github.io/pcc_3e/"><img src="https://ehmatthes.github.io/pcc_2e/images/pcc_3e_cover-170px.png" /></a>
 
 ---
 
@@ -49,6 +49,6 @@ I'd love to know what you think of *Python Crash Course*! Please consider taking
 
 ---
 
-[![Python Crash Course 2e cover](images/cover.png)](https://nostarch.com/pythoncrashcourse2e)
+<a href="https://nostarch.com/pythoncrashcourse2e"><img src="https://ehmatthes.github.io/pcc_2e/images/cover.png" /></a>
 
 Available from <a href="https://nostarch.com/pythoncrashcourse2e">No Starch Press</a>, <a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280">Amazon</a>, and [Barnes & Noble](https://www.barnesandnoble.com/w/python-crash-course-2nd-edition-eric-matthes/1129705311/). You can also find *Python Crash Course* in person at Barnes & Noble bookstores, and other fine booksellers worldwide.
