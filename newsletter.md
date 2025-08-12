@@ -24,5 +24,5 @@ If you're curious to read some posts, you might want to start with one of these:
     
 ---
 
-[![Mostly Python logo, two snakes facing each other over a microchip.](../images/mp_logo_200px.png)](https://mostlypython.substack.com)
+[![Mostly Python logo, two snakes facing each other over a microchip.](../images/mp_logo_200px.png)](https://www.mostlypython.com)
 
