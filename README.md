@@ -1,10 +1,10 @@
-Python Crash Course - Second Edition
-===
-
 > [!WARNING]
 > The second edition of Python Crash Course has been out of print since 2023, and is significantly out of date at this point. The third edition is fully up to date.
 > 
 > All resources for the third edition can be found [here](https://ehmatthes.github.io/pcc_3e/).
+
+Python Crash Course - Second Edition
+===
 
 A Hands-On, Project-Based Introduction to Programming
 ---
