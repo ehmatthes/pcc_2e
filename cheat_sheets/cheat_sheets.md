@@ -9,10 +9,6 @@ has_children: false
 
 Cheat sheets can be really helpful when you’re trying a set of exercises related to a specific topic, or working on a project. Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well. You can click here and download [all of the original sheets in a single document](https://github.com/ehmatthes/pcc_2e/releases/download/v1.0.1/beginners_python_cheat_sheet_pcc_all.pdf).
 
-A more recently updated version of these sheets (April 2021) is available through [Leanpub](https://leanpub.com/beginners-python-cheat-sheets/). The updated version includes a sheet that focuses on Git basics, a printer-friendly b&w version of each sheet, and each sheet as a separate document. There is an option to download the fully updated set at no cost.
-
-If you'd like to know when more resources become available, you can sign up for [email notifications here](https://emailoctopus.com/lists/95c27296-f1d4-11e9-be00-06b4694bee2a/forms/subscribe).
-
 # Individual Sheet Descriptions
 
 ### Overview Sheet
@@ -49,9 +45,3 @@ If you'd like to know when more resources become available, you can sign up for 
     - Focuses on creating web apps with Django. Installing Django and starting a project, working with models, building a home page, using templates, using data, and making user accounts.
 
 ---
-
-If you find any errors, please feel free to get in touch:
-
-Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
-
-Twitter: [@ehmatthes](https://twitter.com/ehmatthes)
