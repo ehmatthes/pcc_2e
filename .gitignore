@@ -15,3 +15,5 @@ _site/
 vendor/
 
 .jekyll-metadata
+.ruby-version
+
